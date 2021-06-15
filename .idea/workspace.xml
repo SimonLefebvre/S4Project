@@ -16,6 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db430054-1d14-4255-8a93-ec6427cdc4d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/testRTC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testRTC.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,9 +54,12 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="ics" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mimon\OneDrive\Documents\GitHub\APP4\S4Project\Tests" />
+      <recent name="C:\Users\mimon\OneDrive\Documents\GitHub\APP4\S4Project\Tests\XCinlude" />
       <recent name="C:\Users\mimon\Documents\GitHub\S4Project" />
     </key>
   </component>
@@ -64,6 +71,11 @@
       </method>
     </configuration>
     <configuration name="Google_Tests_run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="S4Project" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="S4Project" RUN_TARGET_NAME="Google_Tests_run">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -116,5 +128,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

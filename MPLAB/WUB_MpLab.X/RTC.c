@@ -6,8 +6,15 @@
 
 #include "RTC.h"
 
-void RTC_init(void)
+static bool alarm_enable = false;
+static bool alarm_initialised = false;
+static bool rtc_initialised = false;
+
+static bool Alarm_init(void);
+
+bool RTC_init(void)
 {
+    bool res = false;
     RTCCONbits.CAL = 0;//no adjustment
     RTCCONbits.SIDL = 0;// Continue clock on IDLE mode
     RTCCONbits.RTSECSEL = 1;//Seconds clock select
@@ -19,30 +26,43 @@ void RTC_init(void)
     RTCALRMbits.ALRMEN = 0; // alarm is disable 
     IEC0bits.RTCCIE = 1;//int enable = 1;
     IFS0bits.RTCCIF = 0;//Clear flag
-    Alarm_init();
+    res = Alarm_init();
+    rtc_initialised = res;
+
+    return res;
 }
 
-void Alarm_init(void)
+static bool Alarm_init(void)//private function
 {
+    bool res = false;
     RTCALRMbits.ALRMEN = 0; //Disable Alarm
     RTCALRMbits.CHIME = 0;
     RTCALRMbits.ALRMSYNC = 1; //Sync enable
     RTCALRMbits.AMASK = 0x06; //Alarm every Day
+
+    res = true;
+    alarm_initialised = res;
+    return res;
 }
 
-void Alarm_enable(bool enable)
+bool Alarm_enable(bool enable)
 {
-    RTCALRMbits.ALRMEN = enable; //Can enable and disable the alarm
+    bool res = false;
+    if(alarm_initialised)
+    {
+        RTCALRMbits.ALRMEN = enable; //Can enable and disable the alarm
+        res = true;
+    }
+    return res;
 }
 
 bool RTC_SetTime(Time time)
 {
-    bool err = false;
-    if(time.sec > 59)err = true;
-    if(time.min > 59)err = true;
-    if(time.hour > 23)err = true;
-    
-    if(err == false)
+    bool res = false;
+    if(time.sec > 59)res = false;
+    else if(time.min > 59)res = false;
+    else if(time.hour > 23)res = false;
+    else if(rtc_initialised)
     {
         RTCTIMEbits.SEC01   = time.sec % 10;  
         RTCTIMEbits.SEC10   = time.sec / 10;
@@ -50,20 +70,20 @@ bool RTC_SetTime(Time time)
         RTCTIMEbits.MIN10   = time.min / 10;
         RTCTIMEbits.HR01    = time.hour % 10;
         RTCTIMEbits.HR10    = time.hour / 10;
+        res = true;
     }
 
-    return err;
+    return res;
 }
 
 bool RTC_SetDate(Date date)
 {
-    bool err = false;
-    if(date.wday > 6)err = true;
-    if(date.day > 31)err = true;
-    if(date.month > 12)err = true;
-    if(date.year > 99)err = true;
-    
-    if(err == false)
+    bool res = false;
+    if(date.wday > 6)res = false;
+    else if(date.day > 31)res = false;
+    else if(date.month > 12)res = false;
+    else if(date.year > 99)res = false;
+    else if(rtc_initialised)
     {
         RTCDATEbits.DAY01   = date.day   % 10;
         RTCDATEbits.DAY10   = date.day   / 10;
@@ -72,8 +92,9 @@ bool RTC_SetDate(Date date)
         RTCDATEbits.YEAR01  = date.year  % 10;
         RTCDATEbits.YEAR10  = date.year  % 100 / 10;
         RTCDATEbits.w       = date.wday;
+        bool res = true;
     }
-    return err;
+    return res;
 }
 
 Time RTC_GetTime(void)
@@ -98,12 +119,11 @@ Date RTC_GetDate(void)
 
 bool Alarm_SetTime(Time time)
 {
-    bool err = false;
-    if(time.sec > 59)err = true;
-    if(time.min > 59)err = true;
-    if(time.hour > 23)err = true;
-    
-    if(err == false)
+    bool res = false;
+    if(time.sec > 59)res = false;
+    else if(time.min > 59)res = false;
+    else if(time.hour > 23)res = false;
+    else if(alarm_initialised)
     {
         ALRMTIMEbits.HR10  = time.hour / 10;
         ALRMTIMEbits.HR01  = time.hour % 10;
@@ -111,25 +131,28 @@ bool Alarm_SetTime(Time time)
         ALRMTIMEbits.MIN01 = time.min % 10;
         ALRMTIMEbits.SEC10 = time.sec / 10;
         ALRMTIMEbits.SEC01 = time.sec % 10;
-    } 
+        res = true;
+    }
+    return res;
 }
 
 bool Alarm_SetDate(Date date)
 {
-    bool err = false;
-    if(date.wday > 6)err = true;
-    if(date.day > 31)err = true;
-    if(date.month > 12)err = true;
-    if(date.year > 99)err = true;
-    
-    if(err == false)
+    bool res = false;
+    if(date.wday > 6)res = false;
+    else if(date.day > 31)res = false;
+    else if(date.month > 12)res = false;
+    else if(date.year > 99)res = false;
+    else if(alarm_initialised)
     {
         ALRMDATEbits.DAY01   = date.day   % 10;
         ALRMDATEbits.DAY10   = date.day   / 10;
         ALRMDATEbits.MONTH01 = date.month % 10;
         ALRMDATEbits.MONTH10 = date.month / 10;
         ALRMDATEbits.w       = date.wday;
+        res = true;
     }
+    return res;
 }
 
 Time Alarm_GetTime(void)

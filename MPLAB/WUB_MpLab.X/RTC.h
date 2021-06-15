@@ -22,16 +22,92 @@ typedef struct
     uint32_t year;
 }Date;
 
-void RTC_init(void);
 
+/** @brief
+ * Initialize the Real time clock of the PIC32
+ *
+ * @return
+ * true if ok, false otherwise
+ */
+bool RTC_init(void);
+
+/** @brief RTC_SetTime
+ * Set the time of the Real Time Clock
+ *
+ * @param time ==>struct
+ * - 0 < sec  < 60
+ * - 0 < min  < 60
+ * - 0 < hour < 23
+ * @return
+ * true if ok, false otherwise
+ */
 bool RTC_SetTime(Time time);    //returns error = 1 if error encounterd
+
+/** @brief RTC_SetDate
+ * Set the Date of the Real Time Clock
+ *
+ * @param date ==>struct
+ * - 0 <= wday  < 7
+ * - 0 <= day   < 32
+ * - 0 <= month < 12
+ * - 0 <= year  < 99
+ * @return
+ * true if ok, false otherwise
+ */
 bool RTC_SetDate(Date date);    //returns error = 1 if error encounterd
+
+/** @brief RTC_GetTime
+ *  Returns the current values of the time in the RTC register
+ * @return Time ==>struct
+ */
 Time RTC_GetTime(void);
+
+/** @brief RTC_GetDate
+ *  Returns the current values of the dates in the RTC register
+ * @return Date ==>struct
+ */
 Date RTC_GetDate(void);
 
-void Alarm_init(void);
-void Alarm_enable(bool enable);
+/** @brief Alarm_enable
+ *  Enables or Disables the Alarm in the RTC
+ * @param enable
+ * True to enable, False to disable
+ * @return
+ * true if ok, false otherwise
+ */
+bool Alarm_enable(bool enable);
+
+/** @brief Alarm_SetTime
+ *  Set the time of the Alarm in the RTC module
+ * @param time ==>struct
+ * - 0 < sec  < 60
+ * - 0 < min  < 60
+ * - 0 < hour < 23
+ * @return
+ * true if ok, false otherwise
+ */
 bool Alarm_SetTime(Time time);  //returns error = 1 if error encounterd
+
+/** @brief Alarm_SetDate
+ * Set the Date of the Alarm in the RTC module
+ * @param date ==>struct
+ * - 0 <= wday  < 7
+ * - 0 <= day   < 32
+ * - 0 <= month < 12
+ * - 0 <= year  < 99
+ * @return
+ * true if ok, false otherwise
+ */
 bool Alarm_SetDate(Date date);  //returns error = 1 if error encounterd
+
+/** @brief Alarm_GetTime
+ * Returns the current values of the Alarm time in the RTC register
+ * @return Time ==>struct
+ */
 Time Alarm_GetTime(void);
+
+/** @brief Alarm_GetDate
+ * Returns the current values of the Alarm Date in the RTC register
+ * @return Date ==>struct
+ */
 Date Alarm_GetDate(void);
