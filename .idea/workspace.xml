@@ -16,10 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db430054-1d14-4255-8a93-ec6427cdc4d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/testRTC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testRTC.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

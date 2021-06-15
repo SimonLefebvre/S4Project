@@ -3,14 +3,17 @@
 //
 
 #include <gtest/gtest.h>
+extern "C"{
 #include "../MPLAB/WUB_MpLab.X/RTC.h"
+}
+
 
 
 
 TEST(testRTC,testRtcSetTime){
     Time time;
-    time.sec = 2;
     time.min = 3;
+    time.sec = 2;
     time.hour = 2;
     EXPECT_FALSE(RTC_SetTime(time)) <<"Erreur d'initialisation RTC non détecté";
     RTC_init();
