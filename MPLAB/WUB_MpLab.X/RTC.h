@@ -37,7 +37,7 @@ bool RTC_init(void);
  * @param time ==>struct
  * - 0 < sec  < 60
  * - 0 < min  < 60
- * - 0 < hour < 23
+ * - 0 < hour < 24
  * @return
  * true if ok, false otherwise
  */
@@ -50,7 +50,7 @@ bool RTC_SetTime(Time time);    //returns error = 1 if error encounterd
  * - 0 <= wday  < 7
  * - 0 <= day   < 32
  * - 0 <= month < 12
- * - 0 <= year  < 99
+ * - 0 <= year  < 100
  * @return
  * true if ok, false otherwise
  */
@@ -58,7 +58,7 @@ bool RTC_SetDate(Date date);    //returns error = 1 if error encounterd
 
 /** @brief RTC_GetTime
  *  Returns the current values of the time in the RTC register
- * @return Time ==>struct
+ * @return Time ==>structun
  */
 Time RTC_GetTime(void);
 
@@ -82,7 +82,7 @@ bool Alarm_enable(bool enable);
  * @param time ==>struct
  * - 0 < sec  < 60
  * - 0 < min  < 60
- * - 0 < hour < 23
+ * - 0 < hour < 24
  * @return
  * true if ok, false otherwise
  */
@@ -94,7 +94,7 @@ bool Alarm_SetTime(Time time);  //returns error = 1 if error encounterd
  * - 0 <= wday  < 7
  * - 0 <= day   < 32
  * - 0 <= month < 12
- * - 0 <= year  < 99
+ * - 0 <= year  < 100
  * @return
  * true if ok, false otherwise
  */
@@ -111,3 +111,15 @@ Time Alarm_GetTime(void);
  * @return Date ==>struct
  */
 Date Alarm_GetDate(void);
+
+
+
+/** @brief
+ * Uninitialize the Real time clock of the PIC32
+ *
+ * @return
+ * true if ok, false otherwise
+ */
+#ifdef gtest
+bool RTC_uninit(void);
+#endif

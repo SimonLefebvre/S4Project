@@ -20,4 +20,4 @@ add_executable(Google_Tests_run
         Tests/p32mx370f512l.h)
 target_link_libraries(Google_Tests_run gtest gtest_main)
 
-
+add_definitions(-Dgtest)

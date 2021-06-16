@@ -81,7 +81,7 @@ bool RTC_SetDate(Date date)
     bool res = false;
     if(date.wday > 6)res = false;
     else if(date.day > 31)res = false;
-    else if(date.month > 12)res = false;
+    else if(date.month > 11)res = false;
     else if(date.year > 99)res = false;
     else if(rtc_initialised)
     {
@@ -92,7 +92,7 @@ bool RTC_SetDate(Date date)
         RTCDATEbits.YEAR01  = date.year  % 10;
         RTCDATEbits.YEAR10  = date.year  % 100 / 10;
         RTCDATEbits.w       = date.wday;
-        bool res = true;
+        res = true;
     }
     return res;
 }
@@ -141,7 +141,7 @@ bool Alarm_SetDate(Date date)
     bool res = false;
     if(date.wday > 6)res = false;
     else if(date.day > 31)res = false;
-    else if(date.month > 12)res = false;
+    else if(date.month > 11)res = false;
     else if(date.year > 99)res = false;
     else if(alarm_initialised)
     {
@@ -174,7 +174,15 @@ Date Alarm_GetDate(void)
     return date;
 }
 
-
-
-
+#ifdef gtest
+bool RTC_uninit(void)
+{
+    bool res = false;
+    alarm_enable = false;
+    alarm_initialised = false;
+    rtc_initialised = false;
+    res = true;
+    return res;
+}
+#endif
 

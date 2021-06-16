@@ -16,6 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db430054-1d14-4255-8a93-ec6427cdc4d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/RTC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MPLAB/WUB_MpLab.X/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/testRTC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testRTC.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +65,11 @@
     </key>
   </component>
   <component name="RunManager" selected="Google Test.All Tests">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All Tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="S4Project" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="S4Project" RUN_TARGET_NAME="Google_Tests_run" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -67,11 +77,6 @@
       </method>
     </configuration>
     <configuration name="Google_Tests_run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="S4Project" TARGET_NAME="Google_Tests_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="S4Project" RUN_TARGET_NAME="Google_Tests_run">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -119,6 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623541767833</updated>
       <workItem from="1623541775345" duration="3835000" />
+      <workItem from="1623875858100" duration="3530000" />
     </task>
     <servers />
   </component>
