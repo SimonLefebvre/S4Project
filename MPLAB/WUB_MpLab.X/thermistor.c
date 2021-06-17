@@ -74,16 +74,13 @@ char message[80] = "";
 char msg[80] = "";
 
 double analogread() {
-  LCD_Init();  
-ADC_Init();
-PMODS_InitPin(0, 4, 1, 0, 0);
-PMODS_InitPin(0, 5, 1, 0, 0);
+   
  
-tension = ADC_AnalogRead(16);
- 
-sprintf(msg, "V:%f", tension);
-LCD_WriteStringAtPos(msg, 0, 0);
-return tension;
+    tension = ADC_AnalogRead(16);
+
+    sprintf(msg, "V:%f", tension);
+    LCD_WriteStringAtPos(msg, 0, 0);
+    return tension;
 
 }
 
@@ -91,21 +88,21 @@ void thermistor() {
    
     LCD_Init();
     Vo = 0;
-  //Vo = analogread();
-  LCD_DisplayClear();
-  R2 = R1 * (1023.0 / (float)Vo - 1.0);
-  logR2 = log(R2);
-  T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2));
-  T = T - 273.15;
-  T = (T * 9.0)/ 5.0 + 32.0; 
+    //Vo = analogread();
+    LCD_DisplayClear();
+    R2 = R1 * (1023.0 / (float)Vo - 1.0);
+    logR2 = log(R2);
+    T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2));
+    T = T - 273.15;
+    T = (T * 9.0)/ 5.0 + 32.0; 
 
-  sprintf(message, "Temp:%f", T);
-  //LCD_DisplayClear();
-  LCD_WriteStringAtPos(message, 0, 0);
+    sprintf(message, "Temp:%f", T);
+    //LCD_DisplayClear();
+    LCD_WriteStringAtPos(message, 0, 0);
   
-  //Serial.print("Temperature: "); 
-  //Serial.print(T);
-  //Serial.println(" F"); 
+    //Serial.print("Temperature: "); 
+    //Serial.print(T);
+    //Serial.println(" F"); 
 
   
 }

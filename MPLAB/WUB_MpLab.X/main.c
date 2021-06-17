@@ -19,7 +19,11 @@ void main(void)
      //gnd
     
     
-    UART_Init(9600);
+   
+    LCD_Init();  
+    ADC_Init();
+    PMODS_InitPin(0, 4, 1, 1, 0);
+    PMODS_InitPin(0, 5, 1, 0, 0);
     
     while (1)
     {
