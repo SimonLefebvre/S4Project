@@ -15,23 +15,24 @@
 # $ makeMP_CC="/opt/microchip/mplabc30/v3.30c/bin/pic30-gcc" ...  
 #
 SHELL=cmd.exe
-PATH_TO_IDE_BIN=M:/MPLABX/v5.45/mplab_platform/platform/../mplab_ide/modules/../../bin/
+PATH_TO_IDE_BIN=C:/MPLAB/mplab_platform/platform/../mplab_ide/modules/../../bin/
 # Adding MPLAB X bin directory to path.
-PATH:=M:/MPLABX/v5.45/mplab_platform/platform/../mplab_ide/modules/../../bin/:$(PATH)
+PATH:=C:/MPLAB/mplab_platform/platform/../mplab_ide/modules/../../bin/:$(PATH)
 # Path to java used to run MPLAB X when this makefile was created
-MP_JAVA_PATH="M:\MPLABX\v5.45\sys\java\zulu8.40.0.25-ca-fx-jre8.0.222-win_x64/bin/"
+MP_JAVA_PATH="C:\Program Files\Java\jdk1.8.0_291\jre/bin/"
 OS_CURRENT="$(shell uname -s)"
-MP_CC="M:\Microchip\xc32\v2.50\bin\xc32-gcc.exe"
-MP_CPPC="M:\Microchip\xc32\v2.50\bin\xc32-g++.exe"
+MP_CC="C:\Users\Zacharie S.Joncas\bin\xc32-gcc.exe"
+MP_CPPC="C:\Users\Zacharie S.Joncas\bin\xc32-g++.exe"
 # MP_BC is not defined
-MP_AS="M:\Microchip\xc32\v2.50\bin\xc32-as.exe"
-MP_LD="M:\Microchip\xc32\v2.50\bin\xc32-ld.exe"
-MP_AR="M:\Microchip\xc32\v2.50\bin\xc32-ar.exe"
-DEP_GEN=${MP_JAVA_PATH}java -jar "M:/MPLABX/v5.45/mplab_platform/platform/../mplab_ide/modules/../../bin/extractobjectdependencies.jar"
-MP_CC_DIR="M:\Microchip\xc32\v2.50\bin"
-MP_CPPC_DIR="M:\Microchip\xc32\v2.50\bin"
+MP_AS="C:\Users\Zacharie S.Joncas\bin\xc32-as.exe"
+MP_LD="C:\Users\Zacharie S.Joncas\bin\xc32-ld.exe"
+MP_AR="C:\Users\Zacharie S.Joncas\bin\xc32-ar.exe"
+DEP_GEN=${MP_JAVA_PATH}java -jar "C:/MPLAB/mplab_platform/platform/../mplab_ide/modules/../../bin/extractobjectdependencies.jar"
+MP_CC_DIR="C:\Users\Zacharie S.Joncas\bin"
+MP_CPPC_DIR="C:\Users\Zacharie S.Joncas\bin"
 # MP_BC_DIR is not defined
-MP_AS_DIR="M:\Microchip\xc32\v2.50\bin"
-MP_LD_DIR="M:\Microchip\xc32\v2.50\bin"
-MP_AR_DIR="M:\Microchip\xc32\v2.50\bin"
+MP_AS_DIR="C:\Users\Zacharie S.Joncas\bin"
+MP_LD_DIR="C:\Users\Zacharie S.Joncas\bin"
+MP_AR_DIR="C:\Users\Zacharie S.Joncas\bin"
 # MP_BC_DIR is not defined
+DFP_DIR=C:/MPLAB/packs/Microchip/PIC32MX_DFP/1.5.259

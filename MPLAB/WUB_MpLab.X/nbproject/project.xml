@@ -14,6 +14,7 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
+                <sourceRootElem>E:/S4/APP3/MPLAB/LibPack_jb</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
