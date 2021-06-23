@@ -21,15 +21,12 @@ void main(void)
     
    
     LCD_Init();  
-    ADC_Init();
-    PMODS_InitPin(0, 4, 1, 1, 0);
-    PMODS_InitPin(0, 5, 1, 0, 0);
+    I2C_Init(400000);
     
     while (1)
     {
-        
-        analogread();
-        //thermistor();
+        init_sensor();
+        temperature();
     }
     
 }

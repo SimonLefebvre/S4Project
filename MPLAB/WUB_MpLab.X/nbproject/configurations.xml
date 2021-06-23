@@ -11,6 +11,7 @@
         <itemPath>config.h</itemPath>
         <itemPath>adc.h</itemPath>
         <itemPath>pmods.h</itemPath>
+        <itemPath>i2c.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.h</itemPath>
@@ -31,6 +32,7 @@
         <itemPath>uart.c</itemPath>
         <itemPath>adc.c</itemPath>
         <itemPath>pmods.c</itemPath>
+        <itemPath>i2c.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.c</itemPath>
@@ -227,6 +229,9 @@
         <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <PK3OBPlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </PK3OBPlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

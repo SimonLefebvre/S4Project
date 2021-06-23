@@ -164,10 +164,10 @@ extern "C" {
             return 3;
         }
      */
-    int ExampleFunction(int param1, int param2);
-    void thermistor();
-    float analogread();
-
+   
+    void temperature();
+    void init_sensor();
+    
     /* Provide C++ Compatibility */
 #ifdef __cplusplus
 }

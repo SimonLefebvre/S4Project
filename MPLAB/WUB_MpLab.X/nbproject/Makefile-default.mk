@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=lcd.c spiflash.c uart.c adc.c pmods.c RTC.c main.c thermistor.c
+SOURCEFILES_QUOTED_IF_SPACED=lcd.c spiflash.c uart.c adc.c pmods.c RTC.c main.c thermistor.c i2c.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/thermistor.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o ${OBJECTDIR}/i2c.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/thermistor.o.d ${OBJECTDIR}/i2c.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o
+OBJECTFILES=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o ${OBJECTDIR}/i2c.o
 
 # Source Files
-SOURCEFILES=lcd.c spiflash.c uart.c adc.c pmods.c RTC.c main.c thermistor.c
+SOURCEFILES=lcd.c spiflash.c uart.c adc.c pmods.c RTC.c main.c thermistor.c i2c.c
 
 
 
@@ -155,6 +155,12 @@ ${OBJECTDIR}/thermistor.o: thermistor.c  .generated_files/flags/default/d7c3d49d
 	@${RM} ${OBJECTDIR}/thermistor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/thermistor.o.d" -o ${OBJECTDIR}/thermistor.o thermistor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+${OBJECTDIR}/i2c.o: i2c.c  .generated_files/flags/default/2b1e05389c09efa34f9415bd97d1014f200267d9 .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/i2c.o.d 
+	@${RM} ${OBJECTDIR}/i2c.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/i2c.o.d" -o ${OBJECTDIR}/i2c.o i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 else
 ${OBJECTDIR}/lcd.o: lcd.c  .generated_files/flags/default/e31b04986ba25779f16e8903e1a766c202bdb1c4 .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
 	@${MKDIR} "${OBJECTDIR}" 
@@ -203,6 +209,12 @@ ${OBJECTDIR}/thermistor.o: thermistor.c  .generated_files/flags/default/fc605be8
 	@${RM} ${OBJECTDIR}/thermistor.o.d 
 	@${RM} ${OBJECTDIR}/thermistor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/thermistor.o.d" -o ${OBJECTDIR}/thermistor.o thermistor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/i2c.o: i2c.c  .generated_files/flags/default/290625728dad17021f0d43962b7e6d0076969c63 .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/i2c.o.d 
+	@${RM} ${OBJECTDIR}/i2c.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/i2c.o.d" -o ${OBJECTDIR}/i2c.o i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 
