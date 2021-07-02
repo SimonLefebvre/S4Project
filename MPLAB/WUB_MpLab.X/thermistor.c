@@ -139,12 +139,21 @@ void temperature() {
     LCD_WriteStringAtPos(msg2, 1, 0);
 }
 
-  signed int32_t t_fine;
-    signed int32_t BME280_compensate_T_int32(signed int32_t adc_T)
+     int32_t t_fine;
+     int32_t BME280_compensate_T_int32( int32_t adc_T)
     {
+        int32_t var1, var2, T, dig_T1, dig_T2, dig_T3;
+        
+        var1 = ((((adc_T >> 3)-(dig_T1 << 1))) * (dig_T2)) >> 11;
+                
+        var2 = (((((adc_T >> 4)-(dig_T1 << 1))) * ((adc_T >> 4) - (dig_T1)) >> 12)
+                * (dig_T3) >> 14);
     
-    
-    
+        t_fine = var1 + var2;
+        
+        T = (t_fine*5 + 128) >> 8;
+        
+        return T;
     
     }
     
