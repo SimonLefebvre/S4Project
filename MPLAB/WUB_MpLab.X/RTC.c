@@ -15,17 +15,30 @@ static bool Alarm_init(void);
 bool RTC_init(void)
 {
     bool res = false;
-    RTCCONbits.CAL = 0;//no adjustment
-    RTCCONbits.SIDL = 0;// Continue clock on IDLE mode
-    RTCCONbits.RTSECSEL = 1;//Seconds clock select
-    RTCCONbits.RTCWREN = 1;//RTC can be modified
-    RTCCONbits.RTCSYNC = 1;//Sync option for reading valid values
-    RTCCONbits.RTCOE = 0;//disable RTCC pin
-    RTCCONbits.ON = 1;//Enable RTC
-    RTCCONbits.RTCCLKON = 1;//Enable clock
+    SYSKEY = 0xaa996655; // write first unlock key to SYSKEY
+    SYSKEY = 0x556699aa; // write second unlock key to SYSKEY
+    RTCCONSET = 0x8; // set RTCWREN in RTCCONSET
+    
+    unsigned long time=0x04153300;// set time to 04 hr, 15 min, 33 sec
+    unsigned long date=0x06102705;// set date to Friday 27 Oct 2006
+    RTCCONCLR=0x8000; // turn off the RTCC
+    while(RTCCON&0x40); // wait for clock to be turned off
+    RTCTIME=time; // safe to update the time
+    RTCDATE=date; // update the date
     RTCALRMbits.ALRMEN = 0; // alarm is disable 
     IEC0bits.RTCCIE = 1;//int enable = 1;
     IFS0bits.RTCCIF = 0;//Clear flag
+    
+    
+    RTCCONSET=0x8000; // turn on the RTCC
+    //while(!(RTCCON&0x40)); // wait for clock to be turned on
+    
+
+    
+    
+    
+   
+    
     res = Alarm_init();
     rtc_initialised = res;
 
