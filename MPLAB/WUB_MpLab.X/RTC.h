@@ -35,9 +35,9 @@ bool RTC_init(void);
  * Set the time of the Real Time Clock
  *
  * @param time ==>struct
- * - 0 < sec  < 60
- * - 0 < min  < 60
- * - 0 < hour < 24
+ * - 0 <= sec  < 60
+ * - 0 <= min  < 60
+ * - 0 <= hour < 24
  * @return
  * true if ok, false otherwise
  */
@@ -80,9 +80,9 @@ bool Alarm_enable(bool enable);
 /** @brief Alarm_SetTime
  *  Set the time of the Alarm in the RTC module
  * @param time ==>struct
- * - 0 < sec  < 60
- * - 0 < min  < 60
- * - 0 < hour < 24
+ * - 0 <= sec  < 60
+ * - 0 <= min  < 60
+ * - 0 <= hour < 24
  * @return
  * true if ok, false otherwise
  */
