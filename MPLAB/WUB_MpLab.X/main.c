@@ -19,12 +19,12 @@ void main(void)
      //gnd
     
     
-   
+    UART_Init(9600);
     LCD_Init();  
     I2C_Init(400000);
-    
+    int32_t adc_T;
     while (1)
-    {
+    {   
         init_sensor();
         temperature();
     }

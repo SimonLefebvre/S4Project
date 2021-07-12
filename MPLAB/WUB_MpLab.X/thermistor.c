@@ -61,101 +61,86 @@
 #include "pmods.h"
 #include "lcd.h"
 #include "i2c.h"
+#include "uart.h"
 
 
 
-//int global_data;
-//
-//double tension;
-//int Vo;
-//float R1 = 1; //thermistor = 1 ohm
-//float logR2, R2, T;
-//float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
-char msg0[80] = "";
-char msg1[80] = "";
-char msg2[80] = "";
-//double analogread() {
-//   
-// 
-//    tension = ADC_AnalogRead(16);
-//
-//    sprintf(msg, "V:%f", tension);
-//    LCD_WriteStringAtPos(msg, 0, 0);
-//    return tension;
-//
-//}
+    char msg0[80] = "";
+    char msg1[80] = "";
+    char msg2[80] = "";
+    
+int32_t t_fine;
+            
+ int32_t BME280_compensate_T_int32(int32_t adc_T)
+{
+    int32_t var1, var2, T, dig_T1, dig_T2, dig_T3;
 
+    var1 = ((((adc_T >> 3)-(dig_T1 << 1))) * (dig_T2)) >> 11;
+
+    var2 = (((((adc_T >> 4)-(dig_T1 << 1))) * ((adc_T >> 4) - (dig_T1)) >> 12)
+                        * (dig_T3) >> 14);
+
+    t_fine = var1 + var2;
+  
+    T = (t_fine*5 + 128) >> 8;
+
+    return T;
+                 
+}
+ 
+    
 void init_sensor()
 {
-    
-    
     //ctrl_measReg INIT
     unsigned char rgVals0[2], bResult0;
     rgVals0[0] = 0xF4;// register address
     rgVals0[1] = 0x05; // register value
-          
-    bResult0 = I2C_Write(0x76, rgVals0, 2, 1);
 
+    bResult0 = I2C_Write(0x76, rgVals0, 2, 1);
     
+    UART_PutString(rgVals0);
+    UART_PutString("\n");
     //configReg
     unsigned char rgVals1[2], bResult1;
     rgVals1[0] = 0xF5;// register address
     rgVals1[1] = 0xA0; // register value
-          
-    bResult1 = I2C_Write(0x76, rgVals1, 2, 1);
-   
-  
-}
 
-void temperature() {
    
-//    LCD_Init();
-//    Vo = 0;
-//    Vo = analogread();
-//    LCD_DisplayClear();
-//    R2 = R1 * (1023.0 / (float)Vo - 1.0);
-//    logR2 = log(R2);
-//    T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2));
-//    T = T - 273.15;
-//    T = (T * 9.0)/ 5.0 + 32.0; 
-    
-  
+    bResult1 = I2C_Write(0x76, rgVals1, 2, 1);
+    //UART_PutString(rgVals1);
+    //UART_PutString("\n");
+
+
+}
+ char temperature() {
+
+    int32_t Temperature;
     unsigned char bResult0;
     unsigned char bResult1;
     unsigned char bResult2;
-    
+
     I2C_Read(0xFA, &bResult0, 1);
     I2C_Read(0xFB, &bResult1, 1);
     I2C_Read(0xFC, &bResult2, 1);
+//    UART_PutString(bResult0);
+    //manque conversion en degrés celcius
+    Temperature = BME280_compensate_T_int32(bResult0);
+
+
+    sprintf(msg0, "Temp:%f C", Temperature);
     
-   //manque conversion en degrés celcius
+    //UART_PutString(msg0);
     
-    sprintf(msg0, "Temp:%f C", bResult0);
-    sprintf(msg1, "Temp:%f C", bResult1);
-    sprintf(msg2, "Temp:%f C", bResult2);
+    //sprintf(msg1, "Temp:%f C", bResult1);
+    //sprintf(msg2, "Temp:%f C", bResult2);
     //LCD_DisplayClear();
-    LCD_WriteStringAtPos(msg0, 0, 0);
-    LCD_WriteStringAtPos(msg1, 0, 1);
-    LCD_WriteStringAtPos(msg2, 1, 0);
+    //LCD_WriteStringAtPos(msg0, 0, 0);
+    UART_PutString(msg0);
+   // UART_PutString("\n");
+    //LCD_WriteStringAtPos(msg1, 0, 1);
+     //LCD_WriteStringAtPos(msg2, 1, 0);
+    
 }
 
-     int32_t t_fine;
-     int32_t BME280_compensate_T_int32( int32_t adc_T)
-    {
-        int32_t var1, var2, T, dig_T1, dig_T2, dig_T3;
-        
-        var1 = ((((adc_T >> 3)-(dig_T1 << 1))) * (dig_T2)) >> 11;
-                
-        var2 = (((((adc_T >> 4)-(dig_T1 << 1))) * ((adc_T >> 4) - (dig_T1)) >> 12)
-                * (dig_T3) >> 14);
-    
-        t_fine = var1 + var2;
-        
-        T = (t_fine*5 + 128) >> 8;
-        
-        return T;
-    
-    }
-    
 
-
+ 
