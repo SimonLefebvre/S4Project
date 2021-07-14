@@ -6,6 +6,7 @@
 
 #include <xc.h>
 #include <stdbool.h>
+#include <sys/attribs.h>
 
 typedef struct 
 {

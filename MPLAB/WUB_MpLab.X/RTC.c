@@ -12,47 +12,94 @@ static bool rtc_initialised = false;
 
 static bool Alarm_init(void);
 
+void __ISR(_RTCC_VECTOR, ipl3) _RTCCInterrupt(void)
+{
+    // ... perform application specific operations
+    // in response to the interrupt
+    IFS0bits.RTCCIF = 0;//Clear flag // be sure to clear RTCC interrupt flag
+    while(1);
+    // before exiting the service routine.
+}
+
 bool RTC_init(void)
 {
     bool res = false;
-    SYSKEY = 0xaa996655; // write first unlock key to SYSKEY
-    SYSKEY = 0x556699aa; // write second unlock key to SYSKEY
+    unsigned long time=0x0000;// set time to 00:00:00
+    unsigned long date=0x21071504;// set date to Jeudi 15 Juillet 2021
+    SYSKEY = 0x0;
+    SYSKEY = 0xAA996655;
+    SYSKEY = 0x556699AA;
+    OSCCONSET = 0x2; 
     RTCCONSET = 0x8; // set RTCWREN in RTCCONSET
+    SYSKEY = 0x0;
     
-    unsigned long time=0x04153300;// set time to 04 hr, 15 min, 33 sec
-    unsigned long date=0x06102705;// set date to Friday 27 Oct 2006
     RTCCONCLR=0x8000; // turn off the RTCC
     while(RTCCON&0x40); // wait for clock to be turned off
+    
+    //IFS1CLR=0x00008000; // clear RTCC existing event
+    //IPC8CLR=0x1f000000; // clear the priority
+    //IPC8SET=0x0d000000; // Set IPL=3, subpriority 1
+    //IEC1SET=0x00008000; // Enable RTCC interrupts
+    IEC0bits.RTCCIE = 0;//int enable = 1;
+    IFS0bits.RTCCIF = 0;//Clear flag
+    IPC6bits.RTCCIS = 0x01;
+    IPC6bits.RTCCIP = 0x03;
+    IEC0bits.RTCCIE = 1;
+
     RTCTIME=time; // safe to update the time
     RTCDATE=date; // update the date
     RTCALRMbits.ALRMEN = 0; // alarm is disable 
+    
+    
     IEC0bits.RTCCIE = 1;//int enable = 1;
     IFS0bits.RTCCIF = 0;//Clear flag
     
-    
-    RTCCONSET=0x8000; // turn on the RTCC
-    //while(!(RTCCON&0x40)); // wait for clock to be turned on
-    
-
-    
-    
-    
-   
-    
     res = Alarm_init();
-    rtc_initialised = res;
-
+    
+    
+    
+    if(!(RTCCON&0x8000))
+    {
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+    }
+    
+    uint32_t testIFS0 = IFS0;//should be 0
+    uint32_t testIEC0 = IEC0;//should be 0x4xxxxxxxxxxxx
+    uint32_t testIPC6 = IPC6;//should be 12:8 bits
+    uint32_t testAlarm = ALRMTIME;
+    uint32_t testMask = RTCALRMbits.AMASK;
+    uint32_t testRTCCON = RTCCON;//0x8048
+    uint32_t testRTCALRM = RTCALRM;
+    
+    uint32_t TESTpRIORITY = IPC6bits.RTCCIP;
+    rtc_initialised = true;
     return res;
 }
 
 static bool Alarm_init(void)//private function
 {
     bool res = false;
-    RTCALRMbits.ALRMEN = 0; //Disable Alarm
-    RTCALRMbits.CHIME = 0;
-    RTCALRMbits.ALRMSYNC = 1; //Sync enable
-    RTCALRMbits.AMASK = 0x06; //Alarm every Day
+    unsigned long alTime=0x00001300;// set Alarm time to 16:15:33
+    unsigned long alDate=0x21071504;// set alarm date to Jeudi 15 Juillet 2021
+    
+    RTCCONCLR=0x8000; // turn off the RTCC
+    while(RTCALRM&0x1000); // wait ALRMSYNC to be off
+    RTCALRMCLR=0xCFFF; // clear ALRMEN, CHIME, AMASK and ARPT; #15-14 + 11-0
+    ALRMTIME=alTime;
+    ALRMDATE=alDate; // update the alarm time and date
 
+    //RTCALRMbits.CHIME = 1;  //rollover the ARPT values to get infinite alarms
+    //RTCALRMbits.PIV = 0;
+    //RTCALRMbits.AMASK = 0x06; //Alarm every Day
+    //RTCALRMbits.ARPT = 0xFF;  //Set 256 alarm
+    RTCALRMSET=0x8000|0x00000601;
+    if(rtc_initialised)
+    {
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+    }
+    
     res = true;
     alarm_initialised = res;
     return res;
@@ -61,10 +108,19 @@ static bool Alarm_init(void)//private function
 bool Alarm_enable(bool enable)
 {
     bool res = false;
+    
+    
     if(alarm_initialised)
     {
+        if(RTCCON&0x8000)//Disable RTC to enable or disable the alarm
+        {
+            RTCCONCLR=0x8000; // turn off the RTCC
+        }
+        while(RTCALRM&0x1000); // wait ALRMSYNC to be off
         RTCALRMbits.ALRMEN = enable; //Can enable and disable the alarm
         res = true;
+        if(rtc_initialised)RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
     }
     return res;
 }

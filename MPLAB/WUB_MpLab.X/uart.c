@@ -47,7 +47,7 @@ char rgchRx[cchRxMax];
 **      flags the success using the fRxDone global variable and then ignores the received bytes.
 **          
 */
-void __ISR(_UART_4_VECTOR, ipl6) Uart4Handler (void)
+void __ISR(_UART_4_VECTOR, ipl6AUTO) Uart4Handler (void)
 {
 	unsigned char bVal;
 	
