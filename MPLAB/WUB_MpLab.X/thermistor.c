@@ -65,9 +65,10 @@
 
 
 
-    char msg0[80] = "";
-    char msg1[80] = "";
-    char msg2[80] = "";
+
+char msg0[80] = "";
+char msg1[80] = "";
+char msg2[80] = "";
     
 int32_t t_fine;
             
@@ -91,51 +92,66 @@ int32_t t_fine;
     
 void init_sensor()
 {
+   
     //ctrl_measReg INIT
     unsigned char rgVals0[2], bResult0;
     rgVals0[0] = 0xF4;// register address
-    rgVals0[1] = 0x05; // register value
+    rgVals0[1] = 0x17; // register value
 
     bResult0 = I2C_Write(0x76, rgVals0, 2, 1);
+    //UART_PutString(rgVals0);
+    //UART_PutString("\n");
     
-    UART_PutString(rgVals0);
-    UART_PutString("\n");
     //configReg
     unsigned char rgVals1[2], bResult1;
     rgVals1[0] = 0xF5;// register address
-    rgVals1[1] = 0xA0; // register value
+    rgVals1[1] = 0xAC; // register value
 
    
     bResult1 = I2C_Write(0x76, rgVals1, 2, 1);
-    //UART_PutString(rgVals1);
-    //UART_PutString("\n");
+//    UART_PutString(rgVals1);
+//    UART_PutString("\n\r");
 
 
 }
- char temperature() {
+void temperature() {
 
     int32_t Temperature;
-    unsigned char bResult0;
-    unsigned char bResult1;
-    unsigned char bResult2;
-
-    I2C_Read(0xFA, &bResult0, 1);
-    I2C_Read(0xFB, &bResult1, 1);
-    I2C_Read(0xFC, &bResult2, 1);
-//    UART_PutString(bResult0);
+    unsigned char bResult0[1];
+    unsigned char bResult1[1];
+    unsigned char bResult2[1];
+    unsigned char Result0;
+    unsigned char Result1;
+    unsigned char Result2;
+    
+    Result0 = I2C_Read(0x76, bResult0, 1);
+    Result1 = I2C_Read(0x76, bResult1, 1);
+    Result2 = I2C_Read(0x76, bResult2, 1);
+    
+    
+    UART_PutString(bResult0);
+    UART_PutString("\n\r");
+//    UART_PutString(&Result1);
+//    UART_PutString("\n\r");
+//    UART_PutString(&Result2);
+//    UART_PutString("\n\r");
+//    UART_PutString(&bResult1);
+//    UART_PutString("\n");
+//    UART_PutString(&bResult2);
+//    UART_PutString("\n");
     //manque conversion en degrés celcius
     Temperature = BME280_compensate_T_int32(bResult0);
-
+    
 
     sprintf(msg0, "Temp:%f C", Temperature);
     
-    //UART_PutString(msg0);
+//    UART_PutString(msg0);
     
     //sprintf(msg1, "Temp:%f C", bResult1);
     //sprintf(msg2, "Temp:%f C", bResult2);
     //LCD_DisplayClear();
-    //LCD_WriteStringAtPos(msg0, 0, 0);
-    UART_PutString(msg0);
+    LCD_WriteStringAtPos(msg0, 0, 0);
+   // UART_PutString(msg0);
    // UART_PutString("\n");
     //LCD_WriteStringAtPos(msg1, 0, 1);
      //LCD_WriteStringAtPos(msg2, 1, 0);
