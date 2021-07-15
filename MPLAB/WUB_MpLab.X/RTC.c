@@ -14,11 +14,11 @@ static bool Alarm_init(void);
 
 void __ISR(_RTCC_VECTOR, ipl3) _RTCCInterrupt(void)
 {
-    // ... perform application specific operations
-    // in response to the interrupt
     IFS0bits.RTCCIF = 0;//Clear flag // be sure to clear RTCC interrupt flag
     LED_SetValue(7,true);
-    // before exiting the service routine.
+    
+    
+    
 }
 
 bool RTC_init(void)
@@ -36,43 +36,22 @@ bool RTC_init(void)
     RTCCONCLR=0x8000; // turn off the RTCC
     while(RTCCON&0x40); // wait for clock to be turned off
     
-    //IFS1CLR=0x00008000; // clear RTCC existing event
-    //IPC8CLR=0x1f000000; // clear the priority
-    //IPC8SET=0x0d000000; // Set IPL=3, subpriority 1
-    //IEC1SET=0x00008000; // Enable RTCC interrupts
-    IEC0bits.RTCCIE = 0;//int enable = 1;
+    IEC0bits.RTCCIE = 0;//disable interrupt
     IFS0bits.RTCCIF = 0;//Clear flag
     IPC6bits.RTCCIS = 0x01;
-    IPC6bits.RTCCIP = 0x03;
-    IEC0bits.RTCCIE = 1;
+    IPC6bits.RTCCIP = 0x03;//Set priority to 3
+    IEC0bits.RTCCIE = 1;//enable interrupt
 
     RTCTIME=time; // safe to update the time
     RTCDATE=date; // update the date
+    
     RTCALRMbits.ALRMEN = 0; // alarm is disable 
-    
-    
-    IEC0bits.RTCCIE = 1;//int enable = 1;
-    IFS0bits.RTCCIF = 0;//Clear flag
-    
     res = Alarm_init();
-    
-    
-    
     if(!(RTCCON&0x8000))
     {
         RTCCONSET=0x8000; // turn on the RTCC
         while(!(RTCCON&0x40)); // wait for clock to be turned on
     }
-    
-    uint32_t testIFS0 = IFS0;//should be 0
-    uint32_t testIEC0 = IEC0;//should be 0x4xxxxxxxxxxxx
-    uint32_t testIPC6 = IPC6;//should be 12:8 bits
-    uint32_t testAlarm = ALRMTIME;
-    uint32_t testMask = RTCALRMbits.AMASK;
-    uint32_t testRTCCON = RTCCON;//0x8048
-    uint32_t testRTCALRM = RTCALRM;
-    
-    uint32_t TESTpRIORITY = IPC6bits.RTCCIP;
     rtc_initialised = true;
     return res;
 }
