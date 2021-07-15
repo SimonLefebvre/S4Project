@@ -91,11 +91,11 @@ void LCD_ConfigurePins()
     rp_LCD_DISP_EN = 0;
     
     // make data pins digital (disable analog)
-    /*ansel_LCD_DB2 = 0;
+    ansel_LCD_DB2 = 0;
     ansel_LCD_DB4 = 0;
     ansel_LCD_DB5 = 0;
     ansel_LCD_DB6 = 0;
-    ansel_LCD_DB7 = 0;*/
+    ansel_LCD_DB7 = 0;
 }
 
 /* ------------------------------------------------------------ */

@@ -21,10 +21,12 @@
 //#pragma config FNOSC = SOSC
 //#pragma config SOSCEN = ON
 
-#pragma config FPBDIV = DIV_1
-#pragma config FPLLIDIV = DIV_2
-#pragma config FPLLMUL = MUL_20
-#pragma config FPLLODIV = DIV_1
+
+//FREQ MAX => 80MHz
+#pragma config FPBDIV = DIV_1       //Peripheral Bus Clock Divisor Default Value bits // DIV_1
+#pragma config FPLLIDIV = DIV_2     //PLL Input Divider bits //The System Phase-Locked Loop (PLL)
+#pragma config FPLLMUL = MUL_20     //PLL Multiplier bits = 4MHZ * 20 = 80MHz
+#pragma config FPLLODIV = DIV_1     //Default PLL Output Divisor bits => 80Mhz
 
 
 
