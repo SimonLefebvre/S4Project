@@ -9,6 +9,7 @@
         <itemPath>spiflash.h</itemPath>
         <itemPath>uart.h</itemPath>
         <itemPath>config.h</itemPath>
+        <itemPath>led.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.h</itemPath>
@@ -26,6 +27,7 @@
         <itemPath>lcd.c</itemPath>
         <itemPath>spiflash.c</itemPath>
         <itemPath>uart.c</itemPath>
+        <itemPath>led.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.c</itemPath>
@@ -223,9 +225,6 @@
       <PK3OBPlatformTool>
         <property key="firmware.download.all" value="false"/>
       </PK3OBPlatformTool>
-      <Tool>
-        <property key="firmware.download.all" value="false"/>
-      </Tool>
     </conf>
   </confs>
 </configurationDescriptor>

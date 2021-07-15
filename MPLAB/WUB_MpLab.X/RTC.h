@@ -7,6 +7,7 @@
 #include <xc.h>
 #include <stdbool.h>
 #include <sys/attribs.h>
+#include "led.h"
 
 typedef struct 
 {

@@ -8,7 +8,10 @@
 #include "WUB.h"
 #include "lcd.h"
 #include "RTC.h"
-#include "definitions.h"
+#include "config.h"
+#include "led.h"
+
+//#include "definitions.h"
 
 #pragma config FSOSCEN = ON //ON for Sosc enable
 #pragma config FNOSC = FRCPLL
@@ -30,10 +33,12 @@
 void main(void)
 {
     //asm volatile (“di”);
-    
+    macro_disable_interrupts;
     RTC_init();
+    macro_enable_interrupts();
     //Alarm_enable(true);
     //asm volatile (“ei”);
+    LED_Init();
     LCD_Init();
     //RTC_init();
     LCD_WriteStringAtPos("HELLO WORLD", 0, 0);
@@ -62,11 +67,6 @@ void main(void)
         sprintf(outbuf,"%2d:%2d:%2d",t.hour,t.min,t.sec);
         LCD_WriteStringAtPos(outbuf, 1, 0);
         uint32_t i =0;
-        if(IFS0bits.RTCCIF)
-        {
-            while(1);
-        }
-        
         for(;i<0x00010000;i++);
     }
     

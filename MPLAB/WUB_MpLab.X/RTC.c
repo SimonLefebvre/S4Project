@@ -17,7 +17,7 @@ void __ISR(_RTCC_VECTOR, ipl3) _RTCCInterrupt(void)
     // ... perform application specific operations
     // in response to the interrupt
     IFS0bits.RTCCIF = 0;//Clear flag // be sure to clear RTCC interrupt flag
-    while(1);
+    LED_SetValue(7,true);
     // before exiting the service routine.
 }
 
