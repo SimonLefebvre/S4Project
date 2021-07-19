@@ -160,6 +160,12 @@ void thermometre() {
   // long signed int b3 = (T_32 >> 16) & 0xff;
    //long signed int b4 = (T_32 >> 24);
    
+   if (b1 > 0x63)
+       b2 = b2 + 1;
+   
+   else
+       b2 = b2;
+   
    
            
    
