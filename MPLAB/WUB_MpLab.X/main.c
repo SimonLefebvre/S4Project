@@ -26,8 +26,8 @@ void main(void)
     int32_t adc_T;
     while (1)
     {   
-        init_sensor();
-        temperature();
+        init_thermo();
+        thermometre();
     }
     
 }

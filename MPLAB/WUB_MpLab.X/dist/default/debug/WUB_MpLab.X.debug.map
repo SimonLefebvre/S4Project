@@ -5,135 +5,127 @@ c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatuns
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
                               build/default/debug/lcd.o (strlen)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (_bootstrap_exception_handler)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (_bootstrap_exception_handler)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (_on_reset)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (_on_reset)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (_on_bootstrap)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (_on_bootstrap)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (_nmi_handler)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (_nmi_handler)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (__pic32_data_init)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (__pic32_data_init)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o (_general_exception_context)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o (_general_exception_context)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_0)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_0)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_1)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_1)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_2)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_2)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_3)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_3)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_4)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_4)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_5)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_5)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_6)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_6)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_7)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_7)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_8)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_8)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_9)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_9)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_10)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_10)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_11)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_11)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_12)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_12)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_13)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_13)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_14)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_14)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_15)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_15)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_16)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_16)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_17)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_17)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_18)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_18)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_19)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_19)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_20)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_20)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_21)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_21)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_22)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_22)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_23)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_23)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_24)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_24)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_25)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_25)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_26)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_26)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_27)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_27)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_28)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_28)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_29)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_29)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_30)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_30)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_31)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_31)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_32)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_32)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_33)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_33)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_34)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_34)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_35)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_35)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_36)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_36)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_37)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_37)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_38)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_38)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_40)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_40)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_41)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_41)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_42)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_42)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_43)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_43)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_44)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_44)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector45.o)
-                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o (__vector_dispatch_45)
+                              C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o (__vector_dispatch_45)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o) (_general_exception_handler)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o) (_DefaultInterrupt)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
-                              build/default/debug/thermistor.o (_sprintf_fF)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo) (_do_print_fF)
+c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
+                              build/default/debug/thermistor.o (_sprintf_cdnopuxX)
+c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo) (_do_print_cdnopuxX)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (_libc_data)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo) (_libc_data)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o) (_filbuf_simple)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo) (_io_strfuncs)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo) (_io_strfuncs)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (fputc)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo) (fputc)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o) (errno)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (modfl)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (__divdf3)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (__muldf3)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
                               build/default/debug/uart.o (__adddf3)
-c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (__nedf2)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
                               build/default/debug/uart.o (__fixdfsi)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
@@ -145,9 +137,9 @@ c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o) (__floatsisf)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (__udivdi3)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo) (__udivdi3)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
-                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo) (__umoddi3)
+                              c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo) (__umoddi3)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
                               c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o) (_mon_getc)
 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
@@ -168,67 +160,61 @@ section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
 .text                   0x9d000000         0x1c80        7296  App's exec code 
 .text                   0x9d001c80         0x11fc        4604  App's exec code 
-.text                   0x9d002e7c          0xf38        3896  App's exec code 
-.text._do_print_fF      0x9d003db4          0x64c        1612   
-.text._fconvert         0x9d004400          0x584        1412   
-.text.dp32mul           0x9d004984          0x4b8        1208   
-.text.dp32subadd        0x9d004e3c          0x430        1072   
-.text                   0x9d00526c          0x7e4        2020  App's exec code 
-.text.dp32mul           0x9d005a50          0x32c         812   
-.text.fpsubadd          0x9d005d7c          0x278         632   
-.text                   0x9d005ff4          0x26c         620  App's exec code 
-.text.fp32div           0x9d006260          0x230         560   
-.text                   0x9d006490          0x168         360  App's exec code 
-.dinit                  0x9d0065f8          0x160         352   
-.text                   0x9d006758          0x150         336  App's exec code 
-.text._mon_getc         0x9d0068a8          0x134         308   
-.text.dpcmp             0x9d0069dc          0x12c         300   
-.text._mon_putc         0x9d006b08          0x128         296   
-.text.libm              0x9d006c30          0x120         288   
-.text.general_exception 0x9d006d50           0xdc         220   
-.text._outcnvrt         0x9d006e2c           0xdc         220   
-.text._flsbuf_simple    0x9d006f08           0xd4         212   
-.text.fptodp            0x9d006fdc           0xac         172   
-.text.fputc             0x9d007088           0xa0         160   
-.text.dptoli            0x9d007128           0x90         144   
-.text                   0x9d0071b8           0x84         132  App's exec code 
-.text.repl              0x9d00723c           0x84         132   
-.text._fwrite_simple    0x9d0072c0           0x74         116   
-.text._fflush_simple    0x9d007334           0x70         112   
-.text.__sputn           0x9d0073a4           0x68         104   
-.text._sprintf_fF       0x9d00740c           0x60          96   
-.text.sitofp            0x9d00746c           0x60          96   
-.text.main_entry        0x9d0074cc           0x54          84   
-.text._mon_write        0x9d007520           0x54          84   
-.text                   0x9d007574           0x94         148  App's exec code 
-.text._bootstrap_except 0x9d007608           0x48          72   
-.text._general_exceptio 0x9d007650           0x48          72   
-.vector_default         0x9d007698           0x48          72   
-.text                   0x9d0076e0           0x44          68  App's exec code 
-.rodata                 0x9d007724           0x40          64  Read-only const 
-.text._filbuf_simple    0x9d007764           0x34          52   
-.text._fsync_simple     0x9d007798           0x30          48   
-.text.putchar           0x9d0077c8           0x24          36   
-.rodata.str1.4          0x9d0077ec           0x1c          28   
-.text._vfprintf_fF      0x9d007808           0x1c          28   
-.text.putc              0x9d007824           0x1c          28   
-.MIPS.abiflags          0x9d007840           0x18          24   
-.text                   0x9d007858           0x18          24  App's exec code 
-.rodata.cst8            0x9d007870           0x18          24   
-.text._io_exit          0x9d007888           0x14          20   
-.rodata                 0x9d00789c           0x14          20  Read-only const 
-.text._io_exit          0x9d0078b0           0x14          20   
-.rodata                 0x9d0078c4           0x24          36  Read-only const 
-.rodata                 0x9d0078e8           0x10          16  Read-only const 
-.text.__exception_handl 0x9d0078f8            0xc          12   
-.text._on_reset         0x9d007904            0x8           8   
-.text._on_bootstrap     0x9d00790c            0x8           8   
-.text._filbuf_string    0x9d007914            0x8           8   
-.text._flsbuf_string    0x9d00791c            0x8           8   
-.text._fflush_string    0x9d007924            0x8           8   
-.text._fwrite_string    0x9d00792c            0x8           8   
-.text._fsync_string     0x9d007934            0x8           8   
-      Total kseg0_program_mem used  :      0x793c       31036  5.9% of 0x80000
+.text                   0x9d002e7c          0x8c8        2248  App's exec code 
+.text._do_print_cdnopux 0x9d003744          0x764        1892   
+.text                   0x9d003ea8          0x670        1648  App's exec code 
+.text.dp32subadd        0x9d004518          0x430        1072   
+.text                   0x9d004948          0x7e4        2020  App's exec code 
+.text                   0x9d00512c          0x32c         812  App's exec code 
+.text.fpsubadd          0x9d005458          0x278         632   
+.text.fp32div           0x9d0056d0          0x230         560   
+.text                   0x9d005900          0x168         360  App's exec code 
+.dinit                  0x9d005a68          0x160         352   
+.text                   0x9d005bc8          0x150         336  App's exec code 
+.text._mon_getc         0x9d005d18          0x134         308   
+.text._mon_putc         0x9d005e4c          0x128         296   
+.text._outcnvrt         0x9d005f74           0xe8         232   
+.text.general_exception 0x9d00605c           0xdc         220   
+.text._flsbuf_simple    0x9d006138           0xd4         212   
+.text.fptodp            0x9d00620c           0xac         172   
+.text.repl.constprop.0  0x9d0062b8           0xa8         168   
+.text.fputc             0x9d006360           0xa0         160   
+.text.dptoli            0x9d006400           0x90         144   
+.text                   0x9d006490           0x84         132  App's exec code 
+.text._fwrite_simple    0x9d006514           0x74         116   
+.text._fflush_simple    0x9d006588           0x70         112   
+.text._sprintf_cdnopuxX 0x9d0065f8           0x60          96   
+.text.sitofp            0x9d006658           0x60          96   
+.text.main_entry        0x9d0066b8           0x54          84   
+.text._mon_write        0x9d00670c           0x54          84   
+.text                   0x9d006760           0x94         148  App's exec code 
+.text._bootstrap_except 0x9d0067f4           0x48          72   
+.text._general_exceptio 0x9d00683c           0x48          72   
+.vector_default         0x9d006884           0x48          72   
+.text                   0x9d0068cc           0x44          68  App's exec code 
+.text._filbuf_simple    0x9d006910           0x34          52   
+.text._fsync_simple     0x9d006944           0x30          48   
+.text.putchar           0x9d006974           0x24          36   
+.rodata                 0x9d006998           0x20          32  Read-only const 
+.text._vfprintf_cdnopux 0x9d0069b8           0x1c          28   
+.text.putc              0x9d0069d4           0x1c          28   
+.MIPS.abiflags          0x9d0069f0           0x18          24   
+.text                   0x9d006a08           0x18          24  App's exec code 
+.text._io_exit          0x9d006a20           0x14          20   
+.rodata                 0x9d006a34           0x14          20  Read-only const 
+.text._io_exit          0x9d006a48           0x14          20   
+.rodata                 0x9d006a5c           0x24          36  Read-only const 
+.text.__exception_handl 0x9d006a80            0xc          12   
+.rodata                 0x9d006a8c            0xc          12  Read-only const 
+.text._on_reset         0x9d006a98            0x8           8   
+.text._on_bootstrap     0x9d006aa0            0x8           8   
+.rodata.str1.4          0x9d006aa8            0x8           8   
+.text._filbuf_string    0x9d006ab0            0x8           8   
+.text._flsbuf_string    0x9d006ab8            0x8           8   
+.text._fflush_string    0x9d006ac0            0x8           8   
+.text._fwrite_string    0x9d006ac8            0x8           8   
+.text._fsync_string     0x9d006ad0            0x8           8   
+      Total kseg0_program_mem used  :      0x6ad8       27352  5.2% of 0x80000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -294,7 +280,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x1ac         428  36.6% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x7c68       31848  6.0% of 0x81e00
+         Total Program Memory used  :      0x6e04       28164  5.3% of 0x81e00
         --------------------------------------------------------------------------
 
 
@@ -311,20 +297,20 @@ reserve_data_0_kseg1    0xa0000000          0x200         512
 .sdata                  0xa0000200            0x8           8  Small init data 
 .sbss                   0xa0000208            0xc          12  Small uninit data 
 .bss                    0xa0000214           0xff         255  Uninitialized data 
-.bss                    0xa0000314           0xf0         240  Uninitialized data 
-.data                   0xa0000404           0xd4         212  Initialized data 
-.bss                    0xa00004d8           0x9e         158  Uninitialized data 
-         Total kseg1_data_mem used  :       0x575        1397  1.1% of 0x20000
+.data                   0xa0000314           0xd4         212  Initialized data 
+.bss                    0xa00003e8           0xd8         216  Uninitialized data 
+.bss                    0xa00004c0           0x16          22  Uninitialized data 
+         Total kseg1_data_mem used  :       0x4d5        1237  0.9% of 0x20000
         --------------------------------------------------------------------------
-            Total Data Memory used  :       0x775        1909  1.5% of 0x20200
+            Total Data Memory used  :       0x6d5        1749  1.3% of 0x20200
         --------------------------------------------------------------------------
 
 
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0xa0000578           0x10          16  Reserved for heap 
-stack                   0xa00005a0        0x1fa50      129616  Reserved for stack 
+heap                    0xa00004d8           0x10          16  Reserved for heap 
+stack                   0xa0000500        0x1faf0      129776  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -361,16 +347,16 @@ Discarded input sections
  .reginfo       0x0000000000000000       0x18 build/default/debug/thermistor.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/debug/thermistor.o
- .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
- .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
+                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
- .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
- .discard       0x0000000000000000       0xb8 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+                0x0000000000000000       0x18 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
+ .discard       0x0000000000000000       0xb8 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
  .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
@@ -763,20 +749,20 @@ Discarded input sections
                 0x0000000000000000       0x1f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
  .xc_stack_usage.hdr
                 0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+ .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
  .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
  .xc_stack_usage
-                0x0000000000000000       0x19 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+                0x0000000000000000       0x1f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
  .xc_stack_usage.hdr
-                0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
+ .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .xc_stack_usage
-                0x0000000000000000       0x9f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x0000000000000000       0x8b c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .xc_stack_usage.hdr
-                0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
@@ -808,21 +794,9 @@ Discarded input sections
                 0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
  .xc_stack_usage.hdr
                 0x0000000000000000        0xe c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
- .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
- .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
- .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
  .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
- .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
- .MIPS.abiflags
-                0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
  .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
@@ -951,9 +925,9 @@ LOAD build/default/debug/thermistor.o
                 0x0000000000000001                __MPLAB_DEBUG = 0x1
                 0x0000000000000001                __DEBUG = 0x1
                 0x0000000000000001                __MPLAB_DEBUGGER_PK3 = 0x1
-LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
-LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
-LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
+LOAD C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
 LOAD c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 LOAD c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a
 START GROUP
@@ -997,16 +971,16 @@ END GROUP
 
 .reset          0x00000000bfc00000      0x19c
  *(.reset)
- .reset         0x00000000bfc00000        0x8 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+ .reset         0x00000000bfc00000        0x8 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
                 0x00000000bfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0x00000000bfc00008      0x194 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+                0x00000000bfc00008      0x194 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
                 0x00000000bfc00008                _startup
 
 .bev_excpt      0x00000000bfc00380       0x10
  *(.bev_handler)
- .bev_handler   0x00000000bfc00380       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+ .bev_handler   0x00000000bfc00380       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
 
 .dbg_excpt      0x00000000bfc00480        0x0
                 0x00000000bfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
@@ -1016,7 +990,7 @@ END GROUP
 
 .app_excpt      0x000000009fc01180       0x10
  *(.gen_handler)
- .gen_handler   0x000000009fc01180       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+ .gen_handler   0x000000009fc01180       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
 
 .vector_0       0x000000009fc01200        0x8
  *(.vector_0)
@@ -1563,8 +1537,8 @@ END GROUP
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
- .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
+ .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
  .mdebug.abi32  0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
@@ -1637,9 +1611,9 @@ END GROUP
  .comment       0x000000000000006c       0x54 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
  .comment       0x000000000000006c       0x54 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .comment       0x000000000000006c       0x54 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .comment       0x000000000000006c       0x52 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+ .comment       0x000000000000006c       0x52 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
                                          0xa6 (size before relaxing)
- .comment       0x00000000000000be       0x52 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+ .comment       0x00000000000000be       0x52 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
                                          0xa6 (size before relaxing)
  .comment       0x0000000000000110       0x53 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
                                          0xa7 (size before relaxing)
@@ -1698,7 +1672,7 @@ END GROUP
  .debug_aranges
                 0x0000000000000120       0x20 build/default/debug/thermistor.o
  .debug_aranges
-                0x0000000000000140       0x40 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+                0x0000000000000140       0x40 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
  .debug_aranges
                 0x0000000000000180       0x20 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .debug_aranges
@@ -1726,7 +1700,7 @@ END GROUP
  *.elf(.debug_pubnames)
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0xb4fd3
+.debug_info     0x0000000000000000    0xb514c
  *.elf(.debug_info .gnu.linkonce.wi.*)
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000       0x3f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
@@ -1738,21 +1712,21 @@ END GROUP
  .debug_info    0x0000000000070328    0x164ff build/default/debug/i2c.o
  .debug_info    0x0000000000086827    0x16621 build/default/debug/RTC.o
  .debug_info    0x000000000009ce48    0x166eb build/default/debug/main.o
- .debug_info    0x00000000000b3533      0x6a7 build/default/debug/thermistor.o
- .debug_info    0x00000000000b3bda       0x22 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
- .debug_info    0x00000000000b3bfc       0x9d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_info    0x00000000000b3c99       0x41 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x00000000000b3cda       0x3f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x00000000000b3d19       0x3f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x00000000000b3d58       0x41 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_info    0x00000000000b3d99       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_info    0x00000000000b3dd9      0x85c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
- .debug_info    0x00000000000b4635      0x8d4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .debug_info    0x00000000000b4f09       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .debug_info    0x00000000000b4f49       0x4a c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .debug_info    0x00000000000b4f93       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_info    0x00000000000b3533      0x820 build/default/debug/thermistor.o
+ .debug_info    0x00000000000b3d53       0x22 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+ .debug_info    0x00000000000b3d75       0x9d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_info    0x00000000000b3e12       0x41 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x00000000000b3e53       0x3f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x00000000000b3e92       0x3f c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x00000000000b3ed1       0x41 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_info    0x00000000000b3f12       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x00000000000b3f52      0x85c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+ .debug_info    0x00000000000b47ae      0x8d4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+ .debug_info    0x00000000000b5082       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+ .debug_info    0x00000000000b50c2       0x4a c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+ .debug_info    0x00000000000b510c       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
-.debug_abbrev   0x0000000000000000     0x1c32
+.debug_abbrev   0x0000000000000000     0x1c46
  *.elf(.debug_abbrev)
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
@@ -1764,21 +1738,21 @@ END GROUP
  .debug_abbrev  0x0000000000000dbd      0x1f8 build/default/debug/i2c.o
  .debug_abbrev  0x0000000000000fb5      0x24b build/default/debug/RTC.o
  .debug_abbrev  0x0000000000001200      0x274 build/default/debug/main.o
- .debug_abbrev  0x0000000000001474      0x1e7 build/default/debug/thermistor.o
- .debug_abbrev  0x000000000000165b       0x12 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
- .debug_abbrev  0x000000000000166d       0x7d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_abbrev  0x00000000000016ea       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_abbrev  0x000000000000171b       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_abbrev  0x0000000000001749       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_abbrev  0x0000000000001777       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_abbrev  0x00000000000017a8       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_abbrev  0x00000000000017d9      0x1d8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
- .debug_abbrev  0x00000000000019b1      0x1ee c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .debug_abbrev  0x0000000000001b9f       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .debug_abbrev  0x0000000000001bcd       0x37 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .debug_abbrev  0x0000000000001c04       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_abbrev  0x0000000000001474      0x1fb build/default/debug/thermistor.o
+ .debug_abbrev  0x000000000000166f       0x12 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+ .debug_abbrev  0x0000000000001681       0x7d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_abbrev  0x00000000000016fe       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x000000000000172f       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x000000000000175d       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x000000000000178b       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_abbrev  0x00000000000017bc       0x31 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_abbrev  0x00000000000017ed      0x1d8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000000000019c5      0x1ee c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+ .debug_abbrev  0x0000000000001bb3       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+ .debug_abbrev  0x0000000000001be1       0x37 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+ .debug_abbrev  0x0000000000001c18       0x2e c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
-.debug_line     0x0000000000000000     0x2e7b
+.debug_line     0x0000000000000000     0x2f28
  *.elf(.debug_line)
  *(.debug_line)
  .debug_line    0x0000000000000000       0xb1 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
@@ -1790,20 +1764,20 @@ END GROUP
  .debug_line    0x0000000000001112      0x339 build/default/debug/i2c.o
  .debug_line    0x000000000000144b      0x480 build/default/debug/RTC.o
  .debug_line    0x00000000000018cb      0x1d8 build/default/debug/main.o
- .debug_line    0x0000000000001aa3      0x1d9 build/default/debug/thermistor.o
- .debug_line    0x0000000000001c7c      0x133 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
- .debug_line    0x0000000000001daf       0xba c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_line    0x0000000000001e69       0xca c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000000000001f33       0xa6 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x0000000000001fd9       0xaa c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x0000000000002083       0xc8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_line    0x000000000000214b       0xc9 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_line    0x0000000000002214      0x490 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
- .debug_line    0x00000000000026a4      0x4d9 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .debug_line    0x0000000000002b7d      0x12d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .debug_line    0x0000000000002caa       0xb0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .debug_line    0x0000000000002d5a        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
- .debug_line    0x0000000000002d5a      0x121 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_line    0x0000000000001aa3      0x286 build/default/debug/thermistor.o
+ .debug_line    0x0000000000001d29      0x133 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+ .debug_line    0x0000000000001e5c       0xba c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_line    0x0000000000001f16       0xca c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000000000001fe0       0xa6 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000000000002086       0xaa c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000000000002130       0xc8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_line    0x00000000000021f8       0xc9 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x00000000000022c1      0x490 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000002751      0x4d9 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+ .debug_line    0x0000000000002c2a      0x12d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+ .debug_line    0x0000000000002d57       0xb0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+ .debug_line    0x0000000000002e07        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
+ .debug_line    0x0000000000002e07      0x121 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
 .debug_frame    0x0000000000000000      0xc9c
  *.elf(.debug_frame)
@@ -1830,7 +1804,7 @@ END GROUP
  .debug_frame   0x0000000000000c28       0x38 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
  .debug_frame   0x0000000000000c60       0x3c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
-.debug_str      0x0000000000000000    0x3e476
+.debug_str      0x0000000000000000    0x3e516
  *.elf(.debug_str)
  *(.debug_str)
  .debug_str     0x0000000000000000      0x3a3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
@@ -1842,22 +1816,22 @@ END GROUP
  .debug_str     0x00000000000250ab     0x754a build/default/debug/i2c.o
  .debug_str     0x000000000002c5f5     0x7582 build/default/debug/RTC.o
  .debug_str     0x0000000000033b77     0x7653 build/default/debug/main.o
- .debug_str     0x000000000003b1ca      0x4f8 build/default/debug/thermistor.o
- .debug_str     0x000000000003b6c2       0x97 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
- .debug_str     0x000000000003b759      0x31c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_str     0x000000000003ba75      0x3b3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_str     0x000000000003be28      0x38d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_str     0x000000000003c1b5      0x395 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_str     0x000000000003c54a      0x3af c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_str     0x000000000003c8f9      0x3a7 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
- .debug_str     0x000000000003cca0      0x4e3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
- .debug_str     0x000000000003d183      0x4e3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .debug_str     0x000000000003d666      0x386 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .debug_str     0x000000000003d9ec      0x388 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .debug_str     0x000000000003dd74      0x37c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
- .debug_str     0x000000000003e0f0      0x386 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_str     0x000000000003b1ca      0x598 build/default/debug/thermistor.o
+ .debug_str     0x000000000003b762       0x97 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+ .debug_str     0x000000000003b7f9      0x31c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_str     0x000000000003bb15      0x3b3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x000000000003bec8      0x38d c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_str     0x000000000003c255      0x395 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x000000000003c5ea      0x3af c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_str     0x000000000003c999      0x3a7 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_str     0x000000000003cd40      0x4e3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+ .debug_str     0x000000000003d223      0x4e3 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+ .debug_str     0x000000000003d706      0x386 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+ .debug_str     0x000000000003da8c      0x388 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+ .debug_str     0x000000000003de14      0x37c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
+ .debug_str     0x000000000003e190      0x386 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
-.debug_loc      0x0000000000000000     0x411c
+.debug_loc      0x0000000000000000     0x42ef
  *.elf(.debug_loc)
  *(.debug_loc)
  .debug_loc     0x0000000000000000      0xaa3 build/default/debug/lcd.o
@@ -1868,15 +1842,15 @@ END GROUP
  .debug_loc     0x0000000000001ff3      0x4c9 build/default/debug/i2c.o
  .debug_loc     0x00000000000024bc      0x3a1 build/default/debug/RTC.o
  .debug_loc     0x000000000000285d       0x2c build/default/debug/main.o
- .debug_loc     0x0000000000002889      0x24b build/default/debug/thermistor.o
- .debug_loc     0x0000000000002ad4       0x84 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
- .debug_loc     0x0000000000002b58       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_loc     0x0000000000002b84       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_loc     0x0000000000002bb0      0xb5b c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
- .debug_loc     0x000000000000370b      0x969 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .debug_loc     0x0000000000004074       0x38 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .debug_loc     0x00000000000040ac       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .debug_loc     0x00000000000040d8       0x44 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+ .debug_loc     0x0000000000002889      0x41e build/default/debug/thermistor.o
+ .debug_loc     0x0000000000002ca7       0x84 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+ .debug_loc     0x0000000000002d2b       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_loc     0x0000000000002d57       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_loc     0x0000000000002d83      0xb5b c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+ .debug_loc     0x00000000000038de      0x969 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+ .debug_loc     0x0000000000004247       0x38 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+ .debug_loc     0x000000000000427f       0x2c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+ .debug_loc     0x00000000000042ab       0x44 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
 .debug_macinfo
  *.elf(.debug_macinfo)
@@ -1906,7 +1880,7 @@ END GROUP
  *.elf(.debug_ranges)
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
- .debug_ranges  0x0000000000000010       0x38 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+ .debug_ranges  0x0000000000000010       0x38 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
  .debug_ranges  0x0000000000000048       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_ranges  0x0000000000000058       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_ranges  0x0000000000000068       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1942,11 +1916,11 @@ END GROUP
  .gnu.attributes
                 0x0000000000000090       0x10 build/default/debug/thermistor.o
  .gnu.attributes
-                0x00000000000000a0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+                0x00000000000000a0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
  .gnu.attributes
-                0x00000000000000b0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
+                0x00000000000000b0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
  .gnu.attributes
-                0x00000000000000c0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+                0x00000000000000c0       0x10 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
  .gnu.attributes
                 0x00000000000000d0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .gnu.attributes
@@ -2060,9 +2034,9 @@ END GROUP
  .gnu.attributes
                 0x0000000000000440       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
  .gnu.attributes
-                0x0000000000000450       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+                0x0000000000000450       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
  .gnu.attributes
-                0x0000000000000460       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x0000000000000460       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
  .gnu.attributes
                 0x0000000000000470       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
  .gnu.attributes
@@ -2074,37 +2048,29 @@ END GROUP
  .gnu.attributes
                 0x00000000000004b0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
  .gnu.attributes
-                0x00000000000004c0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
+                0x00000000000004c0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
  .gnu.attributes
-                0x00000000000004d0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
+                0x00000000000004d0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
  .gnu.attributes
-                0x00000000000004e0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
+                0x00000000000004e0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
  .gnu.attributes
-                0x00000000000004f0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
+                0x00000000000004f0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32subadd.o)
  .gnu.attributes
-                0x0000000000000500       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
+                0x0000000000000500       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fptodp.o)
  .gnu.attributes
-                0x0000000000000510       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
+                0x0000000000000510       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
  .gnu.attributes
-                0x0000000000000520       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
+                0x0000000000000520       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
  .gnu.attributes
-                0x0000000000000530       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32subadd.o)
+                0x0000000000000530       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
  .gnu.attributes
-                0x0000000000000540       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fptodp.o)
+                0x0000000000000540       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
  .gnu.attributes
-                0x0000000000000550       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
+                0x0000000000000550       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
  .gnu.attributes
-                0x0000000000000560       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+                0x0000000000000560       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
  .gnu.attributes
-                0x0000000000000570       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
- .gnu.attributes
-                0x0000000000000580       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
- .gnu.attributes
-                0x0000000000000590       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
- .gnu.attributes
-                0x00000000000005a0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
- .gnu.attributes
-                0x00000000000005b0       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+                0x0000000000000570       0x10 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 OUTPUT(dist/default/debug/WUB_MpLab.X.debug.elf elf32-tradlittlemips)
 LOAD stack
 LOAD data_init
@@ -2112,27 +2078,25 @@ LOAD data_init
 .reginfo        0x0000000000000000       0x18
  .reginfo       0x0000000000000000       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
 
-.stack          0x00000000a00005a0      0x400
- .stack         0x00000000a00005a0      0x400 stack
+.stack          0x00000000a0000500      0x400
+ .stack         0x00000000a0000500      0x400 stack
 
 .bss            0x00000000a0000214       0xff
  .bss           0x00000000a0000214       0xff build/default/debug/uart.o
                 0x00000000a0000214                rgchRx
 
-.bss            0x00000000a0000314       0xf0
- .bss           0x00000000a0000314       0xf0 build/default/debug/thermistor.o
-                0x00000000a0000314                msg0
-                0x00000000a0000364                msg1
-                0x00000000a00003b4                msg2
+.data           0x00000000a0000314       0xd4
+ .data          0x00000000a0000314       0xd4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
 
-.data           0x00000000a0000404       0xd4
- .data          0x00000000a0000404       0xd4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
+.bss            0x00000000a00003e8       0xd8
+ .bss           0x00000000a00003e8       0x88 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
+ .bss           0x00000000a0000470       0x50 build/default/debug/thermistor.o
+                0x00000000a0000470                msg
 
-.bss            0x00000000a00004d8       0x9e
- .bss           0x00000000a00004d8       0x88 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
- .bss           0x00000000a0000560       0x16 build/default/debug/spiflash.o
-                0x00000000a0000560                rd
-                0x00000000a000056c                wr
+.bss            0x00000000a00004c0       0x16
+ .bss           0x00000000a00004c0       0x16 build/default/debug/spiflash.o
+                0x00000000a00004c0                rd
+                0x00000000a00004cc                wr
 
 .bss%z1         0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
@@ -2201,474 +2165,450 @@ LOAD data_init
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
 
 .bss%z23        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
-
-.data%z24       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
-
-.bss%z25        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
 
-.data%z26       0x0000000000000000        0x0
+.data%z24       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
 
-.bss%z27        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
-
-.data%z28       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
-
-.bss%z29        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
-
-.data%z30       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
-
-.bss%z31        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
-
-.data%z32       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
-
-.bss%z33        0x0000000000000000        0x0
+.bss%z25        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
 
-.data%z34       0x0000000000000000        0x0
+.data%z26       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
 
-.bss%z35        0x0000000000000000        0x0
+.bss%z27        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
 
-.data%z36       0x0000000000000000        0x0
+.data%z28       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
 
-.bss%z37        0x0000000000000000        0x0
+.bss%z29        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
-.data%z38       0x0000000000000000        0x0
+.data%z30       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
-.bss%z39        0x0000000000000000        0x0
+.bss%z31        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
 
-.data%z40       0x0000000000000000        0x0
+.data%z32       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
 
-.bss%z41        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.bss%z33        0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
-.data%z42       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.data%z34       0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
-.bss%z43        0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+.bss%z35        0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
 
-.data%z44       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+.data%z36       0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
 
-.bss%z45        0x0000000000000000        0x0
+.bss%z37        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.data%z46       0x0000000000000000        0x0
+.data%z38       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.bss%z47        0x0000000000000000        0x0
+.bss%z39        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
 
-.data%z48       0x0000000000000000        0x0
+.data%z40       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
 
-.bss%z49        0x0000000000000000        0x0
+.bss%z41        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector45.o)
 
-.data%z50       0x0000000000000000        0x0
+.data%z42       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector45.o)
 
-.bss%z51        0x0000000000000000        0x0
+.bss%z43        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
 
-.data%z52       0x0000000000000000        0x0
+.data%z44       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
 
-.bss%z53        0x0000000000000000        0x0
+.bss%z45        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
 
-.data%z54       0x0000000000000000        0x0
+.data%z46       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
 
-.bss%z55        0x0000000000000000        0x0
+.bss%z47        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
 
-.data%z56       0x0000000000000000        0x0
+.data%z48       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
 
-.bss%z57        0x0000000000000000        0x0
+.bss%z49        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
 
-.data%z58       0x0000000000000000        0x0
+.data%z50       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
 
-.bss%z59        0x0000000000000000        0x0
+.bss%z51        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
 
-.data%z60       0x0000000000000000        0x0
+.data%z52       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
 
-.bss%z61        0x0000000000000000        0x0
+.bss%z53        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
 
-.data%z62       0x0000000000000000        0x0
+.data%z54       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
 
-.bss%z63        0x0000000000000000        0x0
+.bss%z55        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
 
-.data%z64       0x0000000000000000        0x0
+.data%z56       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
 
-.bss%z65        0x0000000000000000        0x0
+.bss%z57        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
 
-.data%z66       0x0000000000000000        0x0
+.data%z58       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
 
-.bss%z67        0x0000000000000000        0x0
+.bss%z59        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
 
-.data%z68       0x0000000000000000        0x0
+.data%z60       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
 
-.bss%z69        0x0000000000000000        0x0
+.bss%z61        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
 
-.data%z70       0x0000000000000000        0x0
+.data%z62       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
 
-.bss%z71        0x0000000000000000        0x0
+.bss%z63        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
 
-.data%z72       0x0000000000000000        0x0
+.data%z64       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
 
-.bss%z73        0x0000000000000000        0x0
+.bss%z65        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
 
-.data%z74       0x0000000000000000        0x0
+.data%z66       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
 
-.bss%z75        0x0000000000000000        0x0
+.bss%z67        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
 
-.data%z76       0x0000000000000000        0x0
+.data%z68       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
 
-.bss%z77        0x0000000000000000        0x0
+.bss%z69        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
 
-.data%z78       0x0000000000000000        0x0
+.data%z70       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
 
-.bss%z79        0x0000000000000000        0x0
+.bss%z71        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
 
-.data%z80       0x0000000000000000        0x0
+.data%z72       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
 
-.bss%z81        0x0000000000000000        0x0
+.bss%z73        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
 
-.data%z82       0x0000000000000000        0x0
+.data%z74       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
 
-.bss%z83        0x0000000000000000        0x0
+.bss%z75        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
 
-.data%z84       0x0000000000000000        0x0
+.data%z76       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
 
-.bss%z85        0x0000000000000000        0x0
+.bss%z77        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
 
-.data%z86       0x0000000000000000        0x0
+.data%z78       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
 
-.bss%z87        0x0000000000000000        0x0
+.bss%z79        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
 
-.data%z88       0x0000000000000000        0x0
+.data%z80       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
 
-.bss%z89        0x0000000000000000        0x0
+.bss%z81        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
 
-.data%z90       0x0000000000000000        0x0
+.data%z82       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
 
-.bss%z91        0x0000000000000000        0x0
+.bss%z83        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
 
-.data%z92       0x0000000000000000        0x0
+.data%z84       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
 
-.bss%z93        0x0000000000000000        0x0
+.bss%z85        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
 
-.data%z94       0x0000000000000000        0x0
+.data%z86       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
 
-.bss%z95        0x0000000000000000        0x0
+.bss%z87        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
 
-.data%z96       0x0000000000000000        0x0
+.data%z88       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
 
-.bss%z97        0x0000000000000000        0x0
+.bss%z89        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
 
-.data%z98       0x0000000000000000        0x0
+.data%z90       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
 
-.bss%z99        0x0000000000000000        0x0
+.bss%z91        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
 
-.data%z100      0x0000000000000000        0x0
+.data%z92       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
 
-.bss%z101       0x0000000000000000        0x0
+.bss%z93        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
 
-.data%z102      0x0000000000000000        0x0
+.data%z94       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
 
-.bss%z103       0x0000000000000000        0x0
+.bss%z95        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
 
-.data%z104      0x0000000000000000        0x0
+.data%z96       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
 
-.bss%z105       0x0000000000000000        0x0
+.bss%z97        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
 
-.data%z106      0x0000000000000000        0x0
+.data%z98       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
 
-.bss%z107       0x0000000000000000        0x0
+.bss%z99        0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
 
-.data%z108      0x0000000000000000        0x0
+.data%z100      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
 
-.bss%z109       0x0000000000000000        0x0
+.bss%z101       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
 
-.data%z110      0x0000000000000000        0x0
+.data%z102      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
 
-.bss%z111       0x0000000000000000        0x0
+.bss%z103       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
 
-.data%z112      0x0000000000000000        0x0
+.data%z104      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
 
-.bss%z113       0x0000000000000000        0x0
+.bss%z105       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
 
-.data%z114      0x0000000000000000        0x0
+.data%z106      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
 
-.bss%z115       0x0000000000000000        0x0
+.bss%z107       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
 
-.data%z116      0x0000000000000000        0x0
+.data%z108      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
 
-.bss%z117       0x0000000000000000        0x0
+.bss%z109       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
 
-.data%z118      0x0000000000000000        0x0
+.data%z110      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
 
-.bss%z119       0x0000000000000000        0x0
+.bss%z111       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
 
-.data%z120      0x0000000000000000        0x0
+.data%z112      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
 
-.bss%z121       0x0000000000000000        0x0
+.bss%z113       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
 
-.data%z122      0x0000000000000000        0x0
+.data%z114      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
 
-.bss%z123       0x0000000000000000        0x0
+.bss%z115       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
 
-.data%z124      0x0000000000000000        0x0
+.data%z116      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
 
-.bss%z125       0x0000000000000000        0x0
+.bss%z117       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
 
-.data%z126      0x0000000000000000        0x0
+.data%z118      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
 
-.bss%z127       0x0000000000000000        0x0
+.bss%z119       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
 
-.data%z128      0x0000000000000000        0x0
+.data%z120      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
 
-.bss%z129       0x0000000000000000        0x0
+.bss%z121       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
 
-.data%z130      0x0000000000000000        0x0
+.data%z122      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
 
-.bss%z131       0x0000000000000000        0x0
+.bss%z123       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
 
-.data%z132      0x0000000000000000        0x0
+.data%z124      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
 
-.bss%z133       0x0000000000000000        0x0
+.bss%z125       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
 
-.data%z134      0x0000000000000000        0x0
+.data%z126      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
 
-.bss%z135       0x0000000000000000        0x0
+.bss%z127       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
 
-.data%z136      0x0000000000000000        0x0
+.data%z128      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
 
-.bss%z137       0x0000000000000000        0x0
+.bss%z129       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
 
-.data%z138      0x0000000000000000        0x0
+.data%z130      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
 
-.bss%z139       0x0000000000000000        0x0
+.bss%z131       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
 
-.data%z140      0x0000000000000000        0x0
+.data%z132      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
 
-.bss%z141       0x0000000000000000        0x0
+.bss%z133       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
 
-.data%z142      0x0000000000000000        0x0
+.data%z134      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
 
-.bss%z143       0x0000000000000000        0x0
+.bss%z135       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
 
-.data%z144      0x0000000000000000        0x0
+.data%z136      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
 
-.bss%z145       0x0000000000000000        0x0
+.bss%z137       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
 
-.data%z146      0x0000000000000000        0x0
+.data%z138      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
 
-.bss%z147       0x0000000000000000        0x0
+.bss%z139       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
 
-.data%z148      0x0000000000000000        0x0
+.data%z140      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
 
-.bss%z149       0x0000000000000000        0x0
+.bss%z141       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
 
-.data%z150      0x0000000000000000        0x0
+.data%z142      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
 
-.bss%z151       0x0000000000000000        0x0
+.bss%z143       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
 
-.data%z152      0x0000000000000000        0x0
+.data%z144      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
 
-.bss%z153       0x0000000000000000        0x0
+.bss%z145       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
 
-.data%z154      0x0000000000000000        0x0
+.data%z146      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
 
-.bss%z155       0x0000000000000000        0x0
+.bss%z147       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 
-.data%z156      0x0000000000000000        0x0
+.data%z148      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 
-.bss%z157       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+.bss%z149       0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
 
-.data%z158      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+.data%z150      0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
 
-.bss%z159       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
+.bss%z151       0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
 
-.data%z160      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
+.data%z152      0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
 
-.bss%z161       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+.bss%z153       0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
 
-.data%z162      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+.data%z154      0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
 
-.data%z163      0x0000000000000000        0x0
+.data%z155      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/thermistor.o
 
-.bss%z164       0x0000000000000000        0x0
+.bss%z156       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/main.o
 
-.data%z165      0x0000000000000000        0x0
+.data%z157      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/main.o
 
-.bss%z166       0x0000000000000000        0x0
+.bss%z158       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/RTC.o
 
-.data%z167      0x0000000000000000        0x0
+.data%z159      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/RTC.o
 
-.bss%z168       0x0000000000000000        0x0
+.bss%z160       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/i2c.o
 
-.data%z169      0x0000000000000000        0x0
+.data%z161      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/i2c.o
 
-.bss%z170       0x0000000000000000        0x0
+.bss%z162       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/pmods.o
 
-.data%z171      0x0000000000000000        0x0
+.data%z163      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/pmods.o
 
-.bss%z172       0x0000000000000000        0x0
+.bss%z164       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/adc.o
 
-.data%z173      0x0000000000000000        0x0
+.data%z165      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/adc.o
 
-.data%z174      0x0000000000000000        0x0
+.data%z166      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/uart.o
 
-.data%z175      0x0000000000000000        0x0
+.data%z167      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/spiflash.o
 
-.bss%z176       0x0000000000000000        0x0
+.bss%z168       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/debug/lcd.o
 
-.data%z177      0x0000000000000000        0x0
+.data%z169      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/debug/lcd.o
 
-.bss%z178       0x0000000000000000        0x0
+.bss%z170       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
 
-.data%z179      0x0000000000000000        0x0
+.data%z171      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
 
 .text           0x000000009d000000     0x1c80
@@ -2724,7 +2664,7 @@ LOAD data_init
                 0x000000009d002c68                UART_GetString
                 0x000000009d002e48                UART_Close
 
-.text           0x000000009d002e7c      0xf38
+.text           0x000000009d002e7c      0x8c8
  .text          0x000000009d002e7c      0x8c8 build/default/debug/lcd.o
                 0x000000009d002e7c                LCD_Init
                 0x000000009d002ebc                LCD_ConfigurePins
@@ -2745,544 +2685,499 @@ LOAD data_init
                 0x000000009d003608                LCD_SetWriteCgramPosition
                 0x000000009d003658                LCD_SetWriteDdramPosition
                 0x000000009d0036a8                LCD_WriteBytesAtPosCgram
- .text          0x000000009d003744      0x670 build/default/debug/i2c.o
-                0x000000009d003744                I2C_Init
-                0x000000009d0037ec                I2C_Write
-                0x000000009d003a60                I2C_Read
-                0x000000009d003d80                I2C_Close
 
-.text._do_print_fF
-                0x000000009d003db4      0x64c
- .text._do_print_fF
-                0x000000009d003db4      0x64c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-                0x000000009d003db4                _do_print_fF
+.text._do_print_cdnopuxX
+                0x000000009d003744      0x764
+ .text._do_print_cdnopuxX
+                0x000000009d003744      0x764 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
+                0x000000009d003744                _do_print_cdnopuxX
 
-.text._fconvert
-                0x000000009d004400      0x584
- .text._fconvert
-                0x000000009d004400      0x584 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-
-.text.dp32mul   0x000000009d004984      0x4b8
- .text.dp32mul  0x000000009d004984      0x4b8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
-                0x000000009d004984                __divdf3
-                0x000000009d004984                dpdiv
+.text           0x000000009d003ea8      0x670
+ .text          0x000000009d003ea8      0x670 build/default/debug/i2c.o
+                0x000000009d003ea8                I2C_Init
+                0x000000009d003f50                I2C_Write
+                0x000000009d0041c4                I2C_Read
+                0x000000009d0044e4                I2C_Close
 
 .text.dp32subadd
-                0x000000009d004e3c      0x430
+                0x000000009d004518      0x430
  .text.dp32subadd
-                0x000000009d004e3c      0x430 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
-                0x000000009d004e3c                __subdf3
-                0x000000009d004e3c                dpsub
-                0x000000009d004e44                dpadd
-                0x000000009d004e44                __adddf3
+                0x000000009d004518      0x430 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
+                0x000000009d004518                __subdf3
+                0x000000009d004518                dpsub
+                0x000000009d004520                dpadd
+                0x000000009d004520                __adddf3
 
-.text           0x000000009d00526c      0x7e4
- .text          0x000000009d00526c      0x3f8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
-                0x000000009d00526c                __umoddi3
- .text          0x000000009d005664      0x3ec c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
-                0x000000009d005664                __udivdi3
+.text           0x000000009d004948      0x7e4
+ .text          0x000000009d004948      0x3f8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_umoddi3.o)
+                0x000000009d004948                __umoddi3
+ .text          0x000000009d004d40      0x3ec c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(_udivdi3.o)
+                0x000000009d004d40                __udivdi3
 
-.text.dp32mul   0x000000009d005a50      0x32c
- .text.dp32mul  0x000000009d005a50      0x32c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
-                0x000000009d005a50                __muldf3
-                0x000000009d005a50                dpmul
+.text           0x000000009d00512c      0x32c
+ .text          0x000000009d00512c      0x32c build/default/debug/thermistor.o
+                0x000000009d00512c                init_thermo
+                0x000000009d0051b8                BME280_compensate_T_int32
+                0x000000009d005288                thermometre
 
-.text.fpsubadd  0x000000009d005d7c      0x278
+.text.fpsubadd  0x000000009d005458      0x278
  .text.fpsubadd
-                0x000000009d005d7c      0x278 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32subadd.o)
-                0x000000009d005d7c                fpsub
-                0x000000009d005d7c                __subsf3
-                0x000000009d005d84                __addsf3
-                0x000000009d005d84                fpadd
+                0x000000009d005458      0x278 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32subadd.o)
+                0x000000009d005458                fpsub
+                0x000000009d005458                __subsf3
+                0x000000009d005460                __addsf3
+                0x000000009d005460                fpadd
 
-.text           0x000000009d005ff4      0x26c
- .text          0x000000009d005ff4      0x26c build/default/debug/thermistor.o
-                0x000000009d005ff4                BME280_compensate_T_int32
-                0x000000009d0060a8                init_sensor
-                0x000000009d006134                temperature
+.text.fp32div   0x000000009d0056d0      0x230
+ .text.fp32div  0x000000009d0056d0      0x230 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
+                0x000000009d0056d0                fpdiv
+                0x000000009d0056d0                __divsf3
 
-.text.fp32div   0x000000009d006260      0x230
- .text.fp32div  0x000000009d006260      0x230 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
-                0x000000009d006260                fpdiv
-                0x000000009d006260                __divsf3
+.text           0x000000009d005900      0x168
+ .text          0x000000009d005900      0x168 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
+                0x000000009d005900                strlen
 
-.text           0x000000009d006490      0x168
- .text          0x000000009d006490      0x168 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
-                0x000000009d006490                strlen
+.dinit          0x000000009d005a68      0x160
+ .dinit         0x000000009d005a68      0x160 data_init
 
-.dinit          0x000000009d0065f8      0x160
- .dinit         0x000000009d0065f8      0x160 data_init
-
-.text           0x000000009d006758      0x150
- .text          0x000000009d006758      0x150 build/default/debug/adc.o
-                0x000000009d006758                ADC_Init
-                0x000000009d0067e8                ADC_AnalogRead
+.text           0x000000009d005bc8      0x150
+ .text          0x000000009d005bc8      0x150 build/default/debug/adc.o
+                0x000000009d005bc8                ADC_Init
+                0x000000009d005c58                ADC_AnalogRead
 
 .text._mon_getc
-                0x000000009d0068a8      0x134
+                0x000000009d005d18      0x134
  .text._mon_getc
-                0x000000009d0068a8      0x134 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
-                0x000000009d0068a8                _mon_getc
-
-.text.dpcmp     0x000000009d0069dc      0x12c
- .text.dpcmp    0x000000009d0069dc      0x12c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
-                0x000000009d0069dc                __gtdf2
-                0x000000009d0069dc                __ltdf2
-                0x000000009d0069dc                dpcmp
-                0x000000009d0069dc                __ledf2
-                0x000000009d0069dc                __nedf2
-                0x000000009d0069dc                __gedf2
-                0x000000009d0069dc                __eqdf2
+                0x000000009d005d18      0x134 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
+                0x000000009d005d18                _mon_getc
 
 .text._mon_putc
-                0x000000009d006b08      0x128
+                0x000000009d005e4c      0x128
  .text._mon_putc
-                0x000000009d006b08      0x128 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
-                0x000000009d006b08                _mon_putc
-
-.text.libm      0x000000009d006c30      0x120
- .text.libm     0x000000009d006c30      0x120 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
-                0x000000009d006c30                modf
-                0x000000009d006c30                dpmodf
-                0x000000009d006c30                modfl
-
-.text.general_exception
-                0x000000009d006d50       0xdc
- .text.general_exception
-                0x000000009d006d50       0xdc c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x000000009d006d50                _general_exception_context
+                0x000000009d005e4c      0x128 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
+                0x000000009d005e4c                _mon_putc
 
 .text._outcnvrt
-                0x000000009d006e2c       0xdc
+                0x000000009d005f74       0xe8
  .text._outcnvrt
-                0x000000009d006e2c       0xdc c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+                0x000000009d005f74       0xe8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
+
+.text.general_exception
+                0x000000009d00605c       0xdc
+ .text.general_exception
+                0x000000009d00605c       0xdc c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x000000009d00605c                _general_exception_context
 
 .text._flsbuf_simple
-                0x000000009d006f08       0xd4
+                0x000000009d006138       0xd4
  .text._flsbuf_simple
-                0x000000009d006f08       0xd4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
-                0x000000009d006f08                _flsbuf_simple
+                0x000000009d006138       0xd4 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006138                _flsbuf_simple
 
-.text.fptodp    0x000000009d006fdc       0xac
- .text.fptodp   0x000000009d006fdc       0xac c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fptodp.o)
-                0x000000009d006fdc                fptodp
-                0x000000009d006fdc                __extendsfdf2
+.text.fptodp    0x000000009d00620c       0xac
+ .text.fptodp   0x000000009d00620c       0xac c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fptodp.o)
+                0x000000009d00620c                fptodp
+                0x000000009d00620c                __extendsfdf2
 
-.text.fputc     0x000000009d007088       0xa0
- .text.fputc    0x000000009d007088       0xa0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
-                0x000000009d007088                fputc
+.text.repl.constprop.0
+                0x000000009d0062b8       0xa8
+ .text.repl.constprop.0
+                0x000000009d0062b8       0xa8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
-.text.dptoli    0x000000009d007128       0x90
- .text.dptoli   0x000000009d007128       0x90 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
-                0x000000009d007128                dptoli
-                0x000000009d007128                __fixdfsi
+.text.fputc     0x000000009d006360       0xa0
+ .text.fputc    0x000000009d006360       0xa0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
+                0x000000009d006360                fputc
 
-.text           0x000000009d0071b8       0x84
- .text          0x000000009d0071b8       0x84 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                0x000000009d0071b8                __pic32_data_init
+.text.dptoli    0x000000009d006400       0x90
+ .text.dptoli   0x000000009d006400       0x90 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
+                0x000000009d006400                dptoli
+                0x000000009d006400                __fixdfsi
 
-.text.repl      0x000000009d00723c       0x84
- .text.repl     0x000000009d00723c       0x84 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.text           0x000000009d006490       0x84
+ .text          0x000000009d006490       0x84 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
+                0x000000009d006490                __pic32_data_init
 
 .text._fwrite_simple
-                0x000000009d0072c0       0x74
+                0x000000009d006514       0x74
  .text._fwrite_simple
-                0x000000009d0072c0       0x74 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
-                0x000000009d0072c0                _fwrite_simple
+                0x000000009d006514       0x74 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006514                _fwrite_simple
 
 .text._fflush_simple
-                0x000000009d007334       0x70
+                0x000000009d006588       0x70
  .text._fflush_simple
-                0x000000009d007334       0x70 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
-                0x000000009d007334                _fflush_simple
+                0x000000009d006588       0x70 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006588                _fflush_simple
 
-.text.__sputn   0x000000009d0073a4       0x68
- .text.__sputn  0x000000009d0073a4       0x68 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.text._sprintf_cdnopuxX
+                0x000000009d0065f8       0x60
+ .text._sprintf_cdnopuxX
+                0x000000009d0065f8       0x60 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
+                0x000000009d0065f8                _sprintf_cdnopuxX
 
-.text._sprintf_fF
-                0x000000009d00740c       0x60
- .text._sprintf_fF
-                0x000000009d00740c       0x60 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
-                0x000000009d00740c                _sprintf_fF
-
-.text.sitofp    0x000000009d00746c       0x60
- .text.sitofp   0x000000009d00746c       0x60 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
-                0x000000009d00746c                __floatsisf
-                0x000000009d00746c                litofp
-                0x000000009d00746c                sitofp
+.text.sitofp    0x000000009d006658       0x60
+ .text.sitofp   0x000000009d006658       0x60 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
+                0x000000009d006658                __floatsisf
+                0x000000009d006658                litofp
+                0x000000009d006658                sitofp
 
 .text.main_entry
-                0x000000009d0074cc       0x54
+                0x000000009d0066b8       0x54
  .text.main_entry
-                0x000000009d0074cc       0x54 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
-                0x000000009d007500                __crt0_exit
+                0x000000009d0066b8       0x54 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
+                0x000000009d0066ec                __crt0_exit
 
 .text._mon_write
-                0x000000009d007520       0x54
+                0x000000009d00670c       0x54
  .text._mon_write
-                0x000000009d007520       0x54 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
-                0x000000009d007520                _mon_write
+                0x000000009d00670c       0x54 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
+                0x000000009d00670c                _mon_write
 
-.text           0x000000009d007574       0x94
- .text          0x000000009d007574       0x4c build/default/debug/main.o
-                0x000000009d007574                main
- .text          0x000000009d0075c0       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
-                0x000000009d0075c0                __floatunsisf
+.text           0x000000009d006760       0x94
+ .text          0x000000009d006760       0x4c build/default/debug/main.o
+                0x000000009d006760                main
+ .text          0x000000009d0067ac       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
+                0x000000009d0067ac                __floatunsisf
 
 .text._bootstrap_exception_handler
-                0x000000009d007608       0x48
+                0x000000009d0067f4       0x48
  .text._bootstrap_exception_handler
-                0x000000009d007608       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x000000009d007608                _bootstrap_exception_handler
+                0x000000009d0067f4       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x000000009d0067f4                _bootstrap_exception_handler
 
 .text._general_exception_handler
-                0x000000009d007650       0x48
+                0x000000009d00683c       0x48
  .text._general_exception_handler
-                0x000000009d007650       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
-                0x000000009d007650                _general_exception_handler
+                0x000000009d00683c       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+                0x000000009d00683c                _general_exception_handler
 
 .vector_default
-                0x000000009d007698       0x48
+                0x000000009d006884       0x48
  .vector_default
-                0x000000009d007698       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x000000009d007698                _DefaultInterrupt
+                0x000000009d006884       0x48 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x000000009d006884                _DefaultInterrupt
 
-.text           0x000000009d0076e0       0x44
- .text          0x000000009d0076e0       0x44 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
-                0x000000009d0076e0                __pic32_software_reset
-
-.rodata         0x000000009d007724       0x40
- .rodata        0x000000009d007724       0x40 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.text           0x000000009d0068cc       0x44
+ .text          0x000000009d0068cc       0x44 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
+                0x000000009d0068cc                __pic32_software_reset
 
 .text._filbuf_simple
-                0x000000009d007764       0x34
+                0x000000009d006910       0x34
  .text._filbuf_simple
-                0x000000009d007764       0x34 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
-                0x000000009d007764                _filbuf_simple
+                0x000000009d006910       0x34 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006910                _filbuf_simple
 
 .text._fsync_simple
-                0x000000009d007798       0x30
+                0x000000009d006944       0x30
  .text._fsync_simple
-                0x000000009d007798       0x30 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
-                0x000000009d007798                _fsync_simple
+                0x000000009d006944       0x30 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006944                _fsync_simple
 
-.text.putchar   0x000000009d0077c8       0x24
- .text.putchar  0x000000009d0077c8       0x24 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
-                0x000000009d0077c8                putchar
+.text.putchar   0x000000009d006974       0x24
+ .text.putchar  0x000000009d006974       0x24 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
+                0x000000009d006974                putchar
 
-.rodata.str1.4  0x000000009d0077ec       0x1c
- .rodata.str1.4
-                0x000000009d0077ec       0x1c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.rodata         0x000000009d006998       0x20
+ .rodata        0x000000009d006998       0x20 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
-.text._vfprintf_fF
-                0x000000009d007808       0x1c
- .text._vfprintf_fF
-                0x000000009d007808       0x1c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-                0x000000009d007808                _vfprintf_fF
+.text._vfprintf_cdnopuxX
+                0x000000009d0069b8       0x1c
+ .text._vfprintf_cdnopuxX
+                0x000000009d0069b8       0x1c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
+                0x000000009d0069b8                _vfprintf_cdnopuxX
 
-.text.putc      0x000000009d007824       0x1c
- .text.putc     0x000000009d007824       0x1c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
-                0x000000009d007824                putc
+.text.putc      0x000000009d0069d4       0x1c
+ .text.putc     0x000000009d0069d4       0x1c c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
+                0x000000009d0069d4                putc
 
-.MIPS.abiflags  0x000000009d007840       0x18
+.MIPS.abiflags  0x000000009d0069f0       0x18
  .MIPS.abiflags
-                0x000000009d007840       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
+                0x000000009d0069f0       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
 
-.text           0x000000009d007858       0x18
- .text          0x000000009d007858       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x000000009d007858                _nmi_handler
+.text           0x000000009d006a08       0x18
+ .text          0x000000009d006a08       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x000000009d006a08                _nmi_handler
 
-.rodata.cst8    0x000000009d007870       0x18
- .rodata.cst8   0x000000009d007870       0x18 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-
-.text._io_exit  0x000000009d007888       0x14
+.text._io_exit  0x000000009d006a20       0x14
  .text._io_exit
-                0x000000009d007888       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
-                0x000000009d007888                _io_exit
+                0x000000009d006a20       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
+                0x000000009d006a20                _io_exit
 
-.rodata         0x000000009d00789c       0x14
- .rodata        0x000000009d00789c       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
-                0x000000009d00789c                _io_funcs
+.rodata         0x000000009d006a34       0x14
+ .rodata        0x000000009d006a34       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
+                0x000000009d006a34                _io_funcs
 
-.text._io_exit  0x000000009d0078b0       0x14
+.text._io_exit  0x000000009d006a48       0x14
  .text._io_exit
-                0x000000009d0078b0       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
+                0x000000009d006a48       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
 
-.rodata         0x000000009d0078c4       0x24
- .rodata        0x000000009d0078c4       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
-                0x000000009d0078c4                _io_strfuncs
- .rodata        0x000000009d0078d8       0x10 build/default/debug/uart.o
-
-.rodata         0x000000009d0078e8       0x10
- .rodata        0x000000009d0078e8       0x10 build/default/debug/thermistor.o
+.rodata         0x000000009d006a5c       0x24
+ .rodata        0x000000009d006a5c       0x14 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006a5c                _io_strfuncs
+ .rodata        0x000000009d006a70       0x10 build/default/debug/uart.o
 
 .text.__exception_handler_break
-                0x000000009d0078f8        0xc
+                0x000000009d006a80        0xc
  .text.__exception_handler_break
-                0x000000009d0078f8        0xc c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
-                0x000000009d0078f8                __exception_handler_break
+                0x000000009d006a80        0xc c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o
+                0x000000009d006a80                __exception_handler_break
+
+.rodata         0x000000009d006a8c        0xc
+ .rodata        0x000000009d006a8c        0xc build/default/debug/thermistor.o
 
 .text._on_reset
-                0x000000009d007904        0x8
+                0x000000009d006a98        0x8
  .text._on_reset
-                0x000000009d007904        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x000000009d007904                _on_reset
+                0x000000009d006a98        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x000000009d006a98                _on_reset
 
 .text._on_bootstrap
-                0x000000009d00790c        0x8
+                0x000000009d006aa0        0x8
  .text._on_bootstrap
-                0x000000009d00790c        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x000000009d00790c                _on_bootstrap
+                0x000000009d006aa0        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x000000009d006aa0                _on_bootstrap
+
+.rodata.str1.4  0x000000009d006aa8        0x8
+ .rodata.str1.4
+                0x000000009d006aa8        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
 .text._filbuf_string
-                0x000000009d007914        0x8
+                0x000000009d006ab0        0x8
  .text._filbuf_string
-                0x000000009d007914        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006ab0        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
 .text._flsbuf_string
-                0x000000009d00791c        0x8
+                0x000000009d006ab8        0x8
  .text._flsbuf_string
-                0x000000009d00791c        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006ab8        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
 .text._fflush_string
-                0x000000009d007924        0x8
+                0x000000009d006ac0        0x8
  .text._fflush_string
-                0x000000009d007924        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006ac0        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
 .text._fwrite_string
-                0x000000009d00792c        0x8
+                0x000000009d006ac8        0x8
  .text._fwrite_string
-                0x000000009d00792c        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006ac8        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
 .text._fsync_string
-                0x000000009d007934        0x8
+                0x000000009d006ad0        0x8
  .text._fsync_string
-                0x000000009d007934        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
+                0x000000009d006ad0        0x8 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
-.text%z180      0x0000000000000000        0x0
+.text%z172      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_putc.o)
 
-.text%z181      0x0000000000000000        0x0
+.text%z173      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(xc32_uart.o)
 
-.text%z182      0x0000000000000000        0x0
+.text%z174      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_write.o)
 
-.text%z183      0x0000000000000000        0x0
+.text%z175      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(_mon_getc.o)
 
-.text%z184      0x0000000000000000        0x0
+.text%z176      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(sitofp.o)
 
-.text%z185      0x0000000000000000        0x0
+.text%z177      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fptodp.o)
 
-.text%z186      0x0000000000000000        0x0
+.text%z178      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32subadd.o)
 
-.text%z187      0x0000000000000000        0x0
+.text%z179      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(fp32div.o)
 
-.text%z188      0x0000000000000000        0x0
+.text%z180      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dptoli.o)
 
-.text%z189      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpcmp.o)
-
-.text%z190      0x0000000000000000        0x0
+.text%z181      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32subadd.o)
 
-.text%z191      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32mul.o)
-
-.text%z192      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dp32div.o)
-
-.text%z193      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libm.a(dpmodf.o)
-
-.text%z194      0x0000000000000000        0x0
+.text%z182      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(errno.o)
 
-.text%z195      0x0000000000000000        0x0
+.text%z183      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(fputc.o)
 
-.text%z196      0x0000000000000000        0x0
+.text%z184      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobstring.o)
 
-.text%z197      0x0000000000000000        0x0
+.text%z185      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobfuncs.o)
 
-.text%z198      0x0000000000000000        0x0
+.text%z186      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_iobdata.o)
 
-.text%z199      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_fF.eo)
+.text%z187      0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(_doprnt_cdnopuxX.eo)
 
-.text%z200      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_fF.eo)
+.text%z188      0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\liblega-c.a(sprintf_cdnopuxX.eo)
 
-.text%z201      0x0000000000000000        0x0
+.text%z189      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.text%z202      0x0000000000000000        0x0
+.text%z190      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
 
-.text%z203      0x0000000000000000        0x0
+.text%z191      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector45.o)
 
-.text%z204      0x0000000000000000        0x0
+.text%z192      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
 
-.text%z205      0x0000000000000000        0x0
+.text%z193      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
 
-.text%z206      0x0000000000000000        0x0
+.text%z194      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
 
-.text%z207      0x0000000000000000        0x0
+.text%z195      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
 
-.text%z208      0x0000000000000000        0x0
+.text%z196      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
 
-.text%z209      0x0000000000000000        0x0
+.text%z197      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
 
-.text%z210      0x0000000000000000        0x0
+.text%z198      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
 
-.text%z211      0x0000000000000000        0x0
+.text%z199      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
 
-.text%z212      0x0000000000000000        0x0
+.text%z200      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
 
-.text%z213      0x0000000000000000        0x0
+.text%z201      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
 
-.text%z214      0x0000000000000000        0x0
+.text%z202      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
 
-.text%z215      0x0000000000000000        0x0
+.text%z203      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
 
-.text%z216      0x0000000000000000        0x0
+.text%z204      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
 
-.text%z217      0x0000000000000000        0x0
+.text%z205      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
 
-.text%z218      0x0000000000000000        0x0
+.text%z206      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
 
-.text%z219      0x0000000000000000        0x0
+.text%z207      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
 
-.text%z220      0x0000000000000000        0x0
+.text%z208      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
 
-.text%z221      0x0000000000000000        0x0
+.text%z209      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
 
-.text%z222      0x0000000000000000        0x0
+.text%z210      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
 
-.text%z223      0x0000000000000000        0x0
+.text%z211      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
 
-.text%z224      0x0000000000000000        0x0
+.text%z212      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
 
-.text%z225      0x0000000000000000        0x0
+.text%z213      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
 
-.text%z226      0x0000000000000000        0x0
+.text%z214      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
 
-.text%z227      0x0000000000000000        0x0
+.text%z215      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
 
-.text%z228      0x0000000000000000        0x0
+.text%z216      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
 
-.text%z229      0x0000000000000000        0x0
+.text%z217      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
 
-.text%z230      0x0000000000000000        0x0
+.text%z218      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
 
-.text%z231      0x0000000000000000        0x0
+.text%z219      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
 
-.text%z232      0x0000000000000000        0x0
+.text%z220      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
 
-.text%z233      0x0000000000000000        0x0
+.text%z221      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
 
-.text%z234      0x0000000000000000        0x0
+.text%z222      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
 
-.text%z235      0x0000000000000000        0x0
+.text%z223      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
 
-.text%z236      0x0000000000000000        0x0
+.text%z224      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
 
-.text%z237      0x0000000000000000        0x0
+.text%z225      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
 
-.text%z238      0x0000000000000000        0x0
+.text%z226      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
 
-.text%z239      0x0000000000000000        0x0
+.text%z227      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
 
-.text%z240      0x0000000000000000        0x0
+.text%z228      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
 
-.text%z241      0x0000000000000000        0x0
+.text%z229      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
 
-.text%z242      0x0000000000000000        0x0
+.text%z230      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
 
-.text%z243      0x0000000000000000        0x0
+.text%z231      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
 
-.text%z244      0x0000000000000000        0x0
+.text%z232      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
 
-.text%z245      0x0000000000000000        0x0
+.text%z233      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
 
-.text%z246      0x0000000000000000        0x0
+.text%z234      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
 
-.text%z247      0x0000000000000000        0x0
+.text%z235      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
 
-.text%z248      0x0000000000000000        0x0
+.text%z236      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
 
-.text%z249      0x0000000000000000        0x0
+.text%z237      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
 
-.text%z250      0x0000000000000000        0x0
+.text%z238      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
 
-.text%z251      0x0000000000000000        0x0
+.text%z239      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
 
-.text%z252      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBG9HCe.o
+.text%z240      0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccVhj0DI.o
 
-.text%z253      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccLEpaH5.o
+.text%z241      0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccxdVswg.o
 
-.text%z254      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccBQblXl.o
+.text%z242      0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 C:\Users\ZACHAR~1.JON\AppData\Local\Temp\ccE8GJp6.o
 
-.text%z255      0x0000000000000000        0x0
+.text%z243      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/users/zacharie s.joncas/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\software-debug-break.o

@@ -166,8 +166,8 @@ extern "C" {
      */
     ;
     int32_t BME280_compensate_T_int32(int32_t adc_T);
-    void temperature();
-    void init_sensor();
+    void thermometre();
+    void init_thermo();
     
     /* Provide C++ Compatibility */
 #ifdef __cplusplus
