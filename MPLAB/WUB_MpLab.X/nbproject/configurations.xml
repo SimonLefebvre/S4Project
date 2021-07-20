@@ -12,6 +12,7 @@
         <itemPath>adc.h</itemPath>
         <itemPath>pmods.h</itemPath>
         <itemPath>i2c.h</itemPath>
+        <itemPath>swt.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.h</itemPath>
@@ -33,6 +34,7 @@
         <itemPath>adc.c</itemPath>
         <itemPath>pmods.c</itemPath>
         <itemPath>i2c.c</itemPath>
+        <itemPath>swt.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.c</itemPath>
@@ -48,7 +50,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
-    <Elem>E:/S4/APP3/MPLAB/LibPack_jb</Elem>
+    <Elem>E:/S4/APP3</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

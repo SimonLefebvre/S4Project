@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=lcd.c spiflash.c uart.c adc.c pmods.c i2c.c RTC.c main.c thermistor.c
+SOURCEFILES_QUOTED_IF_SPACED=lcd.c spiflash.c uart.c adc.c pmods.c i2c.c RTC.c main.c thermistor.c swt.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/thermistor.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o ${OBJECTDIR}/swt.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/RTC.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/thermistor.o.d ${OBJECTDIR}/swt.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o
+OBJECTFILES=${OBJECTDIR}/lcd.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/RTC.o ${OBJECTDIR}/main.o ${OBJECTDIR}/thermistor.o ${OBJECTDIR}/swt.o
 
 # Source Files
-SOURCEFILES=lcd.c spiflash.c uart.c adc.c pmods.c i2c.c RTC.c main.c thermistor.c
+SOURCEFILES=lcd.c spiflash.c uart.c adc.c pmods.c i2c.c RTC.c main.c thermistor.c swt.c
 
 
 
@@ -161,6 +161,12 @@ ${OBJECTDIR}/thermistor.o: thermistor.c  .generated_files/flags/default/d7c3d49d
 	@${RM} ${OBJECTDIR}/thermistor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/thermistor.o.d" -o ${OBJECTDIR}/thermistor.o thermistor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+${OBJECTDIR}/swt.o: swt.c  .generated_files/flags/default/208322e198f9afb02ca137be03df0eb8b64cffae .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/swt.o.d 
+	@${RM} ${OBJECTDIR}/swt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/swt.o.d" -o ${OBJECTDIR}/swt.o swt.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 else
 ${OBJECTDIR}/lcd.o: lcd.c  .generated_files/flags/default/e31b04986ba25779f16e8903e1a766c202bdb1c4 .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
 	@${MKDIR} "${OBJECTDIR}" 
@@ -215,6 +221,12 @@ ${OBJECTDIR}/thermistor.o: thermistor.c  .generated_files/flags/default/fc605be8
 	@${RM} ${OBJECTDIR}/thermistor.o.d 
 	@${RM} ${OBJECTDIR}/thermistor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/thermistor.o.d" -o ${OBJECTDIR}/thermistor.o thermistor.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/swt.o: swt.c  .generated_files/flags/default/ba5ff14d6b6591db36593b5934c9f4af911cefe1 .generated_files/flags/default/9f1180b6b1fa687409817a5ec15eab7d49330811
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/swt.o.d 
+	@${RM} ${OBJECTDIR}/swt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/swt.o.d" -o ${OBJECTDIR}/swt.o swt.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 

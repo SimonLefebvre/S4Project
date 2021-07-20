@@ -76,6 +76,7 @@
 #include "lcd.h"
 #include "uart.h"
 #include "time.h"
+#include "swt.h"
 
 unsigned char msg[80];
 
@@ -97,12 +98,20 @@ void init_thermo() {
     bResult1 = I2C_Write(SLAVE_ADDR, rgVals1, 2, 1);//
 }
 
+ long signed int CToF(long signed int T_celsius)
+  {
+      
+       long signed int T_fahrenheit = T_celsius*1.8 + 32;
+      
+       return T_fahrenheit;
+  }
+
   //Convertion en celcius
   long signed int t_fine;
   long signed int BME280_compensate_T_int32(long signed int bResult_uint)
   {
       
-      int var1, var2, T;
+      long signed int var1, var2, T;
       var1 = ((((bResult_uint>>3)-(45311<<1)))*(767))
       >>11;
       var2 = (((((bResult_uint>>4)-(45311)*((bResult_uint>>4)-(
@@ -113,6 +122,8 @@ void init_thermo() {
       return T;
   }
   
+  
+
 void thermometre() {
   
   unsigned char bResult[3];
@@ -154,9 +165,13 @@ void thermometre() {
   
   
    long signed int T_32 = BME280_compensate_T_int32(bResult_32b);
-  
+   
+   
+   
    long signed int b1 = T_32 & 0xff;
    long signed int b2 = (T_32 >> 8) & 0xff;
+   
+   
   // long signed int b3 = (T_32 >> 16) & 0xff;
    //long signed int b4 = (T_32 >> 24);
    
@@ -165,6 +180,21 @@ void thermometre() {
    
    else
        b2 = b2;
+   
+   unsigned char val = SWT_GetValue(0);
+   
+   if (val == 1)
+   {
+       b1 = CToF(b1);
+       b2 = CToF(b2);     
+   }
+   
+   else
+   {
+       b1 = b1;
+       b2 = b2;
+   }
+   
    
    
            
