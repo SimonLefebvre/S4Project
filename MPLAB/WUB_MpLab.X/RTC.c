@@ -16,9 +16,7 @@ void __ISR(_RTCC_VECTOR, ipl3) _RTCCInterrupt(void)
 {
     IFS0bits.RTCCIF = 0;//Clear flag // be sure to clear RTCC interrupt flag
     LED_SetValue(7,true);
-    
-    
-    
+        
 }
 
 bool RTC_init(void)
@@ -112,12 +110,19 @@ bool RTC_SetTime(Time time)
     else if(time.hour > 23)res = false;
     else if(rtc_initialised)
     {
+        RTCCONCLR=0x8000; // turn off the RTCC
+        while(RTCCON&0x40); // wait for clock to be turned off
+    
         RTCTIMEbits.SEC01   = time.sec % 10;  
         RTCTIMEbits.SEC10   = time.sec / 10;
         RTCTIMEbits.MIN01   = time.min  % 10;
         RTCTIMEbits.MIN10   = time.min / 10;
         RTCTIMEbits.HR01    = time.hour % 10;
         RTCTIMEbits.HR10    = time.hour / 10;
+        
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+        
         res = true;
     }
 
@@ -133,6 +138,9 @@ bool RTC_SetDate(Date date)
     else if(date.year > 99)res = false;
     else if(rtc_initialised)
     {
+        RTCCONCLR=0x8000; // turn off the RTCC
+        while(RTCCON&0x40); // wait for clock to be turned off
+        
         RTCDATEbits.DAY01   = date.day   % 10;
         RTCDATEbits.DAY10   = date.day   / 10;
         RTCDATEbits.MONTH01 = date.month % 10;
@@ -140,6 +148,10 @@ bool RTC_SetDate(Date date)
         RTCDATEbits.YEAR01  = date.year  % 10;
         RTCDATEbits.YEAR10  = date.year  % 100 / 10;
         RTCDATEbits.w       = date.wday;
+        
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+        
         res = true;
     }
     return res;
@@ -173,12 +185,20 @@ bool Alarm_SetTime(Time time)
     else if(time.hour > 23)res = false;
     else if(alarm_initialised)
     {
+        RTCCONCLR=0x8000; // turn off the RTCC
+        while(RTCCON&0x40); // wait for clock to be turned off
+        RTCCONCLR=0x8000; // turn off the RTCC
+        while(RTCCON&0x40); // wait for clock to be turned off
         ALRMTIMEbits.HR10  = time.hour / 10;
         ALRMTIMEbits.HR01  = time.hour % 10;
         ALRMTIMEbits.MIN10 = time.min / 10;
         ALRMTIMEbits.MIN01 = time.min % 10;
         ALRMTIMEbits.SEC10 = time.sec / 10;
         ALRMTIMEbits.SEC01 = time.sec % 10;
+        
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+        
         res = true;
     }
     return res;
@@ -193,11 +213,17 @@ bool Alarm_SetDate(Date date)
     else if(date.year > 99)res = false;
     else if(alarm_initialised)
     {
+        RTCCONCLR=0x8000; // turn off the RTCC
+        while(RTCCON&0x40); // wait for clock to be turned off
+        
         ALRMDATEbits.DAY01   = date.day   % 10;
         ALRMDATEbits.DAY10   = date.day   / 10;
         ALRMDATEbits.MONTH01 = date.month % 10;
         ALRMDATEbits.MONTH10 = date.month / 10;
         ALRMDATEbits.w       = date.wday;
+        RTCCONSET=0x8000; // turn on the RTCC
+        while(!(RTCCON&0x40)); // wait for clock to be turned on
+        
         res = true;
     }
     return res;
