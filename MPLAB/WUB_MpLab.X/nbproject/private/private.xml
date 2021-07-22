@@ -3,12 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/RTC.h</file>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/RTC.c</file>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/uart.c</file>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/WUB.h</file>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/spiflash.c</file>
-            <file>file:/C:/Users/mimon/OneDrive/Documents/GitHub/APP4/S4Project/MPLAB/WUB_MpLab.X/main.c</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/RTC.c</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/acl_gyro.c</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/uart.c</file>
+            <file>file:/C:/Document/Github_file/S4App4/MpLAB/src/system_config/default/framework/system/command/sys_command.h</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/uart.h</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/RTC.h</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/acl_gyro.h</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/main.c</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/i2c.c</file>
+            <file>file:/C:/Document/Github_file/S4Project/MPLAB/WUB_MpLab.X/WUB.h</file>
+            <file>file:/C:/Document/Github_file/S4App4/MpLAB/src/system_config/default/framework/system/console/sys_console.h</file>
         </group>
     </open-files>
 </project-private>

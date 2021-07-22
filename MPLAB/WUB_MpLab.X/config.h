@@ -9,6 +9,7 @@
 #define	CONFIG_H
 
 #define PB_FRQ  48000000
+#define TMR_TIME    0.0001
 
 #define macro_enable_interrupts() \
 {  unsigned int val = 0;\

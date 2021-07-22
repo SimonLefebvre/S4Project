@@ -9,9 +9,14 @@
         <itemPath>spiflash.h</itemPath>
         <itemPath>uart.h</itemPath>
         <itemPath>config.h</itemPath>
+        <itemPath>pmods.h</itemPath>
+        <itemPath>i2c.h</itemPath>
+        <itemPath>swt.h</itemPath>
+        <itemPath>heure.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.h</itemPath>
+        <itemPath>acl_gyro.h</itemPath>
       </logicalFolder>
       <itemPath>WUB.h</itemPath>
     </logicalFolder>
@@ -26,9 +31,15 @@
         <itemPath>lcd.c</itemPath>
         <itemPath>spiflash.c</itemPath>
         <itemPath>uart.c</itemPath>
+        <itemPath>pmods.c</itemPath>
+        <itemPath>i2c.c</itemPath>
+        <itemPath>swt.c</itemPath>
+        <itemPath>heure.c</itemPath>
+        <itemPath>timer1.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="PicSetup" projectFiles="true">
         <itemPath>RTC.c</itemPath>
+        <itemPath>acl_gyro.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -40,6 +51,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
+    <Elem>../../../S4App4/MpLAB/src/system_config</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -49,7 +61,7 @@
         <targetDevice>PIC32MX370F512L</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>PK3OBPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
@@ -220,6 +232,9 @@
         <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <PK3OBPlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </PK3OBPlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>
