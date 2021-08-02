@@ -138,6 +138,7 @@ void thermometre() {
   unsigned char returnRead2;
   unsigned char returnWrite3;
   unsigned char returnRead3;
+  int32_t OLDValue = 0;;
   
   returnWrite = I2C_Write(SLAVE_ADDR, AddrRegBuffer, 1, 0);
   returnRead = I2C_Read(SLAVE_ADDR, bResult, 2);
@@ -151,72 +152,31 @@ void thermometre() {
   returnWrite3 = I2C_Write(SLAVE_ADDR, AddrRegBuffer3, 1, 0);
   returnRead3 = I2C_Read(SLAVE_ADDR, bResult3, 2); //1 30/2e 304/302
   
-  //I2C_Read(SLAVE_ADDR, &bResult1, 1);
-  //I2C_Read(SLAVE_ADDR, &bResult2, 1);
-  
   int32_t bResult_32b = bResult[2] | (bResult[1]<<8) | (bResult[0]<<16);
-  //uint16_t dig_T1 = bResult1[0] | (bResult1[1]<<8);
-  //uint16_t dig_T2 = bResult2[0] | (bResult2[1]<<8);
-  //uint16_t dig_T3 = bResult3[0] | (bResult3[1]<<8);
-  //int32_t  bResult1_32b = bResult1[2] | (bResult1[1]<<8) | (bResult1[0]<<16);
- // int32_t  bResult2_32b = bResult2[2] | (bResult2[1]<<8) | (bResult2[0]<<16);
-  //int32_t  bResult3_32b = bResult3[2] | (bResult3[1]<<8) | (bResult3[0]<<16);
-      
-  
-      
-  
-  
-  
   
    int32_t T_32 = BME280_compensate_T_int32(bResult_32b);
    int32_t T_32_with_offset = offset(T_32);
-   
-   
-   
-   
    int32_t b1 = T_32_with_offset & 0xff;
    int32_t b2 = (T_32_with_offset >> 8) & 0xff;
    
-   
-  // long signed int b3 = (T_32_with_offset >> 16) & 0xff;
-   //long signed int b4 = (T_32_with_offset >> 24);
-   
-  //if (b1 > 0x63)
-     //  b2 = b2 + 1;
-   
-   //else
-     //  b2 = b2;
-   
-   //unsigned char val = SWT_GetValue(0);
-   
-//   if (val == 1)
-//   {
-//       b1 = CToF(b1);
-//       b2 = CToF(b2); 
-//       sprintf(msg1," T = %d degF", b1);
-//       LCD_WriteStringAtPos(msg1, 0, 0);
-//   }
-   
-//   else
-//   {
-//       b1 = b1;
-//       b2 = b2;
    if(SWT_GetValue(7)== 0)
    {
-       sprintf(msg," T=%dC", b1);
-       LCD_WriteStringAtPos(msg, 0, 10);
+       if(b1 != OLDValue)
+       {
+           sprintf(msg," T=%dC", b1);
+           LCD_WriteStringAtPos(msg, 0, 10);
+       }
+       OLDValue = b1;
    }
-   else{
-       CToF(b1);
+   else
+   {
+       if(b1 != OLDValue)
+       {
+        long signed int T_f = b1*1.8 + 32;
+        sprintf(msg,"T=%03dF", T_f);
+        LCD_WriteStringAtPos(msg, 0, 10);
+       }
+       OLDValue = b1;
    }
-//   }
-   
-   
-   
-           
-   
-          
- 
-  
 }
 

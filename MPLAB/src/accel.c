@@ -156,16 +156,9 @@ void accel_tasks()
         {
             data_ready = true;
             i=0;
-            //LED_SetValue(5,true);
-            //LCD_WriteStringAtPos("YO",1,0);
         }
-            if(SWT_GetValue(2) == 1)
-            {
-                //LED_SetValue(3,true);
-                //LCD_WriteStringAtPos("Alarm set", 1, 0);
-            }
-    
-        thermometre();
+         
+       thermometre();
         //SSD_WriteDigitsGrouped(count++, 0x1);
         accel_data_ready = false;
     }

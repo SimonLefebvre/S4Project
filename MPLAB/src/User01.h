@@ -15,5 +15,5 @@ typedef struct
 
 
 SinusInfo GetSinusInfo(int moyX,int moyY,int moyZ,int jeu);
-
+void ItISGameTime(int moyX,int moyY,int moyZ,int jeu, SinusInfo s);
 #endif

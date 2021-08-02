@@ -12,7 +12,7 @@
 MAIN_DATA mainData;
 char outbuf[80];
 int counter3 = 0;
-extern int counter2;
+
 extern float Gyro_xd;
 extern float ACL_BufferX[100];
 extern float ACL_BufferY[100];
@@ -71,7 +71,7 @@ void MAIN_Tasks ( void )
 
         case MAIN_STATE_SERVICE_TASKS:
         {
-            accel_tasks();
+            
             UDP_Tasks();
         	JB1Toggle();
             LED0Toggle();
@@ -109,19 +109,20 @@ int main(void)
     int moyZ = 0;
     int jeu = 0;
     int rouge = 0;
-    int number_pack = 0;
     int freq = 500;
     int amp = 10;
-    int longeur = 1024;
-    signed int paquet[4];
-    char msg_swt1[80];
+    
     
     
     while (1) 
     {
         SYS_Tasks();
         MAIN_Tasks();
+        //macro_disable_interrupts;
         LCD_Menu();
+        accel_tasks();
+        //macro_enable_interrupts();
+        
         
         unsigned char val_swt2 = SWT_GetValue(2);
         unsigned char val_swt6 = SWT_GetValue(6);
@@ -150,222 +151,11 @@ int main(void)
                 SinusInfo s;
                 s = GetSinusInfo(moyX,moyY,moyZ,jeu);
                 // le jeux himself ---------------------------------------------------------------------
-                if (SWT_GetValue(3) == 1)
-                {
-                    if(rouge == 0)
-                    {
-                    rgbled = 0xFF0000;
-                    RGBLED_SetValueGrouped(rgbled);
-                    rouge = 1;
-                    }
-                    if (moyX > moyY && moyX > moyZ && jeu ==0)
-                    {
-                        jeu = 1;
-                        rgbled = 0xFF3000; //rouge
-                        RGBLED_SetValueGrouped(rgbled);
-                        RGBLED_SetValueGrouped(0xFF3000);
-                        //LED_SetValue(6,true);
-                        number_pack++;
-                        paquet[0] = number_pack;
-                        paquet[1] = longeur;
-                        paquet[2] = freq;
-                        paquet[3] = amp;
-                        memcpy(UDP_Send_Buffer, paquet, 4*sizeof(signed int));
-                        UDP_Send_Packet = true;
-                    }
-                    
-                        if (moyY > moyX && moyY > moyZ && jeu == 1)
-                        {
-                            jeu = 2;
-                            rgbled = 0xFF8000;
-                            RGBLED_SetValueGrouped(rgbled);
-                            RGBLED_SetValueGrouped(0xFF8000);
-                            //LED_SetValue(1,true);
-                            number_pack++;
-                            paquet[0] = number_pack;
-                            paquet[1] = longeur;
-                            paquet[2] = freq;
-                            paquet[3] = amp;
-                            memcpy(UDP_Send_Buffer, paquet, 4*sizeof(signed int));
-                            UDP_Send_Packet = true;
-                        }
-                            if (moyZ > moyY && moyZ > moyX && jeu == 2 )
-                            {
-                                //jeu = 3;
-                                rgbled = 0x00FF00;
-                                RGBLED_SetValueGrouped(rgbled);
-                                RGBLED_SetValueGrouped(0x00FF00);
-                                LED_SetValue(2,true);
-                                rouge = 0;
-                                Alarm_enable(false);
-                                number_pack++;
-                                rgb = false;
-                                paquet[0] = number_pack;
-                                paquet[1] = longeur;
-                                paquet[2] = freq;
-                                paquet[3] = amp;
-                                memcpy(UDP_Send_Buffer, paquet, 4*sizeof(signed int));
-                                UDP_Send_Packet = true;
-                                let_the_game_begin = false;
-                                jeu =0;
-                               
-                            }
-                    
-//                            if(Gyro_xd > 100 && jeu ==3)
-//                            {
-//                                jeu =4;
-//                                RGBLED_SetValueGrouped(0x0FF00);
-//                            }
-//                            if(jeu == 3)
-//                            {
-//                                rgbled = 0x00FF00;
-//                                RGBLED_SetValueGrouped(rgbled);
-//                                let_the_game_begin = false;
-//                                jeu = 0;
-//
-//                            }
-                
-                }
-                    
+                ItISGameTime(moyX, moyY, moyZ, jeu, s);
             }
-        }
-        
-        if(counter2  > -1)
-        {
-//        if(rgb)
-//            {
-//                RGBLED_SetValueGrouped(rgbled);
-//                rgbled = rgbled + 0x1;
-//                if(rgbled == 0xFFFFFF)
-//                {
-//                    rgbled = 0x000001;
-//                }
-//            }
-        
-            
-            if(SWT_GetValue(0) == 1)
-            {
-                if(counter2 >= 200)
-                {
-                    counter2 =0;
-                    if(BTN_GetValue('U') == 1)
-                    {
-                        SetTime.hour = SetTime.hour + 1;
-                        if(SetTime.hour >=23)
-                        {
-                            SetTime.hour =0;
-                        }
-                    
-                    
-                    }
-                    if(BTN_GetValue('D') == 1)
-                    {
-                        SetTime.hour = SetTime.hour - 1;
-                        if(SetTime.hour <0)
-                        {
-                            SetTime.hour =23;
-                        }
-                    
-                    }
-                    if(BTN_GetValue('L') == 1)
-                    {
-                        SetTime.min = SetTime.min - 1;
-                        if(SetTime.min >=59)
-                        {
-                            SetTime.min =0;
-                        }
-                    
-                    
-                        
-                    }
-                    if(BTN_GetValue('R') == 1)
-                    {
-                        SetTime.min = SetTime.min + 1;
-                        if(SetTime.min <0)
-                        {
-                            SetTime.min =59;
-                        }
-                    
-                    }
-                    RTC_SetTime(SetTime);
-                    
-
-                }                                     
-                    
-            }
-            
-            if(SWT_GetValue(1) == 1)
-            {
-                sprintf(msg_swt1, "A:%02d:%02d:%02d", AlarmTime.hour,AlarmTime.min,AlarmTime.sec);
-                
-                LCD_WriteStringAtPos(msg_swt1, 0, 0);
-                //LCD_WriteStringAtPos("ALlO",1,8);
-                
-                if(counter2 >= 200)
-                {
-                    counter2 =0;
-                    if(BTN_GetValue('U') == 1)
-                    {
-                        AlarmTime.hour = AlarmTime.hour + 1;
-                        if(AlarmTime.hour >=23)
-                        {
-                            AlarmTime.hour =0;
-                        }
-                    
-                    
-                    }
-                    if(BTN_GetValue('D') == 1)
-                    {
-                        AlarmTime.hour = AlarmTime.hour - 1;
-                        if(AlarmTime.hour <0)
-                        {
-                            AlarmTime.hour =23;
-                        }
-                    
-                    }
-                    if(BTN_GetValue('L') == 1)
-                    {
-                        AlarmTime.min = AlarmTime.min - 1;
-                        if(AlarmTime.min >=59)
-                        {
-                            AlarmTime.min =0;
-                        }
-                    
-                    
-                    }
-                    if(BTN_GetValue('R') == 1)
-                    {
-                        AlarmTime.min = AlarmTime.min + 1;
-                        if(AlarmTime.min <0)
-                        {
-                            AlarmTime.min =59;
-                        }
-                    
-                    }
-                    Alarm_SetTime(AlarmTime);
-
-                }    
-            }
-        
-       
-            
-               
-        }
-                    
+        }       
     }
-//        sprintf(xd2, "%03d", xd);
-//        LCD_WriteStringAtPos(xd2, 1, 11);
-//        
-//        ACL_ReadRawValuesMaison(accel_bufferMaison);
-//        Acl_16bits(accel_bufferMaison, ACL_XYZ);
-//        sprintf(outbuf, "ACL X:%.2f     ", ACL_XYZ[0]);
-        //LCD_WriteStringAtPos(outbuf, 1, 0);
-        
-       
-//        thermometre();
-   // };
-
-    return 0;
+    return;
 }
 
 
