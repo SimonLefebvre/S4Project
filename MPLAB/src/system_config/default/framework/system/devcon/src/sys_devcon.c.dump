@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win32A" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="32"/>
+  <rawtokens>
+    <file index="0" name="../src/system_config/default/framework/system/devcon/src/sys_devcon.c"/>
+    <tok fileIndex="0" linenr="1" column="1" str="/*******************************************************************************x  Device Control System Service Implementationxx  Company:x    Microchip Technology Inc.xx  File Name:x    sys_devcon.cxx  Summary:x    Device Control System Service implementation.xx  Description:x    The DEVCON system service provides a simple interface to manage the Device x    Control module on PIC32M Microchip microcontrollers. This file Implements x    the core interface routines for the Device Control system service.  While x    building the system service from source, ALWAYS include this file in the x    build for PIC32M devices.x*******************************************************************************/"/>
+    <tok fileIndex="0" linenr="21" column="1" str="//DOM-IGNORE-BEGIN"/>
+    <tok fileIndex="0" linenr="22" column="1" str="/*******************************************************************************xCopyright (c) 2013 released Microchip Technology Inc.  All rights reserved.xxMicrochip licenses to you the right to use, modify, copy and distributexSoftware only when embedded on a Microchip microcontroller or digital signalxcontroller that is integrated into your product or third party productx(pursuant to the sublicense terms in the accompanying license agreement).xxYou should refer to the license agreement accompanying this Software forxadditional information regarding your rights and obligations.xxSOFTWARE AND DOCUMENTATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND,xEITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OFxMERCHANTABILITY, TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE.xIN NO EVENT SHALL MICROCHIP OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDERxCONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, ORxOTHER LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSESxINCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE ORxCONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT OFxSUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIESx(INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.x*******************************************************************************/"/>
+    <tok fileIndex="0" linenr="44" column="1" str="//DOM-IGNORE-END"/>
+    <tok fileIndex="0" linenr="47" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="48" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="49" column="1" str="// Section: Included Files"/>
+    <tok fileIndex="0" linenr="50" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="51" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="53" column="1" str="#"/>
+    <tok fileIndex="0" linenr="53" column="2" str="include"/>
+    <tok fileIndex="0" linenr="53" column="10" str="&quot;system/devcon/src/sys_devcon_local.h&quot;"/>
+    <tok fileIndex="0" linenr="54" column="1" str="#"/>
+    <tok fileIndex="0" linenr="54" column="2" str="include"/>
+    <tok fileIndex="0" linenr="54" column="10" str="&quot;peripheral/int/plib_int.h&quot;"/>
+    <tok fileIndex="0" linenr="55" column="1" str="#"/>
+    <tok fileIndex="0" linenr="55" column="2" str="include"/>
+    <tok fileIndex="0" linenr="55" column="10" str="&quot;peripheral/devcon/plib_devcon.h&quot;"/>
+    <tok fileIndex="0" linenr="56" column="1" str="#"/>
+    <tok fileIndex="0" linenr="56" column="2" str="include"/>
+    <tok fileIndex="0" linenr="56" column="10" str="&quot;peripheral/osc/plib_osc.h&quot;"/>
+    <tok fileIndex="0" linenr="58" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="59" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="60" column="1" str="// Section: File Scope or Global Constants"/>
+    <tok fileIndex="0" linenr="61" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="62" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="64" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="65" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="66" column="1" str="// Section: Variable Definitions"/>
+    <tok fileIndex="0" linenr="67" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="68" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="70" column="1" str="/* System Device Control Instance */"/>
+    <tok fileIndex="0" linenr="71" column="1" str="SYS_DEVCON_OBJECT"/>
+    <tok fileIndex="0" linenr="71" column="19" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="71" column="31" str=";"/>
+    <tok fileIndex="0" linenr="74" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="75" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="76" column="1" str="// Section: SYS DEVCON Module Initialization Routines"/>
+    <tok fileIndex="0" linenr="77" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="78" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="80" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="81" column="1" str="/* Function:x    SYS_MODULE_OBJ SYS_DEVCON_Initialize( const SYS_MODULE_INDEX           index,x                                       const SYS_MODULE_INIT * const    init )xx  Summary:x    Initializes data for the instance of the Device Control module and opensx    the specific module instance.xx  Description:x    This function initializes the instance of the Device Control module,x    using the specified initialization data. It also initializes anyx    internal data structures.xx  Remarks:x    This routine should only be called once during system initializationx    unless SYS_DEVCON_Deinitialize is first called to deinitialize the devicex    instance before reinitializing it. If the system was already initializedx    it safely returns without causing any disturbance.x*/"/>
+    <tok fileIndex="0" linenr="101" column="1" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="101" column="16" str="SYS_DEVCON_Initialize"/>
+    <tok fileIndex="0" linenr="101" column="37" str="("/>
+    <tok fileIndex="0" linenr="101" column="39" str="const"/>
+    <tok fileIndex="0" linenr="101" column="45" str="SYS_MODULE_INDEX"/>
+    <tok fileIndex="0" linenr="101" column="62" str="index"/>
+    <tok fileIndex="0" linenr="101" column="67" str=","/>
+    <tok fileIndex="0" linenr="102" column="36" str="const"/>
+    <tok fileIndex="0" linenr="102" column="42" str="SYS_MODULE_INIT"/>
+    <tok fileIndex="0" linenr="102" column="58" str="*"/>
+    <tok fileIndex="0" linenr="102" column="60" str="const"/>
+    <tok fileIndex="0" linenr="102" column="66" str="init"/>
+    <tok fileIndex="0" linenr="102" column="71" str=")"/>
+    <tok fileIndex="0" linenr="103" column="1" str="{"/>
+    <tok fileIndex="0" linenr="104" column="5" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="104" column="17" str="."/>
+    <tok fileIndex="0" linenr="104" column="18" str="status"/>
+    <tok fileIndex="0" linenr="104" column="25" str="="/>
+    <tok fileIndex="0" linenr="104" column="27" str="SYS_STATUS_READY"/>
+    <tok fileIndex="0" linenr="104" column="43" str=";"/>
+    <tok fileIndex="0" linenr="106" column="5" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="106" column="17" str="."/>
+    <tok fileIndex="0" linenr="106" column="18" str="state"/>
+    <tok fileIndex="0" linenr="106" column="24" str="="/>
+    <tok fileIndex="0" linenr="106" column="26" str="SYS_DEVCON_STATE_READY"/>
+    <tok fileIndex="0" linenr="106" column="48" str=";"/>
+    <tok fileIndex="0" linenr="108" column="5" str="return"/>
+    <tok fileIndex="0" linenr="108" column="12" str="("/>
+    <tok fileIndex="0" linenr="108" column="13" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="108" column="27" str=")"/>
+    <tok fileIndex="0" linenr="108" column="28" str="SYS_DEVCON_INDEX_0"/>
+    <tok fileIndex="0" linenr="108" column="46" str=";"/>
+    <tok fileIndex="0" linenr="109" column="1" str="}"/>
+    <tok fileIndex="0" linenr="112" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="113" column="1" str="/* Function:x    void SYS_DEVCON_Reinitialize( SYS_MODULE_OBJ                  object,x                               const SYS_MODULE_INIT * const   init )xx   Summary:x    Reinitializes and refreshes the hardware for the instance of the Device x    Control module.xx   Description:x    This function reinitializes the instance of the Device Control module using x    the supplied data. It modifies the internal data structure.xx   Remarks:x    This operation uses the same initialization data structure as thex    SYS_DEVCON_Initialize operation. This operation can be used to change thex    power state of a DEVCON module. This function can be called multiple timesx    to reinitialize the module. This operation uses the same initializationx    data structure as the Initialize operation. This operation can also bex    used to refresh the hardware registers as defined by the initializationx    data.x*/"/>
+    <tok fileIndex="0" linenr="135" column="1" str="void"/>
+    <tok fileIndex="0" linenr="135" column="6" str="SYS_DEVCON_Reinitialize"/>
+    <tok fileIndex="0" linenr="135" column="29" str="("/>
+    <tok fileIndex="0" linenr="135" column="31" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="135" column="46" str="object"/>
+    <tok fileIndex="0" linenr="135" column="52" str=","/>
+    <tok fileIndex="0" linenr="136" column="28" str="const"/>
+    <tok fileIndex="0" linenr="136" column="34" str="SYS_MODULE_INIT"/>
+    <tok fileIndex="0" linenr="136" column="50" str="*"/>
+    <tok fileIndex="0" linenr="136" column="52" str="const"/>
+    <tok fileIndex="0" linenr="136" column="58" str="init"/>
+    <tok fileIndex="0" linenr="136" column="63" str=")"/>
+    <tok fileIndex="0" linenr="137" column="1" str="{"/>
+    <tok fileIndex="0" linenr="138" column="5" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="138" column="17" str="."/>
+    <tok fileIndex="0" linenr="138" column="18" str="status"/>
+    <tok fileIndex="0" linenr="138" column="25" str="="/>
+    <tok fileIndex="0" linenr="138" column="27" str="SYS_STATUS_READY"/>
+    <tok fileIndex="0" linenr="138" column="43" str=";"/>
+    <tok fileIndex="0" linenr="140" column="5" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="140" column="17" str="."/>
+    <tok fileIndex="0" linenr="140" column="18" str="state"/>
+    <tok fileIndex="0" linenr="140" column="24" str="="/>
+    <tok fileIndex="0" linenr="140" column="26" str="SYS_DEVCON_STATE_READY"/>
+    <tok fileIndex="0" linenr="140" column="48" str=";"/>
+    <tok fileIndex="0" linenr="141" column="1" str="}"/>
+    <tok fileIndex="0" linenr="144" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="145" column="1" str="/* Function:x    void SYS_DEVCON_Deinitialize( SYS_MODULE_OBJ object )xx  Summary:x    Deinitializes the specific module instance of the DEVCON modulexx  Description:x    This function deinitializes the specific module instance disabling its operation x    (and any hardware for driver modules). Resets all of the internal datax    structures and fields for the specified instance to the default settings.xx  Remarks:x    Once the Initialize operation has been called, the Deinitializex    operation must be called before the Initialize operation can be calledx    again.x*/"/>
+    <tok fileIndex="0" linenr="162" column="1" str="void"/>
+    <tok fileIndex="0" linenr="162" column="6" str="SYS_DEVCON_Deinitialize"/>
+    <tok fileIndex="0" linenr="162" column="29" str="("/>
+    <tok fileIndex="0" linenr="162" column="31" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="162" column="46" str="object"/>
+    <tok fileIndex="0" linenr="162" column="53" str=")"/>
+    <tok fileIndex="0" linenr="163" column="1" str="{"/>
+    <tok fileIndex="0" linenr="164" column="5" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="164" column="17" str="."/>
+    <tok fileIndex="0" linenr="164" column="18" str="status"/>
+    <tok fileIndex="0" linenr="164" column="25" str="="/>
+    <tok fileIndex="0" linenr="164" column="27" str="SYS_STATUS_UNINITIALIZED"/>
+    <tok fileIndex="0" linenr="164" column="51" str=";"/>
+    <tok fileIndex="0" linenr="165" column="1" str="}"/>
+    <tok fileIndex="0" linenr="168" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="169" column="1" str="/* Function:x    SYS_STATUS SYS_DEVCON_Status( SYS_MODULE_OBJ object )xx  Summary:x    Returns status of the specific instance of the Device Control module.xx  Description:x    This function returns the status of the specific module instance.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="182" column="1" str="SYS_STATUS"/>
+    <tok fileIndex="0" linenr="182" column="12" str="SYS_DEVCON_Status"/>
+    <tok fileIndex="0" linenr="182" column="29" str="("/>
+    <tok fileIndex="0" linenr="182" column="31" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="182" column="46" str="object"/>
+    <tok fileIndex="0" linenr="182" column="53" str=")"/>
+    <tok fileIndex="0" linenr="183" column="1" str="{"/>
+    <tok fileIndex="0" linenr="184" column="5" str="return"/>
+    <tok fileIndex="0" linenr="184" column="12" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="184" column="24" str="."/>
+    <tok fileIndex="0" linenr="184" column="25" str="status"/>
+    <tok fileIndex="0" linenr="184" column="31" str=";"/>
+    <tok fileIndex="0" linenr="185" column="1" str="}"/>
+    <tok fileIndex="0" linenr="188" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="189" column="1" str="/* Function:x    void SYS_DEVCON_Tasks( SYS_MODULE_OBJ object )xx  Summary:x    Maintains the system Device Control state machine.xx  Description:x    This function is used to maintain the system Device Control internal state machine.xx  Remarks:x    This function is normally not called directly by an application.  It isx    called by the system's Tasks routine (SYS_Tasks) or by the appropriate rawx    ISR.x*/"/>
+    <tok fileIndex="0" linenr="204" column="1" str="void"/>
+    <tok fileIndex="0" linenr="204" column="6" str="SYS_DEVCON_Tasks"/>
+    <tok fileIndex="0" linenr="204" column="22" str="("/>
+    <tok fileIndex="0" linenr="204" column="24" str="SYS_MODULE_OBJ"/>
+    <tok fileIndex="0" linenr="204" column="39" str="object"/>
+    <tok fileIndex="0" linenr="204" column="46" str=")"/>
+    <tok fileIndex="0" linenr="205" column="1" str="{"/>
+    <tok fileIndex="0" linenr="206" column="5" str="switch"/>
+    <tok fileIndex="0" linenr="206" column="12" str="("/>
+    <tok fileIndex="0" linenr="206" column="13" str="sysDevconObj"/>
+    <tok fileIndex="0" linenr="206" column="25" str="."/>
+    <tok fileIndex="0" linenr="206" column="26" str="state"/>
+    <tok fileIndex="0" linenr="206" column="31" str=")"/>
+    <tok fileIndex="0" linenr="207" column="5" str="{"/>
+    <tok fileIndex="0" linenr="208" column="9" str="case"/>
+    <tok fileIndex="0" linenr="208" column="14" str="SYS_DEVCON_STATE_INIT"/>
+    <tok fileIndex="0" linenr="208" column="35" str=":"/>
+    <tok fileIndex="0" linenr="209" column="9" str="case"/>
+    <tok fileIndex="0" linenr="209" column="14" str="SYS_DEVCON_STATE_BUSY"/>
+    <tok fileIndex="0" linenr="209" column="35" str=":"/>
+    <tok fileIndex="0" linenr="210" column="9" str="case"/>
+    <tok fileIndex="0" linenr="210" column="14" str="SYS_DEVCON_STATE_READY"/>
+    <tok fileIndex="0" linenr="210" column="36" str=":"/>
+    <tok fileIndex="0" linenr="211" column="9" str="default"/>
+    <tok fileIndex="0" linenr="211" column="16" str=":"/>
+    <tok fileIndex="0" linenr="212" column="13" str="break"/>
+    <tok fileIndex="0" linenr="212" column="18" str=";"/>
+    <tok fileIndex="0" linenr="213" column="5" str="}"/>
+    <tok fileIndex="0" linenr="214" column="1" str="}"/>
+    <tok fileIndex="0" linenr="217" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="218" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="219" column="1" str="// Section: SYS DEVCON Client Setup Routines"/>
+    <tok fileIndex="0" linenr="220" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="221" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="223" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="224" column="1" str="/* Function:x    void SYS_DEVCON_SystemUnlock( void )xx  Summary:x    Performs a system unlock sequence by writing to the SYSKEY register.xx  Description:x    Performs a system unlock sequence by writing to the SYSKEY register. A x    system unlock sequence is required before performing certain actions suchx    as changing a clock frequency or IO unlocking.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="239" column="1" str="void"/>
+    <tok fileIndex="0" linenr="239" column="6" str="SYS_DEVCON_SystemUnlock"/>
+    <tok fileIndex="0" linenr="239" column="29" str="("/>
+    <tok fileIndex="0" linenr="239" column="31" str="void"/>
+    <tok fileIndex="0" linenr="239" column="36" str=")"/>
+    <tok fileIndex="0" linenr="240" column="1" str="{"/>
+    <tok fileIndex="0" linenr="241" column="5" str="bool"/>
+    <tok fileIndex="0" linenr="241" column="10" str="int_flag"/>
+    <tok fileIndex="0" linenr="241" column="19" str="="/>
+    <tok fileIndex="0" linenr="241" column="21" str="false"/>
+    <tok fileIndex="0" linenr="241" column="26" str=";"/>
+    <tok fileIndex="0" linenr="243" column="5" str="int_flag"/>
+    <tok fileIndex="0" linenr="243" column="14" str="="/>
+    <tok fileIndex="0" linenr="243" column="16" str="("/>
+    <tok fileIndex="0" linenr="243" column="17" str="bool"/>
+    <tok fileIndex="0" linenr="243" column="21" str=")"/>
+    <tok fileIndex="0" linenr="243" column="22" str="("/>
+    <tok fileIndex="0" linenr="243" column="23" str="PLIB_INT_GetStateAndDisable"/>
+    <tok fileIndex="0" linenr="243" column="50" str="("/>
+    <tok fileIndex="0" linenr="243" column="52" str="INT_ID_0"/>
+    <tok fileIndex="0" linenr="243" column="61" str=")"/>
+    <tok fileIndex="0" linenr="243" column="63" str="&amp;"/>
+    <tok fileIndex="0" linenr="243" column="65" str="0x01"/>
+    <tok fileIndex="0" linenr="243" column="69" str=")"/>
+    <tok fileIndex="0" linenr="243" column="70" str=";"/>
+    <tok fileIndex="0" linenr="245" column="5" str="PLIB_DEVCON_SystemUnlock"/>
+    <tok fileIndex="0" linenr="245" column="29" str="("/>
+    <tok fileIndex="0" linenr="245" column="30" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="245" column="41" str=")"/>
+    <tok fileIndex="0" linenr="245" column="42" str=";"/>
+    <tok fileIndex="0" linenr="247" column="5" str="if"/>
+    <tok fileIndex="0" linenr="247" column="8" str="("/>
+    <tok fileIndex="0" linenr="247" column="9" str="int_flag"/>
+    <tok fileIndex="0" linenr="247" column="17" str=")"/>
+    <tok fileIndex="0" linenr="248" column="5" str="{"/>
+    <tok fileIndex="0" linenr="249" column="9" str="PLIB_INT_Enable"/>
+    <tok fileIndex="0" linenr="249" column="24" str="("/>
+    <tok fileIndex="0" linenr="249" column="25" str="INT_ID_0"/>
+    <tok fileIndex="0" linenr="249" column="33" str=")"/>
+    <tok fileIndex="0" linenr="249" column="34" str=";"/>
+    <tok fileIndex="0" linenr="250" column="5" str="}"/>
+    <tok fileIndex="0" linenr="251" column="1" str="}"/>
+    <tok fileIndex="0" linenr="254" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="255" column="1" str="/* Function:x    void SYS_DEVCON_SystemLock( void )xx  Summary:x    Performs a system lock sequence by writing to the SYSKEY register.xx  Description:x    Performs a system lock sequence by writing to the SYSKEY register. A x    system lock sequence is required after performing the action that requiredx    a system lock sequence.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="270" column="1" str="void"/>
+    <tok fileIndex="0" linenr="270" column="6" str="SYS_DEVCON_SystemLock"/>
+    <tok fileIndex="0" linenr="270" column="27" str="("/>
+    <tok fileIndex="0" linenr="270" column="29" str="void"/>
+    <tok fileIndex="0" linenr="270" column="34" str=")"/>
+    <tok fileIndex="0" linenr="271" column="1" str="{"/>
+    <tok fileIndex="0" linenr="272" column="5" str="bool"/>
+    <tok fileIndex="0" linenr="272" column="10" str="int_flag"/>
+    <tok fileIndex="0" linenr="272" column="19" str="="/>
+    <tok fileIndex="0" linenr="272" column="21" str="false"/>
+    <tok fileIndex="0" linenr="272" column="26" str=";"/>
+    <tok fileIndex="0" linenr="274" column="5" str="int_flag"/>
+    <tok fileIndex="0" linenr="274" column="14" str="="/>
+    <tok fileIndex="0" linenr="274" column="16" str="("/>
+    <tok fileIndex="0" linenr="274" column="17" str="bool"/>
+    <tok fileIndex="0" linenr="274" column="21" str=")"/>
+    <tok fileIndex="0" linenr="274" column="22" str="("/>
+    <tok fileIndex="0" linenr="274" column="23" str="PLIB_INT_GetStateAndDisable"/>
+    <tok fileIndex="0" linenr="274" column="50" str="("/>
+    <tok fileIndex="0" linenr="274" column="52" str="INT_ID_0"/>
+    <tok fileIndex="0" linenr="274" column="61" str=")"/>
+    <tok fileIndex="0" linenr="274" column="63" str="&amp;"/>
+    <tok fileIndex="0" linenr="274" column="65" str="0x01"/>
+    <tok fileIndex="0" linenr="274" column="69" str=")"/>
+    <tok fileIndex="0" linenr="274" column="70" str=";"/>
+    <tok fileIndex="0" linenr="276" column="5" str="PLIB_DEVCON_SystemLock"/>
+    <tok fileIndex="0" linenr="276" column="27" str="("/>
+    <tok fileIndex="0" linenr="276" column="28" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="276" column="39" str=")"/>
+    <tok fileIndex="0" linenr="276" column="40" str=";"/>
+    <tok fileIndex="0" linenr="278" column="5" str="if"/>
+    <tok fileIndex="0" linenr="278" column="8" str="("/>
+    <tok fileIndex="0" linenr="278" column="9" str="int_flag"/>
+    <tok fileIndex="0" linenr="278" column="17" str=")"/>
+    <tok fileIndex="0" linenr="279" column="5" str="{"/>
+    <tok fileIndex="0" linenr="280" column="9" str="PLIB_INT_Enable"/>
+    <tok fileIndex="0" linenr="280" column="24" str="("/>
+    <tok fileIndex="0" linenr="280" column="25" str="INT_ID_0"/>
+    <tok fileIndex="0" linenr="280" column="33" str=")"/>
+    <tok fileIndex="0" linenr="280" column="34" str=";"/>
+    <tok fileIndex="0" linenr="281" column="5" str="}"/>
+    <tok fileIndex="0" linenr="282" column="1" str="}"/>
+    <tok fileIndex="0" linenr="285" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="286" column="1" str="/* Function:x    void SYS_DEVCON_JTAGEnable( void )xx  Summary:x    Enables the JTAG port on the device.xx  Description:x    Enables the JTAG port on the device.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="299" column="1" str="void"/>
+    <tok fileIndex="0" linenr="299" column="6" str="SYS_DEVCON_JTAGEnable"/>
+    <tok fileIndex="0" linenr="299" column="27" str="("/>
+    <tok fileIndex="0" linenr="299" column="29" str="void"/>
+    <tok fileIndex="0" linenr="299" column="34" str=")"/>
+    <tok fileIndex="0" linenr="300" column="1" str="{"/>
+    <tok fileIndex="0" linenr="301" column="5" str="PLIB_DEVCON_JTAGPortEnable"/>
+    <tok fileIndex="0" linenr="301" column="31" str="("/>
+    <tok fileIndex="0" linenr="301" column="32" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="301" column="43" str=")"/>
+    <tok fileIndex="0" linenr="301" column="44" str=";"/>
+    <tok fileIndex="0" linenr="302" column="1" str="}"/>
+    <tok fileIndex="0" linenr="305" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="306" column="1" str="/* Function:x    void SYS_DEVCON_JTAGDisable( void )xx  Summary:x    Disables the JTAG port on the device.xx  Description:x    Disables the JTAG port on the device.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="319" column="1" str="void"/>
+    <tok fileIndex="0" linenr="319" column="6" str="SYS_DEVCON_JTAGDisable"/>
+    <tok fileIndex="0" linenr="319" column="28" str="("/>
+    <tok fileIndex="0" linenr="319" column="30" str="void"/>
+    <tok fileIndex="0" linenr="319" column="35" str=")"/>
+    <tok fileIndex="0" linenr="320" column="1" str="{"/>
+    <tok fileIndex="0" linenr="321" column="5" str="PLIB_DEVCON_JTAGPortDisable"/>
+    <tok fileIndex="0" linenr="321" column="32" str="("/>
+    <tok fileIndex="0" linenr="321" column="33" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="321" column="44" str=")"/>
+    <tok fileIndex="0" linenr="321" column="45" str=";"/>
+    <tok fileIndex="0" linenr="322" column="1" str="}"/>
+    <tok fileIndex="0" linenr="325" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="326" column="1" str="/* Function:x    void SYS_DEVCON_TraceEnable( void )xx  Summary:x    Enables the Trace output port on the device.xx  Description:x    Enables the Trace output port on the device.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="339" column="1" str="void"/>
+    <tok fileIndex="0" linenr="339" column="6" str="SYS_DEVCON_TraceEnable"/>
+    <tok fileIndex="0" linenr="339" column="28" str="("/>
+    <tok fileIndex="0" linenr="339" column="30" str="void"/>
+    <tok fileIndex="0" linenr="339" column="35" str=")"/>
+    <tok fileIndex="0" linenr="340" column="1" str="{"/>
+    <tok fileIndex="0" linenr="341" column="5" str="#"/>
+    <tok fileIndex="0" linenr="341" column="6" str="if"/>
+    <tok fileIndex="0" linenr="341" column="9" str="defined"/>
+    <tok fileIndex="0" linenr="341" column="17" str="PLIB_DEVCON_ExistsTraceOutput"/>
+    <tok fileIndex="0" linenr="342" column="9" str="if"/>
+    <tok fileIndex="0" linenr="342" column="11" str="("/>
+    <tok fileIndex="0" linenr="342" column="12" str="PLIB_DEVCON_ExistsTraceOutput"/>
+    <tok fileIndex="0" linenr="342" column="41" str="("/>
+    <tok fileIndex="0" linenr="342" column="42" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="342" column="53" str=")"/>
+    <tok fileIndex="0" linenr="342" column="54" str=")"/>
+    <tok fileIndex="0" linenr="343" column="9" str="{"/>
+    <tok fileIndex="0" linenr="344" column="13" str="PLIB_DEVCON_TraceOutputEnable"/>
+    <tok fileIndex="0" linenr="344" column="42" str="("/>
+    <tok fileIndex="0" linenr="344" column="43" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="344" column="54" str=")"/>
+    <tok fileIndex="0" linenr="344" column="55" str=";"/>
+    <tok fileIndex="0" linenr="345" column="9" str="}"/>
+    <tok fileIndex="0" linenr="346" column="5" str="#"/>
+    <tok fileIndex="0" linenr="346" column="6" str="endif"/>
+    <tok fileIndex="0" linenr="347" column="1" str="}"/>
+    <tok fileIndex="0" linenr="350" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="351" column="1" str="/* Function:x    void SYS_DEVCON_TraceDisable( void )xx  Summary:x    Disables the Trace output port on the device.xx  Description:x    Disables the Trace output port on the device.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="364" column="1" str="void"/>
+    <tok fileIndex="0" linenr="364" column="6" str="SYS_DEVCON_TraceDisable"/>
+    <tok fileIndex="0" linenr="364" column="29" str="("/>
+    <tok fileIndex="0" linenr="364" column="31" str="void"/>
+    <tok fileIndex="0" linenr="364" column="36" str=")"/>
+    <tok fileIndex="0" linenr="365" column="1" str="{"/>
+    <tok fileIndex="0" linenr="366" column="5" str="#"/>
+    <tok fileIndex="0" linenr="366" column="6" str="if"/>
+    <tok fileIndex="0" linenr="366" column="9" str="defined"/>
+    <tok fileIndex="0" linenr="366" column="17" str="PLIB_DEVCON_ExistsTraceOutput"/>
+    <tok fileIndex="0" linenr="367" column="5" str="if"/>
+    <tok fileIndex="0" linenr="367" column="7" str="("/>
+    <tok fileIndex="0" linenr="367" column="8" str="PLIB_DEVCON_ExistsTraceOutput"/>
+    <tok fileIndex="0" linenr="367" column="37" str="("/>
+    <tok fileIndex="0" linenr="367" column="38" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="367" column="49" str=")"/>
+    <tok fileIndex="0" linenr="367" column="50" str=")"/>
+    <tok fileIndex="0" linenr="368" column="5" str="{"/>
+    <tok fileIndex="0" linenr="369" column="9" str="PLIB_DEVCON_TraceOutputDisable"/>
+    <tok fileIndex="0" linenr="369" column="39" str="("/>
+    <tok fileIndex="0" linenr="369" column="40" str="DEVCON_ID_0"/>
+    <tok fileIndex="0" linenr="369" column="51" str=")"/>
+    <tok fileIndex="0" linenr="369" column="52" str=";"/>
+    <tok fileIndex="0" linenr="370" column="5" str="}"/>
+    <tok fileIndex="0" linenr="371" column="5" str="#"/>
+    <tok fileIndex="0" linenr="371" column="6" str="endif"/>
+    <tok fileIndex="0" linenr="372" column="1" str="}"/>
+    <tok fileIndex="0" linenr="375" column="1" str="// *****************************************************************************"/>
+    <tok fileIndex="0" linenr="376" column="1" str="/* Function:x    void SYS_DEVCON_PowerModeEnter(SYS_POWER_MODE pwrMode)xx  Summary:x    Puts the device in a low-power state.xx  Description:x    This function puts the device in a low-power state.xx  Remarks:x    None.x*/"/>
+    <tok fileIndex="0" linenr="389" column="1" str="void"/>
+    <tok fileIndex="0" linenr="389" column="6" str="__attribute__"/>
+    <tok fileIndex="0" linenr="389" column="19" str="("/>
+    <tok fileIndex="0" linenr="389" column="20" str="("/>
+    <tok fileIndex="0" linenr="389" column="21" str="nomips16"/>
+    <tok fileIndex="0" linenr="389" column="29" str=")"/>
+    <tok fileIndex="0" linenr="389" column="30" str=")"/>
+    <tok fileIndex="0" linenr="389" column="32" str="SYS_DEVCON_PowerModeEnter"/>
+    <tok fileIndex="0" linenr="389" column="57" str="("/>
+    <tok fileIndex="0" linenr="389" column="59" str="SYS_POWER_MODE"/>
+    <tok fileIndex="0" linenr="389" column="74" str="pwrMode"/>
+    <tok fileIndex="0" linenr="389" column="82" str=")"/>
+    <tok fileIndex="0" linenr="390" column="1" str="{"/>
+    <tok fileIndex="0" linenr="391" column="5" str="OSC_OPERATION_ON_WAIT"/>
+    <tok fileIndex="0" linenr="391" column="27" str="op"/>
+    <tok fileIndex="0" linenr="391" column="30" str="="/>
+    <tok fileIndex="0" linenr="391" column="32" str="SYS_POWER_MODE_IDLE"/>
+    <tok fileIndex="0" linenr="391" column="51" str=";"/>
+    <tok fileIndex="0" linenr="393" column="5" str="switch"/>
+    <tok fileIndex="0" linenr="393" column="12" str="("/>
+    <tok fileIndex="0" linenr="393" column="13" str="pwrMode"/>
+    <tok fileIndex="0" linenr="393" column="20" str=")"/>
+    <tok fileIndex="0" linenr="394" column="5" str="{"/>
+    <tok fileIndex="0" linenr="395" column="9" str="case"/>
+    <tok fileIndex="0" linenr="395" column="14" str="SYS_POWER_MODE_IDLE"/>
+    <tok fileIndex="0" linenr="395" column="33" str=":"/>
+    <tok fileIndex="0" linenr="396" column="13" str="op"/>
+    <tok fileIndex="0" linenr="396" column="16" str="="/>
+    <tok fileIndex="0" linenr="396" column="18" str="OSC_ON_WAIT_IDLE"/>
+    <tok fileIndex="0" linenr="396" column="34" str=";"/>
+    <tok fileIndex="0" linenr="397" column="13" str="break"/>
+    <tok fileIndex="0" linenr="397" column="18" str=";"/>
+    <tok fileIndex="0" linenr="398" column="9" str="case"/>
+    <tok fileIndex="0" linenr="398" column="14" str="SYS_POWER_MODE_SLEEP"/>
+    <tok fileIndex="0" linenr="398" column="34" str=":"/>
+    <tok fileIndex="0" linenr="399" column="13" str="op"/>
+    <tok fileIndex="0" linenr="399" column="16" str="="/>
+    <tok fileIndex="0" linenr="399" column="18" str="OSC_ON_WAIT_SLEEP"/>
+    <tok fileIndex="0" linenr="399" column="35" str=";"/>
+    <tok fileIndex="0" linenr="400" column="13" str="break"/>
+    <tok fileIndex="0" linenr="400" column="18" str=";"/>
+    <tok fileIndex="0" linenr="401" column="9" str="default"/>
+    <tok fileIndex="0" linenr="401" column="16" str=":"/>
+    <tok fileIndex="0" linenr="402" column="13" str="break"/>
+    <tok fileIndex="0" linenr="402" column="18" str=";"/>
+    <tok fileIndex="0" linenr="403" column="5" str="}"/>
+    <tok fileIndex="0" linenr="406" column="5" str="#"/>
+    <tok fileIndex="0" linenr="406" column="6" str="if"/>
+    <tok fileIndex="0" linenr="406" column="9" str="defined"/>
+    <tok fileIndex="0" linenr="406" column="17" str="PLIB_OSC_ExistsOnWaitAction"/>
+    <tok fileIndex="0" linenr="407" column="5" str="if"/>
+    <tok fileIndex="0" linenr="407" column="7" str="("/>
+    <tok fileIndex="0" linenr="407" column="8" str="PLIB_OSC_ExistsOnWaitAction"/>
+    <tok fileIndex="0" linenr="407" column="35" str="("/>
+    <tok fileIndex="0" linenr="407" column="36" str="OSC_ID_0"/>
+    <tok fileIndex="0" linenr="407" column="44" str=")"/>
+    <tok fileIndex="0" linenr="407" column="45" str=")"/>
+    <tok fileIndex="0" linenr="408" column="5" str="{"/>
+    <tok fileIndex="0" linenr="409" column="9" str="SYS_DEVCON_SystemUnlock"/>
+    <tok fileIndex="0" linenr="409" column="32" str="("/>
+    <tok fileIndex="0" linenr="409" column="33" str=")"/>
+    <tok fileIndex="0" linenr="409" column="34" str=";"/>
+    <tok fileIndex="0" linenr="410" column="9" str="PLIB_OSC_OnWaitActionSet"/>
+    <tok fileIndex="0" linenr="410" column="34" str="("/>
+    <tok fileIndex="0" linenr="410" column="35" str="OSC_ID_0"/>
+    <tok fileIndex="0" linenr="410" column="43" str=","/>
+    <tok fileIndex="0" linenr="410" column="45" str="op"/>
+    <tok fileIndex="0" linenr="410" column="47" str=")"/>
+    <tok fileIndex="0" linenr="410" column="48" str=";"/>
+    <tok fileIndex="0" linenr="411" column="9" str="SYS_DEVCON_SystemLock"/>
+    <tok fileIndex="0" linenr="411" column="30" str="("/>
+    <tok fileIndex="0" linenr="411" column="31" str=")"/>
+    <tok fileIndex="0" linenr="411" column="32" str=";"/>
+    <tok fileIndex="0" linenr="412" column="5" str="}"/>
+    <tok fileIndex="0" linenr="413" column="5" str="#"/>
+    <tok fileIndex="0" linenr="413" column="6" str="endif"/>
+    <tok fileIndex="0" linenr="414" column="5" str="asm"/>
+    <tok fileIndex="0" linenr="414" column="9" str="volatile"/>
+    <tok fileIndex="0" linenr="414" column="18" str="("/>
+    <tok fileIndex="0" linenr="414" column="20" str="&quot;wait&quot;"/>
+    <tok fileIndex="0" linenr="414" column="27" str=")"/>
+    <tok fileIndex="0" linenr="414" column="28" str=";"/>
+    <tok fileIndex="0" linenr="415" column="1" str="}"/>
+    <tok fileIndex="0" linenr="418" column="1" str="/*******************************************************************************x End of Filex*/"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="53" str="#include &quot;system/devcon/src/sys_devcon_local.h&quot;"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="54" str="#include &quot;peripheral/int/plib_int.h&quot;"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="55" str="#include &quot;peripheral/devcon/plib_devcon.h&quot;"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="56" str="#include &quot;peripheral/osc/plib_osc.h&quot;"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="341" str="#if defined PLIB_DEVCON_ExistsTraceOutput"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="346" str="#endif"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="366" str="#if defined PLIB_DEVCON_ExistsTraceOutput"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="371" str="#endif"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="406" str="#if defined PLIB_OSC_ExistsOnWaitAction"/>
+    <directive file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="413" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="01ADCD80" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="71" column="1" str="SYS_DEVCON_OBJECT" scope="02FDE6D8" type="name"/>
+    <token id="01ADCDC0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="71" column="19" str="sysDevconObj" scope="02FDE6D8" type="name" varId="1" variable="03218AA8"/>
+    <token id="01ADCF80" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="71" column="31" str=";" scope="02FDE6D8"/>
+    <token id="01ADC9C0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="1" str="SYS_MODULE_OBJ" scope="02FDE6D8" type="name"/>
+    <token id="01ADCE00" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="16" str="SYS_DEVCON_Initialize" scope="02FDE6D8" type="name" function="033ADFA8" astParent="01ADCE40"/>
+    <token id="01ADCE40" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="37" str="(" scope="02FDE6D8" link="032304C8" astOperand1="01ADCE00" astOperand2="01ADCEC0"/>
+    <token id="01ADCB80" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="39" str="const" scope="02FDE6D8" type="name"/>
+    <token id="01ADD080" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="45" str="SYS_MODULE_INDEX" scope="02FDE6D8" type="name"/>
+    <token id="01ADCE80" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="62" str="index" scope="02FDE6D8" type="name" varId="2" variable="03218928" astParent="01ADCEC0"/>
+    <token id="01ADCEC0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="101" column="67" str="," scope="02FDE6D8" astParent="01ADCE40" astOperand1="01ADCE80" astOperand2="03230408"/>
+    <token id="01ADCF00" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="36" str="const" scope="02FDE6D8" type="name"/>
+    <token id="03230448" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="42" str="SYS_MODULE_INIT" scope="02FDE6D8" type="name" astParent="03230408"/>
+    <token id="03230408" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="58" str="*" scope="02FDE6D8" type="op" isArithmeticalOp="True" astParent="01ADCEC0" astOperand1="03230448" astOperand2="03230608"/>
+    <token id="03230208" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="60" str="const" scope="02FDE6D8" type="name"/>
+    <token id="03230608" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="66" str="init" scope="02FDE6D8" type="name" varId="3" variable="03218FE8" astParent="03230408"/>
+    <token id="032304C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="102" column="71" str=")" scope="02FDE6D8" link="01ADCE40"/>
+    <token id="03230148" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="103" column="1" str="{" scope="02FDF058" link="03230748"/>
+    <token id="03230108" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="5" str="sysDevconObj" scope="02FDF058" type="name" varId="1" variable="03218AA8" astParent="03230508"/>
+    <token id="03230508" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="17" str="." scope="02FDF058" astParent="03230688" astOperand1="03230108" astOperand2="032301C8"/>
+    <token id="032301C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="18" str="status" scope="02FDF058" type="name" varId="4" astParent="03230508"/>
+    <token id="03230688" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="25" str="=" scope="02FDF058" type="op" isAssignmentOp="True" astOperand1="03230508" astOperand2="03230388"/>
+    <token id="03230388" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="27" str="SYS_STATUS_READY" scope="02FDF058" type="name" astParent="03230688"/>
+    <token id="03230648" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="104" column="43" str=";" scope="02FDF058"/>
+    <token id="032307C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="5" str="sysDevconObj" scope="02FDF058" type="name" varId="1" variable="03218AA8" astParent="032306C8"/>
+    <token id="032306C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="17" str="." scope="02FDF058" astParent="032305C8" astOperand1="032307C8" astOperand2="03230488"/>
+    <token id="03230488" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="18" str="state" scope="02FDF058" type="name" varId="5" astParent="032306C8"/>
+    <token id="032305C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="24" str="=" scope="02FDF058" type="op" isAssignmentOp="True" astOperand1="032306C8" astOperand2="032303C8"/>
+    <token id="032303C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="26" str="SYS_DEVCON_STATE_READY" scope="02FDF058" type="name" astParent="032305C8"/>
+    <token id="03230088" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="106" column="48" str=";" scope="02FDF058"/>
+    <token id="03230188" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="5" str="return" scope="02FDF058" type="name" astOperand1="032300C8"/>
+    <token id="032300C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="12" str="(" scope="02FDF058" link="03230548" astParent="03230188" astOperand1="03230588"/>
+    <token id="03230048" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="13" str="SYS_MODULE_OBJ" scope="02FDF058" type="name"/>
+    <token id="03230548" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="27" str=")" scope="02FDF058" link="032300C8"/>
+    <token id="03230588" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="28" str="SYS_DEVCON_INDEX_0" scope="02FDF058" type="name" astParent="032300C8"/>
+    <token id="03230708" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="108" column="46" str=";" scope="02FDF058"/>
+    <token id="03230748" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="109" column="1" str="}" scope="02FDF058" link="03230148"/>
+    <token id="03230248" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="03230288" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="6" str="SYS_DEVCON_Reinitialize" scope="02FDE6D8" type="name" function="033AFDE8" astParent="032302C8"/>
+    <token id="032302C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="29" str="(" scope="02FDE6D8" link="03230948" astOperand1="03230288" astOperand2="03230348" valueType-type="void"/>
+    <token id="03230788" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="31" str="SYS_MODULE_OBJ" scope="02FDE6D8" type="name"/>
+    <token id="03230808" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="46" str="object" scope="02FDE6D8" type="name" varId="6" variable="03218E68" astParent="03230348"/>
+    <token id="03230348" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="135" column="52" str="," scope="02FDE6D8" astParent="032302C8" astOperand1="03230808" astOperand2="03230E88"/>
+    <token id="03230308" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="28" str="const" scope="02FDE6D8" type="name"/>
+    <token id="03230F88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="34" str="SYS_MODULE_INIT" scope="02FDE6D8" type="name" astParent="03230E88"/>
+    <token id="03230E88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="50" str="*" scope="02FDE6D8" type="op" isArithmeticalOp="True" astParent="03230348" astOperand1="03230F88" astOperand2="03230888"/>
+    <token id="03230BC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="52" str="const" scope="02FDE6D8" type="name"/>
+    <token id="03230888" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="58" str="init" scope="02FDE6D8" type="name" varId="7" variable="03218DE8" astParent="03230E88"/>
+    <token id="03230948" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="136" column="63" str=")" scope="02FDE6D8" link="032302C8"/>
+    <token id="03230908" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="137" column="1" str="{" scope="02FDF2B8" link="03230A08"/>
+    <token id="032308C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="5" str="sysDevconObj" scope="02FDF2B8" type="name" varId="1" variable="03218AA8" astParent="03230DC8"/>
+    <token id="03230DC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="17" str="." scope="02FDF2B8" astParent="03230FC8" astOperand1="032308C8" astOperand2="03230A48"/>
+    <token id="03230A48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="18" str="status" scope="02FDF2B8" type="name" varId="4" astParent="03230DC8"/>
+    <token id="03230FC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="25" str="=" scope="02FDF2B8" type="op" isAssignmentOp="True" astOperand1="03230DC8" astOperand2="03230E08"/>
+    <token id="03230E08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="27" str="SYS_STATUS_READY" scope="02FDF2B8" type="name" astParent="03230FC8"/>
+    <token id="03230E48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="138" column="43" str=";" scope="02FDF2B8"/>
+    <token id="03230F48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="5" str="sysDevconObj" scope="02FDF2B8" type="name" varId="1" variable="03218AA8" astParent="03230988"/>
+    <token id="03230988" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="17" str="." scope="02FDF2B8" astParent="03230D88" astOperand1="03230F48" astOperand2="03230A88"/>
+    <token id="03230A88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="18" str="state" scope="02FDF2B8" type="name" varId="5" astParent="03230988"/>
+    <token id="03230D88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="24" str="=" scope="02FDF2B8" type="op" isAssignmentOp="True" astOperand1="03230988" astOperand2="03230848"/>
+    <token id="03230848" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="26" str="SYS_DEVCON_STATE_READY" scope="02FDF2B8" type="name" astParent="03230D88"/>
+    <token id="03230EC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="140" column="48" str=";" scope="02FDF2B8"/>
+    <token id="03230A08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="141" column="1" str="}" scope="02FDF2B8" link="03230908"/>
+    <token id="03230D48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="032309C8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="6" str="SYS_DEVCON_Deinitialize" scope="02FDE6D8" type="name" function="033AFE98" astParent="03230B48"/>
+    <token id="03230B48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="29" str="(" scope="02FDE6D8" link="03230B88" astOperand1="032309C8" astOperand2="03230B08" valueType-type="void"/>
+    <token id="03230AC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="31" str="SYS_MODULE_OBJ" scope="02FDE6D8" type="name"/>
+    <token id="03230B08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="46" str="object" scope="02FDE6D8" type="name" varId="8" variable="032188E8" astParent="03230B48"/>
+    <token id="03230B88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="162" column="53" str=")" scope="02FDE6D8" link="03230B48"/>
+    <token id="03230C08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="163" column="1" str="{" scope="02FDEFC0" link="01CCA9D0"/>
+    <token id="03230F08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="5" str="sysDevconObj" scope="02FDEFC0" type="name" varId="1" variable="03218AA8" astParent="03230C48"/>
+    <token id="03230C48" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="17" str="." scope="02FDEFC0" astParent="03230C88" astOperand1="03230F08" astOperand2="03230CC8"/>
+    <token id="03230CC8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="18" str="status" scope="02FDEFC0" type="name" varId="4" astParent="03230C48"/>
+    <token id="03230C88" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="25" str="=" scope="02FDEFC0" type="op" isAssignmentOp="True" astOperand1="03230C48" astOperand2="03230D08"/>
+    <token id="03230D08" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="27" str="SYS_STATUS_UNINITIALIZED" scope="02FDEFC0" type="name" astParent="03230C88"/>
+    <token id="01CCAE10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="164" column="51" str=";" scope="02FDEFC0"/>
+    <token id="01CCA9D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="165" column="1" str="}" scope="02FDEFC0" link="03230C08"/>
+    <token id="01CCAF90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="1" str="SYS_STATUS" scope="02FDE6D8" type="name"/>
+    <token id="01CCAAD0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="12" str="SYS_DEVCON_Status" scope="02FDE6D8" type="name" function="033AFBD8" astParent="01CCAED0"/>
+    <token id="01CCAED0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="29" str="(" scope="02FDE6D8" link="01CCA850" astOperand1="01CCAAD0" astOperand2="01CCAB10"/>
+    <token id="01CCAC50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="31" str="SYS_MODULE_OBJ" scope="02FDE6D8" type="name"/>
+    <token id="01CCAB10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="46" str="object" scope="02FDE6D8" type="name" varId="9" variable="03218968" astParent="01CCAED0"/>
+    <token id="01CCA850" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="182" column="53" str=")" scope="02FDE6D8" link="01CCAED0"/>
+    <token id="01CCAD90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="183" column="1" str="{" scope="02FDF480" link="01CCAA50"/>
+    <token id="01CCA950" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="184" column="5" str="return" scope="02FDF480" type="name" astOperand1="01CCAC10"/>
+    <token id="01CCADD0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="184" column="12" str="sysDevconObj" scope="02FDF480" type="name" varId="1" variable="03218AA8" astParent="01CCAC10"/>
+    <token id="01CCAC10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="184" column="24" str="." scope="02FDF480" astParent="01CCA950" astOperand1="01CCADD0" astOperand2="01CCAC90"/>
+    <token id="01CCAC90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="184" column="25" str="status" scope="02FDF480" type="name" varId="4" astParent="01CCAC10"/>
+    <token id="01CCAFD0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="184" column="31" str=";" scope="02FDF480"/>
+    <token id="01CCAA50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="185" column="1" str="}" scope="02FDF480" link="01CCAD90"/>
+    <token id="01CCA910" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="01CCAD10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="6" str="SYS_DEVCON_Tasks" scope="02FDE6D8" type="name" function="033AFF48" astParent="01CCA990"/>
+    <token id="01CCA990" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="22" str="(" scope="02FDE6D8" link="01CCAA90" astOperand1="01CCAD10" astOperand2="01CCAF10" valueType-type="void"/>
+    <token id="01CCAE50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="24" str="SYS_MODULE_OBJ" scope="02FDE6D8" type="name"/>
+    <token id="01CCAF10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="39" str="object" scope="02FDE6D8" type="name" varId="10" variable="03218E28" astParent="01CCA990"/>
+    <token id="01CCAA90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="204" column="46" str=")" scope="02FDE6D8" link="01CCA990"/>
+    <token id="01CCAA10" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="205" column="1" str="{" scope="02FDF220" link="01CCA1D0"/>
+    <token id="01CCABD0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="5" str="switch" scope="02FDF220" type="name" astParent="01CCAE90"/>
+    <token id="01CCAE90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="12" str="(" scope="02FDF220" link="01CCAF50" astOperand1="01CCABD0" astOperand2="01CCAB50"/>
+    <token id="01CCAD50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="13" str="sysDevconObj" scope="02FDF220" type="name" varId="1" variable="03218AA8" astParent="01CCAB50"/>
+    <token id="01CCAB50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="25" str="." scope="02FDF220" astParent="01CCAE90" astOperand1="01CCAD50" astOperand2="01CCAB90"/>
+    <token id="01CCAB90" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="26" str="state" scope="02FDF220" type="name" varId="5" astParent="01CCAB50"/>
+    <token id="01CCAF50" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="206" column="31" str=")" scope="02FDF220" link="01CCAE90"/>
+    <token id="01CCACD0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="207" column="5" str="{" scope="02FDF5B0" link="01CCA410"/>
+    <token id="01CCA890" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="208" column="9" str="case" scope="02FDF5B0" type="name" astOperand1="01CCA8D0"/>
+    <token id="01CCA8D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="208" column="14" str="SYS_DEVCON_STATE_INIT" scope="02FDF5B0" type="name" astParent="01CCA890"/>
+    <token id="01CCA7D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="208" column="35" str=":" scope="02FDF5B0"/>
+    <token id="01CCA0D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="209" column="9" str="case" scope="02FDF5B0" type="name" astOperand1="01CCA090"/>
+    <token id="01CCA090" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="209" column="14" str="SYS_DEVCON_STATE_BUSY" scope="02FDF5B0" type="name" astParent="01CCA0D0"/>
+    <token id="01CCA390" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="209" column="35" str=":" scope="02FDF5B0"/>
+    <token id="01CCA550" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="210" column="9" str="case" scope="02FDF5B0" type="name" astOperand1="01CCA810"/>
+    <token id="01CCA810" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="210" column="14" str="SYS_DEVCON_STATE_READY" scope="02FDF5B0" type="name" astParent="01CCA550"/>
+    <token id="01CCA710" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="210" column="36" str=":" scope="02FDF5B0"/>
+    <token id="033FF918" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="210" column="0" str=";" scope="02FDF5B0"/>
+    <token id="01CCA650" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="211" column="9" str="default" scope="02FDF5B0" type="name"/>
+    <token id="01CCA750" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="211" column="16" str=":" scope="02FDF5B0"/>
+    <token id="033FFC98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="211" column="0" str=";" scope="02FDF5B0"/>
+    <token id="01CCA790" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="212" column="13" str="break" scope="02FDF5B0" type="name"/>
+    <token id="01CCA290" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="212" column="18" str=";" scope="02FDF5B0"/>
+    <token id="01CCA410" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="213" column="5" str="}" scope="02FDF5B0" link="01CCACD0"/>
+    <token id="01CCA1D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="214" column="1" str="}" scope="02FDF220" link="01CCAA10"/>
+    <token id="01CCA210" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="239" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="01CCA5D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="239" column="6" str="SYS_DEVCON_SystemUnlock" scope="02FDE6D8" type="name" function="033AF8C0" astParent="01CCA050"/>
+    <token id="01CCA050" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="239" column="29" str="(" scope="02FDE6D8" link="01CCA110" astOperand1="01CCA5D0" valueType-type="void"/>
+    <token id="01CCA110" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="239" column="36" str=")" scope="02FDE6D8" link="01CCA050"/>
+    <token id="01CCA2D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="240" column="1" str="{" scope="02FDF648" link="03191D70"/>
+    <token id="01CCA150" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="5" str="bool" scope="02FDF648" type="name"/>
+    <token id="01CCA590" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="10" str="int_flag" scope="02FDF648" type="name" varId="11" variable="03218868" valueType-type="bool"/>
+    <token id="01CCA450" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="19" str=";" scope="02FDF648"/>
+    <token id="033FFC18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="10" str="int_flag" scope="02FDF648" type="name" varId="11" variable="03218868" astParent="03400158" valueType-type="bool"/>
+    <token id="03400158" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="19" str="=" scope="02FDF648" type="op" isAssignmentOp="True" astOperand1="033FFC18" astOperand2="01CCA190" valueType-type="bool"/>
+    <token id="01CCA190" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="21" str="false" scope="02FDF648" type="name" astParent="03400158" valueType-type="bool"/>
+    <token id="01CCA250" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="241" column="26" str=";" scope="02FDF648"/>
+    <token id="01CCA310" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="5" str="int_flag" scope="02FDF648" type="name" varId="11" variable="03218868" astParent="01CCA490" valueType-type="bool"/>
+    <token id="01CCA490" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="14" str="=" scope="02FDF648" type="op" isAssignmentOp="True" astOperand1="01CCA310" astOperand2="01CCA350" valueType-type="bool"/>
+    <token id="01CCA350" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="16" str="(" scope="02FDF648" link="01CCA4D0" values="01C131E0" astParent="01CCA490" astOperand1="03191930" valueType-type="bool"/>
+    <token id="01CCA3D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="17" str="bool" scope="02FDF648" type="name"/>
+    <token id="01CCA4D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="21" str=")" scope="02FDF648" link="01CCA350"/>
+    <token id="01CCA510" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="22" str="(" scope="02FDF648" link="03191770"/>
+    <token id="01CCA690" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="23" str="PLIB_INT_GetStateAndDisable" scope="02FDF648" type="name" astParent="01CCA6D0"/>
+    <token id="01CCA6D0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="50" str="(" scope="02FDF648" link="03191830" astParent="03191930" astOperand1="01CCA690" astOperand2="03191A70"/>
+    <token id="03191A70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="52" str="INT_ID_0" scope="02FDF648" type="name" astParent="01CCA6D0"/>
+    <token id="03191830" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="61" str=")" scope="02FDF648" link="01CCA6D0"/>
+    <token id="03191930" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="63" str="&amp;" scope="02FDF648" type="op" values="01C13380" astParent="01CCA350" astOperand1="01CCA6D0" astOperand2="03191C30"/>
+    <token id="03191C30" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="65" str="0x01" scope="02FDF648" type="number" isInt="True" values="01C13290" astParent="03191930" valueType-type="int" valueType-sign="signed"/>
+    <token id="03191770" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="69" str=")" scope="02FDF648" link="01CCA510"/>
+    <token id="03191E70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="243" column="70" str=";" scope="02FDF648"/>
+    <token id="03191CB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="245" column="5" str="PLIB_DEVCON_SystemUnlock" scope="02FDF648" type="name" astParent="03191A30"/>
+    <token id="03191A30" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="245" column="29" str="(" scope="02FDF648" link="031916F0" astOperand1="03191CB0" astOperand2="03191730"/>
+    <token id="03191730" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="245" column="30" str="DEVCON_ID_0" scope="02FDF648" type="name" astParent="03191A30"/>
+    <token id="031916F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="245" column="41" str=")" scope="02FDF648" link="03191A30"/>
+    <token id="031917B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="245" column="42" str=";" scope="02FDF648"/>
+    <token id="03191D30" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="247" column="5" str="if" scope="02FDF648" type="name" astParent="03191DF0"/>
+    <token id="03191DF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="247" column="8" str="(" scope="02FDF648" link="03191C70" astOperand1="03191D30" astOperand2="03191BF0"/>
+    <token id="03191BF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="247" column="9" str="int_flag" scope="02FDF648" type="name" varId="11" variable="03218868" values="01C131D0" astParent="03191DF0" valueType-type="bool"/>
+    <token id="03191C70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="247" column="17" str=")" scope="02FDF648" link="03191DF0"/>
+    <token id="03191870" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="248" column="5" str="{" scope="02FDF6E0" link="031919B0"/>
+    <token id="03191970" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="249" column="9" str="PLIB_INT_Enable" scope="02FDF6E0" type="name" astParent="031917F0"/>
+    <token id="031917F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="249" column="24" str="(" scope="02FDF6E0" link="031918B0" astOperand1="03191970" astOperand2="031916B0"/>
+    <token id="031916B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="249" column="25" str="INT_ID_0" scope="02FDF6E0" type="name" astParent="031917F0"/>
+    <token id="031918B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="249" column="33" str=")" scope="02FDF6E0" link="031917F0"/>
+    <token id="031918F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="249" column="34" str=";" scope="02FDF6E0"/>
+    <token id="031919B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="250" column="5" str="}" scope="02FDF6E0" link="03191870"/>
+    <token id="03191D70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="251" column="1" str="}" scope="02FDF648" link="01CCA2D0"/>
+    <token id="03191CF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="270" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="031919F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="270" column="6" str="SYS_DEVCON_SystemLock" scope="02FDE6D8" type="name" function="033AFFA0" astParent="03191AB0"/>
+    <token id="03191AB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="270" column="27" str="(" scope="02FDE6D8" link="03191DB0" astOperand1="031919F0" valueType-type="void"/>
+    <token id="03191DB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="270" column="34" str=")" scope="02FDE6D8" link="03191AB0"/>
+    <token id="03191BB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="271" column="1" str="{" scope="02FDE9D0" link="02FC9820"/>
+    <token id="03191AF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="5" str="bool" scope="02FDE9D0" type="name"/>
+    <token id="03191B70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="10" str="int_flag" scope="02FDE9D0" type="name" varId="12" variable="032188A8" valueType-type="bool"/>
+    <token id="03191B30" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="19" str=";" scope="02FDE9D0"/>
+    <token id="034006D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="10" str="int_flag" scope="02FDE9D0" type="name" varId="12" variable="032188A8" astParent="032184E0" valueType-type="bool"/>
+    <token id="032184E0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="19" str="=" scope="02FDE9D0" type="op" isAssignmentOp="True" astOperand1="034006D8" astOperand2="03192470" valueType-type="bool"/>
+    <token id="03192470" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="21" str="false" scope="02FDE9D0" type="name" astParent="032184E0" valueType-type="bool"/>
+    <token id="03192170" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="272" column="26" str=";" scope="02FDE9D0"/>
+    <token id="03192530" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="5" str="int_flag" scope="02FDE9D0" type="name" varId="12" variable="032188A8" astParent="03192430" valueType-type="bool"/>
+    <token id="03192430" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="14" str="=" scope="02FDE9D0" type="op" isAssignmentOp="True" astOperand1="03192530" astOperand2="031924B0" valueType-type="bool"/>
+    <token id="031924B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="16" str="(" scope="02FDE9D0" link="03192330" values="01C133A0" astParent="03192430" astOperand1="03191FF0" valueType-type="bool"/>
+    <token id="03192270" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="17" str="bool" scope="02FDE9D0" type="name"/>
+    <token id="03192330" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="21" str=")" scope="02FDE9D0" link="031924B0"/>
+    <token id="031925F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="22" str="(" scope="02FDE9D0" link="03191F30"/>
+    <token id="031924F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="23" str="PLIB_INT_GetStateAndDisable" scope="02FDE9D0" type="name" astParent="03192570"/>
+    <token id="03192570" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="50" str="(" scope="02FDE9D0" link="031921F0" astParent="03191FF0" astOperand1="031924F0" astOperand2="031921B0"/>
+    <token id="031921B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="52" str="INT_ID_0" scope="02FDE9D0" type="name" astParent="03192570"/>
+    <token id="031921F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="61" str=")" scope="02FDE9D0" link="03192570"/>
+    <token id="03191FF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="63" str="&amp;" scope="02FDE9D0" type="op" values="01C13390" astParent="031924B0" astOperand1="03192570" astOperand2="031925B0"/>
+    <token id="031925B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="65" str="0x01" scope="02FDE9D0" type="number" isInt="True" values="01C13370" astParent="03191FF0" valueType-type="int" valueType-sign="signed"/>
+    <token id="03191F30" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="69" str=")" scope="02FDE9D0" link="031925F0"/>
+    <token id="03192030" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="274" column="70" str=";" scope="02FDE9D0"/>
+    <token id="03192630" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="276" column="5" str="PLIB_DEVCON_SystemLock" scope="02FDE9D0" type="name" astParent="03191EF0"/>
+    <token id="03191EF0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="276" column="27" str="(" scope="02FDE9D0" link="03192230" astOperand1="03192630" astOperand2="031920F0"/>
+    <token id="031920F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="276" column="28" str="DEVCON_ID_0" scope="02FDE9D0" type="name" astParent="03191EF0"/>
+    <token id="03192230" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="276" column="39" str=")" scope="02FDE9D0" link="03191EF0"/>
+    <token id="03191EB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="276" column="40" str=";" scope="02FDE9D0"/>
+    <token id="03191F70" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="278" column="5" str="if" scope="02FDE9D0" type="name" astParent="03191FB0"/>
+    <token id="03191FB0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="278" column="8" str="(" scope="02FDE9D0" link="03192070" astOperand1="03191F70" astOperand2="031920B0"/>
+    <token id="031920B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="278" column="9" str="int_flag" scope="02FDE9D0" type="name" varId="12" variable="032188A8" values="01C131F0" astParent="03191FB0" valueType-type="bool"/>
+    <token id="03192070" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="278" column="17" str=")" scope="02FDE9D0" link="03191FB0"/>
+    <token id="031923F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="279" column="5" str="{" scope="02FDEA68" link="02FC9D60"/>
+    <token id="03192130" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="280" column="9" str="PLIB_INT_Enable" scope="02FDEA68" type="name" astParent="031922B0"/>
+    <token id="031922B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="280" column="24" str="(" scope="02FDEA68" link="03192370" astOperand1="03192130" astOperand2="031922F0"/>
+    <token id="031922F0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="280" column="25" str="INT_ID_0" scope="02FDEA68" type="name" astParent="031922B0"/>
+    <token id="03192370" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="280" column="33" str=")" scope="02FDEA68" link="031922B0"/>
+    <token id="031923B0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="280" column="34" str=";" scope="02FDEA68"/>
+    <token id="02FC9D60" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="281" column="5" str="}" scope="02FDEA68" link="031923F0"/>
+    <token id="02FC9820" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="282" column="1" str="}" scope="02FDE9D0" link="03191BB0"/>
+    <token id="02FC99E0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="299" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="02FC9B60" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="299" column="6" str="SYS_DEVCON_JTAGEnable" scope="02FDE6D8" type="name" function="033AFA20" astParent="02FC96A0"/>
+    <token id="02FC96A0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="299" column="27" str="(" scope="02FDE6D8" link="02FC9CE0" astOperand1="02FC9B60" valueType-type="void"/>
+    <token id="02FC9CE0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="299" column="34" str=")" scope="02FDE6D8" link="02FC96A0"/>
+    <token id="02FC9BA0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="300" column="1" str="{" scope="02FDF810" link="02FC9660"/>
+    <token id="02FC97E0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="301" column="5" str="PLIB_DEVCON_JTAGPortEnable" scope="02FDF810" type="name" astParent="02FC9D20"/>
+    <token id="02FC9D20" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="301" column="31" str="(" scope="02FDF810" link="02FC9A20" astOperand1="02FC97E0" astOperand2="02FC9B20"/>
+    <token id="02FC9B20" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="301" column="32" str="DEVCON_ID_0" scope="02FDF810" type="name" astParent="02FC9D20"/>
+    <token id="02FC9A20" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="301" column="43" str=")" scope="02FDF810" link="02FC9D20"/>
+    <token id="02FC9DA0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="301" column="44" str=";" scope="02FDF810"/>
+    <token id="02FC9660" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="302" column="1" str="}" scope="02FDF810" link="02FC9BA0"/>
+    <token id="02FC9860" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="319" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="02FC9720" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="319" column="6" str="SYS_DEVCON_JTAGDisable" scope="02FDE6D8" type="name" function="033B0A48" astParent="02FC98A0"/>
+    <token id="02FC98A0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="319" column="28" str="(" scope="02FDE6D8" link="02FC97A0" astOperand1="02FC9720" valueType-type="void"/>
+    <token id="02FC97A0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="319" column="35" str=")" scope="02FDE6D8" link="02FC98A0"/>
+    <token id="02FC9A60" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="320" column="1" str="{" scope="02FDF8A8" link="02FC9C60"/>
+    <token id="02FC9AE0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="321" column="5" str="PLIB_DEVCON_JTAGPortDisable" scope="02FDF8A8" type="name" astParent="02FC9620"/>
+    <token id="02FC9620" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="321" column="32" str="(" scope="02FDF8A8" link="02FC98E0" astOperand1="02FC9AE0" astOperand2="02FC9AA0"/>
+    <token id="02FC9AA0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="321" column="33" str="DEVCON_ID_0" scope="02FDF8A8" type="name" astParent="02FC9620"/>
+    <token id="02FC98E0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="321" column="44" str=")" scope="02FDF8A8" link="02FC9620"/>
+    <token id="02FC9920" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="321" column="45" str=";" scope="02FDF8A8"/>
+    <token id="02FC9C60" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="322" column="1" str="}" scope="02FDF8A8" link="02FC9A60"/>
+    <token id="02FC9BE0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="339" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="02FC9C20" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="339" column="6" str="SYS_DEVCON_TraceEnable" scope="02FDE6D8" type="name" function="033B0730" astParent="02FC9CA0"/>
+    <token id="02FC9CA0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="339" column="28" str="(" scope="02FDE6D8" link="02FC99A0" astOperand1="02FC9C20" valueType-type="void"/>
+    <token id="02FC99A0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="339" column="35" str=")" scope="02FDE6D8" link="02FC9CA0"/>
+    <token id="033FFB18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="340" column="1" str="{" scope="02FDE640" link="033FFE18"/>
+    <token id="033FFE18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="347" column="1" str="}" scope="02FDE640" link="033FFB18"/>
+    <token id="033FFCD8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="364" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="033FFF58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="364" column="6" str="SYS_DEVCON_TraceDisable" scope="02FDE6D8" type="name" function="033B0470" astParent="033FFD18"/>
+    <token id="033FFD18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="364" column="29" str="(" scope="02FDE6D8" link="033FFE98" astOperand1="033FFF58" valueType-type="void"/>
+    <token id="033FFE98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="364" column="36" str=")" scope="02FDE6D8" link="033FFD18"/>
+    <token id="033FFC58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="365" column="1" str="{" scope="02FDE770" link="033FFB58"/>
+    <token id="033FFB58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="372" column="1" str="}" scope="02FDE770" link="033FFC58"/>
+    <token id="033FFE58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="1" str="void" scope="02FDE6D8" type="name"/>
+    <token id="033FFFD8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="32" str="SYS_DEVCON_PowerModeEnter" scope="02FDE6D8" type="name" function="033B0838" astParent="033FFA58"/>
+    <token id="033FFA58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="57" str="(" scope="02FDE6D8" link="033FFF18" astOperand1="033FFFD8" astOperand2="033FFD58" valueType-type="void"/>
+    <token id="03400018" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="59" str="SYS_POWER_MODE" scope="02FDE6D8" type="name"/>
+    <token id="033FFD58" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="74" str="pwrMode" scope="02FDE6D8" type="name" varId="13" variable="03218DA8" astParent="033FFA58"/>
+    <token id="033FFF18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="389" column="82" str=")" scope="02FDE6D8" link="033FFA58"/>
+    <token id="033FFDD8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="390" column="1" str="{" scope="02FDF0F0" link="034007D8"/>
+    <token id="033FFF98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="5" str="OSC_OPERATION_ON_WAIT" scope="02FDF0F0" type="name"/>
+    <token id="033FF858" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="27" str="op" scope="02FDF0F0" type="name" varId="14" variable="03218EA8"/>
+    <token id="033FF8D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="30" str=";" scope="02FDF0F0"/>
+    <token id="03218220" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="27" str="op" scope="02FDF0F0" type="name" varId="14" variable="03218EA8" astParent="032180A0"/>
+    <token id="032180A0" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="30" str="=" scope="02FDF0F0" type="op" isAssignmentOp="True" astOperand1="03218220" astOperand2="033FF998"/>
+    <token id="033FF998" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="32" str="SYS_POWER_MODE_IDLE" scope="02FDF0F0" type="name" astParent="032180A0"/>
+    <token id="033FFB98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="391" column="51" str=";" scope="02FDF0F0"/>
+    <token id="033FFA18" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="393" column="5" str="switch" scope="02FDF0F0" type="name" astParent="033FFA98"/>
+    <token id="033FFA98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="393" column="12" str="(" scope="02FDF0F0" link="033FFBD8" astOperand1="033FFA18" astOperand2="033FFAD8"/>
+    <token id="033FFAD8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="393" column="13" str="pwrMode" scope="02FDF0F0" type="name" varId="13" variable="03218DA8" astParent="033FFA98"/>
+    <token id="033FFBD8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="393" column="20" str=")" scope="02FDF0F0" link="033FFA98"/>
+    <token id="033FFD98" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="394" column="5" str="{" scope="02FDE8A0" link="03400498"/>
+    <token id="03400658" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="395" column="9" str="case" scope="02FDE8A0" type="name" astOperand1="03400258"/>
+    <token id="03400258" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="395" column="14" str="SYS_POWER_MODE_IDLE" scope="02FDE8A0" type="name" astParent="03400658"/>
+    <token id="034001D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="395" column="33" str=":" scope="02FDE8A0"/>
+    <token id="033FF958" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="395" column="0" str=";" scope="02FDE8A0"/>
+    <token id="03400598" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="396" column="13" str="op" scope="02FDE8A0" type="name" varId="14" variable="03218EA8" astParent="034000D8"/>
+    <token id="034000D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="396" column="16" str="=" scope="02FDE8A0" type="op" isAssignmentOp="True" astOperand1="03400598" astOperand2="03400118"/>
+    <token id="03400118" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="396" column="18" str="OSC_ON_WAIT_IDLE" scope="02FDE8A0" type="name" astParent="034000D8"/>
+    <token id="03400398" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="396" column="34" str=";" scope="02FDE8A0"/>
+    <token id="03400298" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="397" column="13" str="break" scope="02FDE8A0" type="name"/>
+    <token id="03400218" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="397" column="18" str=";" scope="02FDE8A0"/>
+    <token id="03400518" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="398" column="9" str="case" scope="02FDE8A0" type="name" astOperand1="03400558"/>
+    <token id="03400558" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="398" column="14" str="SYS_POWER_MODE_SLEEP" scope="02FDE8A0" type="name" astParent="03400518"/>
+    <token id="034005D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="398" column="34" str=":" scope="02FDE8A0"/>
+    <token id="033FFED8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="398" column="0" str=";" scope="02FDE8A0"/>
+    <token id="034004D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="399" column="13" str="op" scope="02FDE8A0" type="name" varId="14" variable="03218EA8" astParent="03400318"/>
+    <token id="03400318" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="399" column="16" str="=" scope="02FDE8A0" type="op" isAssignmentOp="True" astOperand1="034004D8" astOperand2="03400418"/>
+    <token id="03400418" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="399" column="18" str="OSC_ON_WAIT_SLEEP" scope="02FDE8A0" type="name" astParent="03400318"/>
+    <token id="03400358" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="399" column="35" str=";" scope="02FDE8A0"/>
+    <token id="03400798" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="400" column="13" str="break" scope="02FDE8A0" type="name"/>
+    <token id="034003D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="400" column="18" str=";" scope="02FDE8A0"/>
+    <token id="03400618" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="401" column="9" str="default" scope="02FDE8A0" type="name"/>
+    <token id="03400458" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="401" column="16" str=":" scope="02FDE8A0"/>
+    <token id="033FF898" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="401" column="0" str=";" scope="02FDE8A0"/>
+    <token id="03400698" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="402" column="13" str="break" scope="02FDE8A0" type="name"/>
+    <token id="03400098" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="402" column="18" str=";" scope="02FDE8A0"/>
+    <token id="03400498" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="403" column="5" str="}" scope="02FDE8A0" link="033FFD98"/>
+    <token id="03400198" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="414" column="5" str="asm" scope="02FDF0F0" type="name" astParent="034002D8"/>
+    <token id="034002D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="414" column="0" str="(" scope="02FDF0F0" link="03400058" astOperand1="03400198" astOperand2="03400718"/>
+    <token id="03400718" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="414" column="0" str="&quot;&quot;wait&quot;&quot;" scope="02FDF0F0" type="string" strlen="6" values="01C132E0" astParent="034002D8" valueType-type="char" valueType-pointer="1" valueType-constness="1"/>
+    <token id="03400058" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="414" column="0" str=")" scope="02FDF0F0" link="034002D8"/>
+    <token id="03400758" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="414" column="28" str=";" scope="02FDF0F0"/>
+    <token id="034007D8" file="../src/system_config/default/framework/system/devcon/src/sys_devcon.c" linenr="415" column="1" str="}" scope="02FDF0F0" link="033FFDD8"/>
+  </tokenlist>
+  <scopes>
+    <scope id="02FDE6D8" type="Global">
+      <functionList>
+        <function id="033ADFA8" tokenDef="01ADCE00" name="SYS_DEVCON_Initialize" type="Function">
+          <arg nr="1" variable="03218928"/>
+          <arg nr="2" variable="03218FE8"/>
+        </function>
+        <function id="033AFDE8" tokenDef="03230288" name="SYS_DEVCON_Reinitialize" type="Function">
+          <arg nr="1" variable="03218E68"/>
+          <arg nr="2" variable="03218DE8"/>
+        </function>
+        <function id="033AFE98" tokenDef="032309C8" name="SYS_DEVCON_Deinitialize" type="Function">
+          <arg nr="1" variable="032188E8"/>
+        </function>
+        <function id="033AFBD8" tokenDef="01CCAAD0" name="SYS_DEVCON_Status" type="Function">
+          <arg nr="1" variable="03218968"/>
+        </function>
+        <function id="033AFF48" tokenDef="01CCAD10" name="SYS_DEVCON_Tasks" type="Function">
+          <arg nr="1" variable="03218E28"/>
+        </function>
+        <function id="033AF8C0" tokenDef="01CCA5D0" name="SYS_DEVCON_SystemUnlock" type="Function"/>
+        <function id="033AFFA0" tokenDef="031919F0" name="SYS_DEVCON_SystemLock" type="Function"/>
+        <function id="033AFA20" tokenDef="02FC9B60" name="SYS_DEVCON_JTAGEnable" type="Function"/>
+        <function id="033B0A48" tokenDef="02FC9720" name="SYS_DEVCON_JTAGDisable" type="Function"/>
+        <function id="033B0730" tokenDef="02FC9C20" name="SYS_DEVCON_TraceEnable" type="Function"/>
+        <function id="033B0470" tokenDef="033FFF58" name="SYS_DEVCON_TraceDisable" type="Function"/>
+        <function id="033B0838" tokenDef="033FFFD8" name="SYS_DEVCON_PowerModeEnter" type="Function">
+          <arg nr="1" variable="03218DA8"/>
+        </function>
+      </functionList>
+      <varlist>
+        <var id="03218AA8"/>
+      </varlist>
+    </scope>
+    <scope id="02FDF058" type="Function" className="SYS_DEVCON_Initialize" bodyStart="03230148" bodyEnd="03230748" nestedIn="02FDE6D8" function="033ADFA8"/>
+    <scope id="02FDF2B8" type="Function" className="SYS_DEVCON_Reinitialize" bodyStart="03230908" bodyEnd="03230A08" nestedIn="02FDE6D8" function="033AFDE8"/>
+    <scope id="02FDEFC0" type="Function" className="SYS_DEVCON_Deinitialize" bodyStart="03230C08" bodyEnd="01CCA9D0" nestedIn="02FDE6D8" function="033AFE98"/>
+    <scope id="02FDF480" type="Function" className="SYS_DEVCON_Status" bodyStart="01CCAD90" bodyEnd="01CCAA50" nestedIn="02FDE6D8" function="033AFBD8"/>
+    <scope id="02FDF220" type="Function" className="SYS_DEVCON_Tasks" bodyStart="01CCAA10" bodyEnd="01CCA1D0" nestedIn="02FDE6D8" function="033AFF48"/>
+    <scope id="02FDF5B0" type="Switch" bodyStart="01CCACD0" bodyEnd="01CCA410" nestedIn="02FDF220"/>
+    <scope id="02FDF648" type="Function" className="SYS_DEVCON_SystemUnlock" bodyStart="01CCA2D0" bodyEnd="03191D70" nestedIn="02FDE6D8" function="033AF8C0">
+      <varlist>
+        <var id="03218868"/>
+      </varlist>
+    </scope>
+    <scope id="02FDF6E0" type="If" bodyStart="03191870" bodyEnd="031919B0" nestedIn="02FDF648"/>
+    <scope id="02FDE9D0" type="Function" className="SYS_DEVCON_SystemLock" bodyStart="03191BB0" bodyEnd="02FC9820" nestedIn="02FDE6D8" function="033AFFA0">
+      <varlist>
+        <var id="032188A8"/>
+      </varlist>
+    </scope>
+    <scope id="02FDEA68" type="If" bodyStart="031923F0" bodyEnd="02FC9D60" nestedIn="02FDE9D0"/>
+    <scope id="02FDF810" type="Function" className="SYS_DEVCON_JTAGEnable" bodyStart="02FC9BA0" bodyEnd="02FC9660" nestedIn="02FDE6D8" function="033AFA20"/>
+    <scope id="02FDF8A8" type="Function" className="SYS_DEVCON_JTAGDisable" bodyStart="02FC9A60" bodyEnd="02FC9C60" nestedIn="02FDE6D8" function="033B0A48"/>
+    <scope id="02FDE640" type="Function" className="SYS_DEVCON_TraceEnable" bodyStart="033FFB18" bodyEnd="033FFE18" nestedIn="02FDE6D8" function="033B0730"/>
+    <scope id="02FDE770" type="Function" className="SYS_DEVCON_TraceDisable" bodyStart="033FFC58" bodyEnd="033FFB58" nestedIn="02FDE6D8" function="033B0470"/>
+    <scope id="02FDF0F0" type="Function" className="SYS_DEVCON_PowerModeEnter" bodyStart="033FFDD8" bodyEnd="034007D8" nestedIn="02FDE6D8" function="033B0838">
+      <varlist>
+        <var id="03218EA8"/>
+      </varlist>
+    </scope>
+    <scope id="02FDE8A0" type="Switch" bodyStart="033FFD98" bodyEnd="03400498" nestedIn="02FDF0F0"/>
+  </scopes>
+  <variables>
+    <var id="03218868" nameToken="01CCA590" typeStartToken="01CCA150" typeEndToken="01CCA150" access="Local" scope="02FDF648" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="032188A8" nameToken="03191B70" typeStartToken="03191AF0" typeEndToken="03191AF0" access="Local" scope="02FDE9D0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="032188E8" nameToken="03230B08" typeStartToken="03230AC8" typeEndToken="03230AC8" access="Argument" scope="02FDEFC0" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218928" nameToken="01ADCE80" typeStartToken="01ADD080" typeEndToken="01ADD080" access="Argument" scope="02FDF058" constness="1" isArgument="true" isArray="false" isClass="true" isConst="true" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218968" nameToken="01CCAB10" typeStartToken="01CCAC50" typeEndToken="01CCAC50" access="Argument" scope="02FDF480" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218AA8" nameToken="01ADCDC0" typeStartToken="01ADCD80" typeEndToken="01ADCD80" access="Global" scope="02FDE6D8" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218DA8" nameToken="033FFD58" typeStartToken="03400018" typeEndToken="03400018" access="Argument" scope="02FDF0F0" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218DE8" nameToken="03230888" typeStartToken="03230F88" typeEndToken="03230E88" access="Argument" scope="02FDF2B8" constness="3" isArgument="true" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="false"/>
+    <var id="03218E28" nameToken="01CCAF10" typeStartToken="01CCAE50" typeEndToken="01CCAE50" access="Argument" scope="02FDF220" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218E68" nameToken="03230808" typeStartToken="03230788" typeEndToken="03230788" access="Argument" scope="02FDF2B8" constness="0" isArgument="true" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218EA8" nameToken="033FF858" typeStartToken="033FFF98" typeEndToken="033FFF98" access="Local" scope="02FDF0F0" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="03218FE8" nameToken="03230608" typeStartToken="03230448" typeEndToken="03230408" access="Argument" scope="02FDF058" constness="3" isArgument="true" isArray="false" isClass="false" isConst="true" isExtern="false" isLocal="false" isPointer="true" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="01C131E0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C13380">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C13290">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="01C131D0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C133A0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C13390">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C13370">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="01C131F0">
+      <value intvalue="0" possible="true"/>
+      <value intvalue="1" possible="true"/>
+    </values>
+    <values id="01C132E0">
+      <value tokvalue="03400718" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>
